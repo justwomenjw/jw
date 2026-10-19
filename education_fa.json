@@ -1,0 +1,95 @@
+{
+    "page.title": "آموزش و توانمندسازی | جاست وومن",
+    "brand.tagline": "می‌تواند جامعه را تغییر دهد",
+  
+    "nav.home": "خانه",
+    "nav.about": "دربارهٔ ما",
+    "nav.media": "رسانه و روایت‌ها",
+    "nav.education": "آموزش و توانمندسازی",
+    "nav.team": "به تیم ما بپیوندید",
+    "nav.story": "روایت‌تان را شریک سازید",
+    "nav.partner": "همکاران و پشتیبانی",
+    "nav.contact": "تماس",
+  
+    "search.label": "جستجوی این صفحه",
+    "search.placeholder": "جستجوی صنف‌ها یا بخش‌ها…",
+    "search.empty": "بخشی مطابق جستجو یافت نشد. کلمهٔ دیگری امتحان کنید.",
+  
+    "footer.slogan": "زنان فقط روایت نیستند. زنان روایت را می‌گویند.",
+    "footer.explore": "کاوش",
+    "footer.connect": "ارتباط",
+    "footer.follow": "ما را دنبال کنید",
+    "footer.share": "اشتراک",
+    "footer.copyright": "© ۲۰۲۶ جاست وومن — برای تغییر اجتماعی.",
+    "footer.backtotop": "بازگشت به بالا ↑",
+  
+    "share.copied": "پیوند صفحه کپی شد.",
+    "share.failed": "اشتراک‌گذاری در اینجا در دسترس نیست.",
+    "share.copyFailed": "کپی در اینجا در دسترس نیست.",
+  
+    "education.hero.kicker": "جاست وومن برای تغییر اجتماعی",
+    "education.hero.title": "آموزش و توانمندسازی",
+    "education.hero.subtitle": "مهارت امروز. فرصت فردا.",
+    "education.hero.note": "عکس مستند گونه و نمونه؛ افراد آن به‌عنوان اعضای جاست وومن معرفی نشده‌اند.",
+  
+    "education.overview.kicker": "آنچه انجام می‌دهیم",
+    "education.overview.title": "ساختن مهارت، گشودن درها",
+    "education.overview.body": "جاست وومن فرصت‌های آموزش و راهنمایی برای زنان و دختران افغان فراهم می‌کند. ما فضایی برای یادگیری مهارت‌های عملی رسانه، افزایش اعتماد به نفس و کاوش در روایت‌گری با دقت ایجاد می‌کنیم. ثبت‌نام برخی از صنف‌ها هم‌اکنون باز است — در ادامه ببینید.",
+  
+    "education.programs.kicker": "صنف‌ها و ثبت‌نام",
+    "education.programs.title": "صنف‌های ما",
+    "education.programs.intro": "برخی از صنف‌ها برای ثبت‌نام باز هستند و برخی دیگر در حال آماده‌سازی‌اند. همهٔ لینک‌های ثبت‌نام به فرم‌های رسمی گوگل سازمان می‌رود.",
+    "education.programs.badge.open": "ثبت‌نام باز است",
+    "education.programs.badge.soon": "به‌زودی",
+    "education.programs.btn.register": "ثبت‌نام در این صنف",
+    "education.programs.btn.soon": "ثبت‌نام به‌زودی باز می‌شود",
+    "education.programs.note": "همهٔ ثبت‌نام‌ها از طریق فرم‌های رسمی گوگل سازمان انجام می‌شود. ارسال فرم به معنای تضمین جایگاه نیست؛ درخواست‌ها را بررسی و پیگیری می‌کنیم.",
+  
+    "education.p1.title": "روزنامه‌نگاری و گزارش‌گری",
+    "education.p1.copy": "مبانی گزارش‌گری دقیق و اخلاقی: پرورش روایت، مصاحبه و مسئولیت تحریریه.",
+  
+    "education.p2.title": "آمادگی برای آزمون GED",
+    "education.p2.copy": "آماده‌سازی ساختارمند برای آزمون‌های GED و تقویت گام‌به‌گام اعتماد به نفس تحصیلی.",
+  
+    "education.p3.title": "سلامت و سلامت روان",
+    "education.p3.copy": "دانش عملی دربارهٔ تندرستی جسمی، سلامت هیجانی، مراقبت از خود و محل دریافت پشتیبانی، با کرامت و دقت.",
+  
+    "education.p4.title": "حقوق بشر و حقوق زنان",
+    "education.p4.copy": "مقدمه‌ای بر حقوق بشر، حقوق زنان و چارچوب‌هایی که کرامت، برابری و مشارکت را محافظت می‌کنند.",
+  
+    "education.p5.title": "مستندسازی",
+    "education.p5.copy": "یادگیری ثبت و حفظ مسئولانهٔ داستان‌های زنان افغان — یادداشت‌های میدانی، آرشیوها و شیوه‌های دقیق مستندسازی.",
+  
+    "education.p6.title": "کنفرانس",
+    "education.p6.copy": "گردهمایی برای یادگیری، گفت‌وگو و تبادل — پیوند شرکت‌کنندگان، راهنمایان و همکاران.",
+  
+    "education.skills.kicker": "مهارت‌هایی که پشتیبانی می‌کنیم",
+    "education.skills.title": "حوزه‌های یادگیری",
+    "education.skills.s1.title": "روزنامه‌نگاری و گزارش‌گری",
+    "education.skills.s1.copy": "مبانی گزارش‌گری دقیق و اخلاقی و پرورش روایت.",
+    "education.skills.s2.title": "نوشتن و ویرایش",
+    "education.skills.s2.copy": "نوشتار روشن، ساختارمند و مهارت ویرایشی.",
+    "education.skills.s3.title": "مصاحبه و پژوهش",
+    "education.skills.s3.copy": "گوش دادن، آماده‌سازی و پژوهش مسئولانه.",
+    "education.skills.s4.title": "راستی‌آزمایی و اعتبارسنجی",
+    "education.skills.s4.copy": "بررسی منابع و تمایز میان واقعیت و ابهام.",
+  "education.skills.s5.title": "عکاسی و تولید مستند",
+  "education.skills.s5.copy": "روایت‌گری بصری با دقت، زمینه و رضایت.",
+  "education.skills.s6.title": "روایت‌گری دیجیتال و راهنمایی",
+  "education.skills.s6.copy": "به‌کارگیری رسانه‌های دیجیتال و راهنمایی برای شکل‌دادن به روایت‌ها.",
+
+  "education.how.kicker": "چگونه یادگیری شکل می‌گیرد",
+  "education.how.title": "روش ما",
+  "education.how.h1.title": "کارگاه‌ها",
+  "education.how.h1.copy": "جلسه‌های کوتاه و هدایت‌شده دربارهٔ مهارت‌های مشخص.",
+  "education.how.h2.title": "یادگیری همتا",
+  "education.how.h2.copy": "تمرین و بازخورد مشترک میان شرکت‌کنندگان.",
+  "education.how.h3.title": "راهنمایی",
+  "education.how.h3.copy": "راهنمایی فردی از سوی داوطلبان باتجربه.",
+  "education.how.h4.title": "تمرین‌های عملی",
+  "education.how.h4.copy": "تکالیف کوچک که به‌تدریج اعتماد به نفس می‌سازند.",
+
+  "education.cta.title": "به آموزش یا راهنمایی علاقه‌مندید؟",
+  "education.cta.btn.mentor": "به‌عنوان راهنما داوطلب شوید",
+  "education.cta.btn.contact": "تماس با ما"
+}

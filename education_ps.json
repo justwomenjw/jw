@@ -1,0 +1,94 @@
+{
+    "page.title": "زده کړه او روزنه | جسټ وومن",
+    "brand.tagline": "ټولنه بدلولی شي",
+  
+    "nav.home": "کور",
+    "nav.about": "زموږ په اړه",
+    "nav.media": "رسنۍ او کیسې",
+    "nav.education": "زده کړه او روزنه",
+    "nav.team": "زموږ ټیم ته راشئ",
+    "nav.story": "خپله کیسه شریکه کړئ",
+    "nav.partner": "همکاران او ملاتړ",
+    "nav.contact": "اړیکه",
+  
+    "search.label": "دا پاڼه ولټوئ",
+    "search.placeholder": "د صنفونو یا برخو لټون…",
+    "search.empty": "هیڅ برخه ستاسو لټون سره سمه نه ده. بله کلمه هڅه وکړئ.",
+  
+    "footer.slogan": "ښځې یوازې کیسې نه دي. ښځې کیسې وایي.",
+    "footer.explore": "وګورئ",
+    "footer.connect": "اړیکه",
+    "footer.follow": "موږ تعقیب کړئ",
+    "footer.share": "شریکول",
+    "footer.copyright": "© ۲۰۲۶ جسټ وومن — د ټولنیز بدلون لپاره.",
+    "footer.backtotop": "بیرته پورته ↑",
+  
+    "share.copied": "د پاڼې لینک کاپي شو.",
+    "share.failed": "شریکول دلته شتون نه لري.",
+    "share.copyFailed": "کاپي کول دلته شتون نه لري.",
+  
+    "education.hero.kicker": "جسټ وومن د ټولنیز بدلون لپاره",
+    "education.hero.title": "زده کړه او روزنه",
+    "education.hero.subtitle": "نن مهارتونه. سبا فرصتونه.",
+    "education.hero.note": "د بېلګې مستند انځور؛ پکې خلک د جسټ وومن غړي نه دي معرفي شوي.",
+  
+    "education.overview.kicker": "څه کوو",
+    "education.overview.title": "مهارتونه جوړول، دروازې پرانیستل",
+    "education.overview.body": "جسټ وومن د افغان ښځو او نجونو لپاره د روزنې او لارښوونې فرصتونه جوړوي. موږ د عملي رسنیزو مهارتونو زده کړې، باور لوړولو او د پاملرنې سره کیسه ویلو کې د کاوش لپاره ځای جوړوو. د ځینو صنفونو لپاره ننوتل اوس خلاص دي — لاندې وګورئ.",
+  
+    "education.programs.kicker": "صنفونه او ننوتل",
+    "education.programs.title": "زموږ صنفونه",
+    "education.programs.intro": "ځینې صنفونه د ننوتلو لپاره خلاص دي. نور بیا په چمتووالي کې دي. د ننوتلو ټولې لینکونه د سازمان رسمي ګوګل فورمونو ته ځي.",
+    "education.programs.badge.open": "ننوتل خلاص دي",
+    "education.programs.badge.soon": "ژر راځي",
+    "education.programs.btn.register": "دې صنف ته ننوتنه وکړئ",
+    "education.programs.btn.soon": "ننوتل به ژر خلاص شي",
+    "education.programs.note": "ټول ننوتل د سازمان رسمي ګوګل فورمونو له لارې ترسره کیږي. فورم سپارل د څوکۍ تضمین نه دی؛ موږ غوښتنې بیاکتنه او تعقیبوو.",
+  
+    "education.p1.title": "خبریالۍ او راپور ورکول",
+    "education.p1.copy": "د دقیقې او اخلاقي راپور ورکولو بنسټونه: کیسه پراخول، مرکه او ایډیټوریل مسؤلیت.",
+  
+    "education.p2.title": "د GED لپاره چمتووالی",
+    "education.p2.copy": "د GED ازموینو لپاره جوړشوی چمتووالی، چې ګام په ګام علمي باور جوړوي.",
+  
+    "education.p3.title": "روغتیا او رواني روغتیا",
+    "education.p3.copy": "د جسمي روغتیا، احساسي روغتیا، پخپله پاملرنې او د ملاتړ موندلو ځای په اړه عملي پوهه، چې د کرامت او پاملرنې سره نږدې کیږي.",
+  
+    "education.p4.title": "بشري حقوق او د ښځو حقوق",
+    "education.p4.copy": "د بنسټیزو بشري حقوقو، د ښځو حقوقو او هغو چوکاټونو پیژندنه چې کرامت، برابري او ګډون ساتي.",
+  
+    "education.p5.title": "مستندسازی",
+    "education.p5.copy": "د افغان ښځو کیسو د مسؤلانه ثبت او ساتنې زده کړه — ساحوي یادښتونه، آرشیفونه او د مستندسازی دقیقې لارې.",
+  
+    "education.p6.title": "کنفرانس",
+    "education.p6.copy": "د زده کړې، خبرو او تبادلې لپاره غونډه — چې ګډون کوونکي، لارښوونکي او همکاران یوځای کوي.",
+  
+    "education.skills.kicker": "هغه مهارتونه چې ملاتړ یې کوو",
+    "education.skills.title": "د زده کړې برخې",
+    "education.skills.s1.title": "خبریالۍ او راپور ورکول",
+    "education.skills.s1.copy": "د دقیقې او اخلاقي راپور ورکولو او کیسه پراخولو بنسټونه.",
+    "education.skills.s2.title": "لیکل او ایډیټ",
+    "education.skills.s2.copy": "روښانه لیکل، جوړښت او د ایډیټ مهارت.",
+    "education.skills.s3.title": "مرکه او څیړنه",
+    "education.skills.s3.copy": "اورېدل، چمتووالی او مسؤلیت لرونکې څیړنه.",
+    "education.skills.s4.title": "حقیقت‌تایید او اعتبارسنجي",
+    "education.skills.s4.copy": "د سرچینو بیاکتنه او د حقیقت او ابهام ترمنځ توپیر.",
+    "education.skills.s5.title": "عکاسي او مستند تولید",
+    "education.skills.s5.copy": "بصري کیسه ویل د پاملرنې، شرایطو او رضایت سره.",
+    "education.skills.s6.title": "ډیجیټل کیسه ویل او لارښوونه",
+    "education.skills.s6.copy": "ډیجیټل رسنیو او لارښوونې کارول ترڅو کیسې جوړې شي.",
+    "education.how.kicker": "زده کړه څنګه ترسره کیږي",
+  "education.how.title": "زموږ لاره",
+  "education.how.h1.title": "ورکشاپونه",
+  "education.how.h1.copy": "د ځانګړو مهارتونو په اړه لنډې لارښود شوې غونډې.",
+  "education.how.h2.title": "هم‌زده کړه",
+  "education.how.h2.copy": "د ګډون کوونکو ترمنځ شریکه تمرین او نظرونه.",
+  "education.how.h3.title": "لارښوونه",
+  "education.how.h3.copy": "د تجربه لرونکو داوطلبانو لخوا یو پر یو لارښوونه.",
+  "education.how.h4.title": "عملي تمرینونه",
+  "education.how.h4.copy": "کوچني کارونه چې په تدریجي ډول باور جوړوي.",
+
+  "education.cta.title": "د تدریس یا لارښوونې سره علاقه لرئ؟",
+  "education.cta.btn.mentor": "د لارښوونکي په توګه داوطلب شئ",
+  "education.cta.btn.contact": "زموږ سره اړیکه"
+}

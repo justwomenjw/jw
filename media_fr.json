@@ -1,0 +1,102 @@
+{
+    "page.title": "Médias & Récits | Just Women — Pour le changement social",
+    "brand.tagline": "Peut changer la société",
+  
+    "nav.home": "Accueil",
+    "nav.about": "À propos",
+    "nav.media": "Médias & Récits",
+    "nav.education": "Éducation & Formation",
+    "nav.team": "Rejoignez-nous",
+    "nav.story": "Partagez votre histoire",
+    "nav.partner": "Partenaires & Soutien",
+    "nav.contact": "Contact",
+  
+    "search.label": "RECHERCHER DES HISTOIRES",
+    "search.placeholder": "Rechercher par titre, catégorie ou sujet…",
+  
+    "footer.slogan": "Les femmes ne sont pas seulement les histoires. Les femmes racontent les histoires.",
+    "footer.explore": "EXPLORER",
+    "footer.connect": "CONTACT",
+    "footer.follow": "SUIVEZ-NOUS",
+    "footer.share": "PARTAGER",
+    "footer.copyright": "© 2026 Just Women — Pour le changement social.",
+    "footer.backtotop": "Retour en haut ↑",
+  
+    "share.copied": "Lien de la page copié.",
+    "share.failed": "Le partage n'est pas disponible ici.",
+    "share.copyFailed": "La copie n'est pas disponible ici.",
+  
+    "media.hero.kicker": "JUST WOMEN PEUT CHANGER LA SOCIÉTÉ",
+    "media.hero.title": "Médias & Récits",
+    "media.hero.subtitle": "De vraies histoires. De vraies voix. De la place pour le changement.",
+    "media.hero.note": "Photographie documentaire d'illustration. La personne représentée n'est pas identifiée comme contributrice de Just Women ni comme journaliste afghane.",
+  
+    "media.browse.kicker": "LA RÉDACTION",
+    "media.browse.title": "Explorer les histoires",
+    "media.search.label": "RECHERCHER DANS L'INDEX ÉDITORIAL",
+    "media.search.placeholder": "Rechercher par titre, catégorie ou sujet…",
+  
+    "media.cat.all": "Toutes les histoires",
+    "media.cat.news": "Actualités",
+    "media.cat.reports": "Rapports",
+    "media.cat.analysis": "Articles & Analyses",
+    "media.cat.interviews": "Entretiens",
+    "media.cat.personal": "Histoires personnelles",
+    "media.cat.poetry": "Poésie & Littérature",
+    "media.cat.photo": "Histoires photo",
+    "media.cat.docs": "Documentaires",
+  
+    "media.featured.kicker": "HISTOIRE À LA UNE · ESPACE ÉDITORIAL",
+    "media.featured.cat": "HISTOIRES PERSONNELLES · ESPACE",
+    "media.featured.title": "Une place pour les voix des femmes",
+    "media.featured.summary": "Texte d'espace réservé — cet espace est destiné à une histoire vérifiée de femmes racontant leurs propres histoires. Aucun reportage ni récit de participante n'a encore été publié ici.",
+    "media.featured.date": "Date de publication à venir",
+    "media.featured.btn": "Lire l'histoire",
+  
+    "media.latest.title": "Dernières histoires",
+  
+    "media.c1.cat": "ACTUALITÉS · ESPACE",
+    "media.c1.title": "Un espace pour de nouvelles perspectives",
+    "media.c1.excerpt": "Les détails seront ajoutés après vérification et révision éditoriale. Ceci n'est pas un reportage publié.",
+    "media.c1.date": "Date de publication à venir",
+  
+    "media.c2.cat": "RAPPORTS · ESPACE",
+    "media.c2.title": "Apprendre ensemble",
+    "media.c2.excerpt": "Extrait d'espace réservé pour un futur rapport vérifié. Les participants et les circonstances ne sont pas représentés par cette image.",
+    "media.c2.date": "Date de publication à venir",
+  
+    "media.c3.cat": "ENTRETIENS · ESPACE",
+    "media.c3.title": "En conversation",
+    "media.c3.excerpt": "Les détails seront ajoutés lorsqu'un entretien sera vérifié et que la contributrice aura donné son consentement approprié.",
+    "media.c3.date": "Date de publication à venir",
+  
+    "media.c4.cat": "POÉSIE & LITTÉRATURE · ESPACE",
+    "media.c4.title": "Mots sur la page",
+    "media.c4.excerpt": "Espace réservé pour une œuvre littéraire future. Aucun poème, auteur ou texte publié n'est représenté ici.",
+    "media.c4.date": "Date de publication à venir",
+  
+    "media.c5.cat": "HISTOIRES PHOTO · ESPACE",
+    "media.c5.title": "Lieux en focus",
+    "media.c5.excerpt": "Les détails seront ajoutés après examen des images, du contexte, des permissions et de la sécurité des contributrices.",
+    "media.c5.date": "Date de publication à venir",
+    "media.c6.cat": "DOCUMENTAIRES · ESPACE",
+  "media.c6.title": "Derrière la caméra",
+  "media.c6.excerpt": "Espace réservé pour un futur travail documentaire. Aucun film ni profil de contributrice n'est disponible ici.",
+  "media.c6.date": "Date de publication à venir",
+
+  "media.readmore": "En savoir plus ↗",
+  "media.none": "Aucune histoire d'espace réservé ne correspond à cette recherche. Essayez une autre catégorie ou un autre terme.",
+  "media.loadmore": "Charger plus d'histoires",
+
+  "media.panel.interviews.title": "Entretiens à la une",
+  "media.panel.interviews.copy": "Les entretiens apparaîtront ici lorsque du contenu vérifié et un consentement approprié des contributrices seront disponibles.",
+  "media.panel.poetry.title": "Poésie & Littérature",
+  "media.panel.poetry.copy": "La poésie et les œuvres littéraires apparaîtront ici lorsque les permissions de publication et la révision éditoriale seront complètes.",
+  "media.panel.photo.title": "Histoires photo & Documentaires",
+  "media.panel.photo.copy": "Les histoires visuelles apparaîtront ici après examen du contexte, du consentement, des droits d'image et des considérations de sécurité des contributrices.",
+
+  "media.note.kicker": "NOTE SUR LA PUBLICATION",
+  "media.note.title": "Note éditoriale",
+  "media.note.copy": "Note éditoriale : les histoires ne sont publiées qu'après une vérification appropriée des faits, le consentement, l'examen de la confidentialité et les considérations de sécurité des contributrices. La protection des sources et la sécurité des contributrices doivent guider les décisions de publication.",
+  "media.note.disclosure": "Les histoires et extraits de cette page sont des espaces éditoriaux en attente de contenu vérifié. Les photographies d'illustration ne représentent pas des contributrices identifiées de ces histoires proposées."
+}

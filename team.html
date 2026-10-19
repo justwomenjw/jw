@@ -1,0 +1,395 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title data-i18n-title="page.title">Join Our Team | Just Women Can Change Society</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Vazirmatn:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{--ink:#080808;--gold:#D4AF63;--paper:#F8F7F4}
+    html{scroll-behavior:smooth;scroll-padding-top:95px}
+    body{margin:0;width:100%;font-family:Inter,sans-serif;color:var(--ink)}
+    h1,h2,h3,.serif{font-family:"Playfair Display",serif}
+    [hidden]{display:none!important}
+    :focus-visible{outline:2px solid var(--gold);outline-offset:4px}
+
+    html[lang="fa"] body, html[lang="ps"] body{font-family:'Vazirmatn',Inter,sans-serif}
+    html[lang="fa"] h1, html[lang="fa"] h2, html[lang="fa"] h3,
+    html[lang="ps"] h1, html[lang="ps"] h2, html[lang="ps"] h3{font-family:'Vazirmatn',"Playfair Display",serif}
+
+    .brand-mark{width:49px;height:49px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;flex:none;overflow:hidden}
+    .nav-link{white-space:nowrap;transition:color .2s}
+    .nav-link:hover,.footer-link:hover{color:var(--gold)}
+    .nav-current{color:var(--gold);border-bottom:1px solid var(--gold);padding-bottom:5px}
+    .hero{min-height:620px;min-height:calc(76 * min(var(--vh,1vh),1vh))}
+    .hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 44%}
+    .hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.87),rgba(0,0,0,.57) 55%,rgba(0,0,0,.29))}
+    .gold-line{width:52px;height:2px;background:var(--gold)}
+    .eyebrow{letter-spacing:.19em;text-transform:uppercase}
+    .gold-button{background:var(--gold);color:var(--ink);transition:background .2s,transform .2s}
+    .gold-button:hover{background:#e6c783;transform:translateY(-2px)}
+    .editorial-rule{border-top:1px solid #D4AF63}
+    .search-result:hover{background:#f0e9db}
+    .step-number{width:40px;height:40px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-family:"Playfair Display",serif;color:#806022;font-size:18px}
+    @media(max-width:1190px){.desktop-nav{display:none!important}.menu-trigger{display:inline-flex!important}}
+    @media(max-width:640px){.hero{min-height:580px}.hero-image{object-position:62% center}.hero-shade{background:linear-gradient(0deg,rgba(0,0,0,.91),rgba(0,0,0,.42))}.brand-mark{width:42px;height:42px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
+  </style>
+
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
+</head>
+<body class="w-full" style="background:#fff;">
+
+<header class="canva-header sticky top-0 z-50 border-b border-white/15 text-white" style="background:#080808;">
+  <div class="w-full max-w-[1600px] mx-auto px-5 sm:px-8 xl:px-12 min-h-[78px] flex items-center justify-between gap-4">
+    <a href="home.html" class="flex items-center gap-3 shrink-0" aria-label="Just Women — Home">
+      <span class="brand-mark" aria-hidden="true">
+        <img src="cropped_circle_image.png" alt="" width="48" height="48" style="width:48px;height:48px;object-fit:contain;display:block;">
+      </span>
+      <span class="flex flex-col leading-none">
+        <strong class="canva-text tracking-[.13em]" style="color:#fff;font-weight:700;font-size:16px;">JUST WOMEN</strong>
+        <small class="canva-text tracking-[.22em] mt-2" data-i18n="brand.tagline" style="color:#D4AF63;font-size:10px;">Can Change Society</small>
+      </span>
+    </a>
+
+    <nav class="desktop-nav flex items-center gap-4 xl:gap-5 font-medium text-[11px]" aria-label="Main navigation">
+      <a class="nav-link" href="index.html" data-i18n="nav.home" style="color:#fff;font-size:16px;">Home</a>
+      <a class="nav-link" href="about.html" data-i18n="nav.about" style="color:#fff;font-size:16px;">About Us</a>
+      <a class="nav-link" href="media.html" data-i18n="nav.media" style="color:#fff;font-size:16px;">Media &amp; Stories</a>
+      <a class="nav-link" href="education.html" data-i18n="nav.education" style="color:#fff;font-size:16px;">Education &amp; Training</a>
+      <a class="nav-link nav-current" href="team.html" aria-current="page" data-i18n="nav.team" style="color:#D4AF63;font-size:16px;">Join Our Team</a>
+      <a class="nav-link" href="story.html" data-i18n="nav.story" style="color:#fff;font-size:16px;">Share Your Story</a>
+      <a class="nav-link" href="partner.html" data-i18n="nav.partner" style="color:#fff;font-size:16px;">Partners &amp; Support</a>
+      <a class="nav-link" href="contact.html" data-i18n="nav.contact" style="color:#fff;font-size:16px;">Contact</a>
+    </nav>
+
+    <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+      <div class="flex items-center gap-1 font-semibold text-[11px]" aria-label="Language">
+        <button type="button" data-lang-switch="en" aria-pressed="true" class="px-1 text-[#D4AF63]">EN</button>
+        <span aria-hidden="true" class="text-white/40">/</span>
+        <button type="button" data-lang-switch="fa" aria-pressed="false" class="px-1 text-white/70">دری</button>
+        <span aria-hidden="true" class="text-white/40">/</span>
+        <button type="button" data-lang-switch="ps" aria-pressed="false" class="px-1 text-white/70">پشتو</button>
+        <span aria-hidden="true" class="text-white/40">/</span>
+        <button type="button" data-lang-switch="fr" aria-pressed="false" class="px-1 text-white/70">FR</button>
+      </div>
+      <button id="search-toggle" type="button" class="p-2 hover:text-[#D4AF63]" aria-label="Search this page" aria-expanded="false" aria-controls="search-panel"><i data-lucide="search" class="w-[18px] h-[18px]"></i></button>
+      <button id="menu-toggle" type="button" class="menu-trigger hidden p-2 hover:text-[#D4AF63]" aria-label="Open menu" aria-expanded="false" aria-controls="mobile-menu"><i data-lucide="menu" class="w-5 h-5"></i></button>
+    </div>
+  </div>
+
+  <div id="search-panel" hidden class="border-t border-white/15 px-5 py-4">
+    <div class="max-w-3xl mx-auto">
+      <label class="canva-text block text-xs mb-2" for="page-search" data-i18n="search.label" style="color:#D4AF63;font-size:16px;">SEARCH THIS PAGE</label>
+      <input id="page-search" class="canva-input w-full px-4 py-3 rounded-sm" type="search" autocomplete="off" data-i18n-placeholder="search.placeholder" placeholder="Search roles or sections…" style="background:#fff;color:#080808;font-size:16px;">
+      <div id="search-results" class="mt-2 bg-white text-[#080808] rounded-sm" aria-live="polite"></div>
+      <p id="search-empty" hidden class="canva-text mt-3" data-i18n="search.empty" style="color:#fff;font-size:16px;">No matching sections. Try another word.</p>
+    </div>
+  </div>
+
+  <nav id="mobile-menu" hidden class="px-6 py-5 border-t border-white/15 text-white" aria-label="Mobile navigation">
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-x-5 gap-y-4 text-sm">
+      <a href="index.html" class="canva-link nav-link" data-i18n="nav.home" style="color:#fff;font-size:16px;">Home</a>
+      <a href="about.html" class="canva-link nav-link" data-i18n="nav.about" style="color:#fff;font-size:16px;">About Us</a>
+      <a href="media.html" class="canva-link nav-link" data-i18n="nav.media" style="color:#fff;font-size:16px;">Media &amp; Stories</a>
+      <a href="education.html" class="canva-link nav-link" data-i18n="nav.education" style="color:#fff;font-size:16px;">Education &amp; Training</a>
+      <a href="team.html" class="canva-link nav-current" data-i18n="nav.team" style="color:#D4AF63;font-size:16px;">Join Our Team</a>
+      <a href="story.html" class="canva-link nav-link" data-i18n="nav.story" style="color:#fff;font-size:16px;">Share Your Story</a>
+      <a href="partner.html" class="canva-link nav-link" data-i18n="nav.partner" style="color:#fff;font-size:16px;">Partners &amp; Support</a>
+      <a href="contact.html" class="canva-link nav-link" data-i18n="nav.contact" style="color:#fff;font-size:16px;">Contact</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero relative flex items-center text-white overflow-hidden">
+    <img class="canva-image hero-image" loading="lazy" src="https://images.pexels.com/photos/31569220/pexels-photo-31569220.jpeg" alt="Women in colorful headscarves gathered outdoors in sunlight">
+    <div class="hero-shade" aria-hidden="true"></div>
+    <div class="relative w-full max-w-[1450px] mx-auto px-6 sm:px-12 lg:px-20 py-24">
+      <div class="gold-line mb-7"></div>
+      <p class="canva-text eyebrow text-xs mb-6" data-i18n="team.hero.kicker" style="color:#D4AF63;font-size:16px;">JUST WOMEN FOR SOCIAL CHANGE</p>
+      <h1 class="canva-text max-w-[850px] leading-[1.12] font-medium" data-i18n="team.hero.title" style="color:#fff;font-weight:500;font-size:76px;">Join Our Team</h1>
+      <p class="canva-text max-w-[640px] mt-7 leading-[1.8]" data-i18n="team.hero.subtitle" style="color:#fff;font-size:19px;">Your skills. Our mission. Greater impact.</p>
+      <p class="canva-text mt-12 max-w-md text-xs leading-relaxed" data-i18n="team.hero.note" style="color:#fff;font-size:12px;">Illustrative documentary photograph; subjects are not identified as members of Just Women.</p>
+    </div>
+  </section>
+
+  <section id="intro" class="px-6 py-20 sm:py-28" style="background:#F8F7F4;">
+    <div class="max-w-[1260px] mx-auto grid md:grid-cols-[1fr_2fr] gap-9 md:gap-20">
+      <div>
+        <p class="canva-text eyebrow text-xs" data-i18n="team.intro.kicker" style="color:#88692F;font-size:16px;">VOLUNTEER WITH US</p>
+        <div class="gold-line mt-5"></div>
+      </div>
+      <div>
+        <h2 class="canva-text leading-tight mb-8" data-i18n="team.intro.title" style="color:#080808;font-weight:500;font-size:24px;">Skills with Purpose</h2>
+        <p class="canva-text max-w-3xl leading-[1.95]" data-i18n="team.intro.body" style="color:#44413D;font-size:16px;">Just Women welcomes volunteers from Afghanistan and internationally who want to support women-led media, storytelling, and future educational activities. Every contribution is valued, and we aim to match skills with needs carefully.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="roles" class="px-6 py-20 sm:py-28" style="background:#fff;">
+    <div class="max-w-[1260px] mx-auto">
+      <p class="canva-text eyebrow text-xs mb-4" data-i18n="team.roles.kicker" style="color:#88692F;font-size:16px;">WHO WE'RE LOOKING FOR</p>
+      <h2 class="canva-text mb-12" data-i18n="team.roles.title" style="color:#080808;font-size:24px;">Volunteer roles</h2>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+        <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
+          <i data-lucide="newspaper" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
+          <h3 class="canva-text mb-3" data-i18n="team.r1.title" style="color:#080808;font-size:18px;">Journalists and Reporters</h3>
+          <p class="canva-text leading-[1.8]" data-i18n="team.r1.copy" style="color:#55514D;font-size:15px;">Reporting, interviews, and story development.</p>
+        </article>
+        <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
+          <i data-lucide="pen-line" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
+          <h3 class="canva-text mb-3" data-i18n="team.r2.title" style="color:#080808;font-size:18px;">Writers and Editors</h3>
+          <p class="canva-text leading-[1.8]" data-i18n="team.r2.copy" style="color:#55514D;font-size:15px;">Drafting, structure, and editorial review.</p>
+        </article>
+        <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
+          <i data-lucide="languages" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
+          <h3 class="canva-text mb-3" data-i18n="team.r3.title" style="color:#080808;font-size:18px;">Researchers and Translators</h3>
+          <p class="canva-text leading-[1.8]" data-i18n="team.r3.copy" style="color:#55514D;font-size:15px;">Research support and careful translation.</p>
+        </article>
+        <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
+          <i data-lucide="camera" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
+          <h3 class="canva-text mb-3" data-i18n="team.r4.title" style="color:#080808;font-size:18px;">Photographers and Documentary Filmmakers</h3>
+          <p class="canva-text leading-[1.8]" data-i18n="team.r4.copy" style="color:#55514D;font-size:15px;">Visual storytelling with care and consent.</p>
+        </article>
+        <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
+          <i data-lucide="graduation-cap" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
+          <h3 class="canva-text mb-3" data-i18n="team.r5.title" style="color:#080808;font-size:18px;">Journalism Instructors and Mentors</h3>
+          <p class="canva-text leading-[1.8]" data-i18n="team.r5.copy" style="color:#55514D;font-size:15px;">Teaching, mentoring, and sharing experience.</p>
+        </article>
+        <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
+          <i data-lucide="code" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
+          <h3 class="canva-text mb-3" data-i18n="team.r6.title" style="color:#080808;font-size:18px;">Front-End, Back-End and Full-Stack Developers</h3>
+          <p class="canva-text leading-[1.8]" data-i18n="team.r6.copy" style="color:#55514D;font-size:15px;">Building and maintaining web tools.</p>
+        </article>
+        <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
+          <i data-lucide="layout" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
+          <h3 class="canva-text mb-3" data-i18n="team.r7.title" style="color:#080808;font-size:18px;">UI/UX Designers</h3>
+          <p class="canva-text leading-[1.8]" data-i18n="team.r7.copy" style="color:#55514D;font-size:15px;">Readable, accessible design.</p>
+        </article>
+        <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
+          <i data-lucide="shield" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
+          <h3 class="canva-text mb-3" data-i18n="team.r8.title" style="color:#080808;font-size:18px;">Cybersecurity Specialists &amp; Website Maintenance</h3>
+          <p class="canva-text leading-[1.8]" data-i18n="team.r8.copy" style="color:#55514D;font-size:15px;">Safety, privacy, and reliable upkeep.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="conditions" class="px-6 py-20 sm:py-28" style="background:#F8F7F4;">
+    <div class="max-w-[1260px] mx-auto">
+      <p class="canva-text eyebrow text-xs mb-4" data-i18n="team.cond.kicker" style="color:#88692F;font-size:16px;">VOLUNTEER CONDITIONS</p>
+      <h2 class="canva-text mb-10" data-i18n="team.cond.title" style="color:#080808;font-size:24px;">What to know</h2>
+      <div class="grid md:grid-cols-3 gap-5">
+        <article class="editorial-rule pt-7">
+          <h3 class="canva-text mb-3" data-i18n="team.c1.title" style="color:#080808;font-size:19px;">Voluntary and unpaid</h3>
+          <p class="canva-text leading-[1.85]" data-i18n="team.c1.copy" style="color:#55514D;font-size:16px;">Positions are voluntary and unpaid. Contributions are offered freely.</p>
+        </article>
+        <article class="editorial-rule pt-7">
+          <h3 class="canva-text mb-3" data-i18n="team.c2.title" style="color:#080808;font-size:19px;">Dependent on needs</h3>
+          <p class="canva-text leading-[1.85]" data-i18n="team.c2.copy" style="color:#55514D;font-size:16px;">Collaboration depends on organizational needs and availability.</p>
+        </article>
+        <article class="editorial-rule pt-7">
+          <h3 class="canva-text mb-3" data-i18n="team.c3.title" style="color:#080808;font-size:19px;">No guarantee</h3>
+          <p class="canva-text leading-[1.85]" data-i18n="team.c3.copy" style="color:#55514D;font-size:16px;">Submitting an application does not guarantee selection.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="apply" class="px-6 py-20 sm:py-28" style="background:#fff;">
+    <div class="max-w-[1260px] mx-auto">
+      <p class="canva-text eyebrow text-xs mb-4" data-i18n="team.apply.kicker" style="color:#88692F;font-size:16px;">HOW TO APPLY</p>
+      <h2 class="canva-text mb-10" data-i18n="team.apply.title" style="color:#080808;font-size:24px;">Three simple steps</h2>
+      <div class="grid md:grid-cols-3 gap-6 mb-12">
+        <div class="flex items-start gap-5">
+          <span class="step-number" aria-hidden="true">1</span>
+          <div>
+            <h3 class="canva-text mb-2" data-i18n="team.step1.title" style="color:#080808;font-size:19px;">Explore Roles</h3>
+            <p class="canva-text leading-[1.8]" data-i18n="team.step1.copy" style="color:#55514D;font-size:16px;">Read through the volunteer roles above.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-5">
+          <span class="step-number" aria-hidden="true">2</span>
+          <div>
+            <h3 class="canva-text mb-2" data-i18n="team.step2.title" style="color:#080808;font-size:19px;">Submit the Volunteer Form</h3>
+            <p class="canva-text leading-[1.8]" data-i18n="team.step2.copy" style="color:#55514D;font-size:16px;">Use the secure form linked below.</p>
+          </div>
+        </div>
+        <div class="flex items-start gap-5">
+          <span class="step-number" aria-hidden="true">3</span>
+          <div>
+            <h3 class="canva-text mb-2" data-i18n="team.step3.title" style="color:#080808;font-size:19px;">Wait for Review</h3>
+            <p class="canva-text leading-[1.8]" data-i18n="team.step3.copy" style="color:#55514D;font-size:16px;">We will review applications as capacity allows.</p>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap items-center gap-5">
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWy3Cruvnxlx0E9pEg8AEwLRjofLHNqWD3GvHJH9NE6As-Aw/viewform?usp=header" target="_blank" rel="noopener" class="gold-button inline-block px-8 py-4 font-semibold" data-i18n="team.apply.btn" style="font-size:16px;">Apply to Volunteer</a>
+        <p class="canva-text max-w-md text-xs leading-relaxed" data-i18n="team.apply.privacy" style="color:#6b665f;font-size:13px;">Privacy and safety: please do not submit sensitive personal information publicly. We do not publish identities without consent.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer id="contact" class="canva-footer bg-[#080808] text-white px-6 pt-16 pb-8" style="background:#080808;">
+  <div class="max-w-[1260px] mx-auto">
+    <div class="grid lg:grid-cols-[1.15fr_1fr_1fr] gap-12 pb-14">
+      <div>
+        <div class="flex items-center gap-3 mb-6">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="cropped_circle_image.png" alt="" width="42" height="42" style="width:42px;height:42px;object-fit:contain;display:block;">
+          </span>
+          <span>
+            <strong class="canva-text block tracking-[.13em]" style="color:#fff;font-weight:700;font-size:16px;">JUST WOMEN</strong>
+            <small class="canva-text block tracking-[.2em] mt-1" data-i18n="brand.tagline" style="color:#D4AF63;font-size:10px;">Can Change Society</small>
+          </span>
+        </div>
+        <p class="canva-text font-serif leading-relaxed max-w-xs" data-i18n="footer.slogan" style="color:#fff;font-size:20px;">Women are not only the stories. Women tell the stories.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <p class="canva-text eyebrow mb-6" data-i18n="footer.explore" style="color:#D4AF63;letter-spacing:.19em;font-size:13px;">EXPLORE</p>
+        <div class="grid grid-cols-2 gap-4">
+          <a href="home.html" class="canva-link hover:text-[#D4AF63]" data-i18n="nav.home" style="color:#fff;font-size:15px;">Home</a>
+          <a href="about.html" class="canva-link hover:text-[#D4AF63]" data-i18n="nav.about" style="color:#fff;font-size:15px;">About Us</a>
+          <a href="media.html" class="canva-link hover:text-[#D4AF63]" data-i18n="nav.media" style="color:#fff;font-size:15px;">Media &amp; Stories</a>
+          <a href="education.html" class="canva-link hover:text-[#D4AF63]" data-i18n="nav.education" style="color:#fff;font-size:15px;">Education &amp; Training</a>
+          <a href="team.html" class="canva-link hover:text-[#D4AF63]" data-i18n="nav.team" style="color:#fff;font-size:15px;">Join Our Team</a>
+          <a href="story.html" class="canva-link hover:text-[#D4AF63]" data-i18n="nav.story" style="color:#fff;font-size:15px;">Share Your Story</a>
+          <a href="partner.html" class="canva-link hover:text-[#D4AF63]" data-i18n="nav.partner" style="color:#fff;font-size:15px;">Partners &amp; Support</a>
+          <a href="contact.html" class="canva-link hover:text-[#D4AF63]" data-i18n="nav.contact" style="color:#fff;font-size:15px;">Contact</a>
+        </div>
+      </nav>
+      <div>
+        <p class="canva-text eyebrow mb-6" data-i18n="footer.connect" style="color:#D4AF63;letter-spacing:.19em;font-size:13px;">CONNECT</p>
+        <a href="mailto:justwomenorganization@gmail.com" class="canva-link break-all hover:text-[#D4AF63]" style="color:#fff;font-size:15px;">justwomenorganization@gmail.com</a>
+
+        <p class="canva-text eyebrow mt-8 mb-4" data-i18n="footer.follow" style="color:#D4AF63;letter-spacing:.19em;font-size:13px;">FOLLOW US</p>
+        <div class="flex flex-wrap gap-3">
+          <a href="https://www.instagram.com/justwomenjw/" target="_blank" rel="noopener" aria-label="Instagram — Just Women" class="border border-white/30 p-3 hover:border-[#D4AF63] hover:text-[#D4AF63] transition-colors">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="https://x.com/JustWomenJW" target="_blank" rel="noopener" aria-label="X (Twitter) — Just Women" class="border border-white/30 p-3 hover:border-[#D4AF63] hover:text-[#D4AF63] transition-colors">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+          </a>
+          <a href="https://www.youtube.com/@JustWomenjw" target="_blank" rel="noopener" aria-label="YouTube — Just Women" class="border border-white/30 p-3 hover:border-[#D4AF63] hover:text-[#D4AF63] transition-colors">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.5 9.4.5 9.4.5s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12z"/></svg>
+          </a>
+          <a href="https://whatsapp.com/channel/0029VbDpH3eICVfjCZKRcI33" target="_blank" rel="noopener" aria-label="WhatsApp Channel — Just Women" class="border border-white/30 p-3 hover:border-[#D4AF63] hover:text-[#D4AF63] transition-colors">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.8-.9-2.1-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.6 8.6 0 0 1-2.5-1.6 9.4 9.4 0 0 1-1.7-2.2c-.2-.3 0-.5.1-.6l.5-.6c.2-.2.2-.3.3-.5s0-.4 0-.5-.7-1.7-1-2.3c-.3-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1.1 2.5 6 6 0 0 0 1.3 3.2 13.6 13.6 0 0 0 5.2 4.6 17.4 17.4 0 0 0 1.7.6 4.2 4.2 0 0 0 1.9.1 3.1 3.1 0 0 0 2-1.5 2.5 2.5 0 0 0 .2-1.4c-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2z"/></svg>
+          </a>
+        </div>
+
+        <p class="canva-text eyebrow mt-8 mb-4" data-i18n="footer.share" style="color:#D4AF63;letter-spacing:.19em;font-size:13px;">SHARE</p>
+        <div class="flex items-center gap-3">
+          <button type="button" id="share-button" class="border border-white/30 p-3 hover:border-[#D4AF63] hover:text-[#D4AF63]" aria-label="Share this page"><i data-lucide="share-2" class="w-5 h-5"></i></button>
+          <button type="button" id="copy-button" class="border border-white/30 p-3 hover:border-[#D4AF63] hover:text-[#D4AF63]" aria-label="Copy page link"><i data-lucide="link" class="w-5 h-5"></i></button>
+        </div>
+        <p id="share-status" class="text-xs mt-3" role="status" aria-live="polite" style="color:#D4AF63;"></p>
+      </div>
+    </div>
+    <div class="border-t border-white/20 pt-7 flex flex-col sm:flex-row justify-between gap-3">
+      <p class="canva-text" data-i18n="footer.copyright" style="color:#fff;font-size:14px;">© 2026 Just Women — For Social Change.</p>
+      <a href="#home" class="canva-link hover:text-[#D4AF63]" data-i18n="footer.backtotop" style="color:#fff;font-size:14px;">Back to top ↑</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  lucide.createIcons();
+  const menuButton = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const searchToggle = document.getElementById('search-toggle');
+  const searchPanel = document.getElementById('search-panel');
+  const searchInput = document.getElementById('page-search');
+  const results = document.getElementById('search-results');
+  const searchEmpty = document.getElementById('search-empty');
+
+  const destinations = [
+    { id:'intro', keys:['team.intro.title'], terms:'volunteer afghanistan international media storytelling education' },
+    { id:'roles', keys:['team.roles.title'], terms:'journalists reporters writers editors researchers translators photographers filmmakers instructors mentors developers ui ux cybersecurity website maintenance' },
+    { id:'conditions', keys:['team.cond.title'], terms:'voluntary unpaid needs availability selection' },
+    { id:'apply', keys:['team.apply.title'], terms:'explore roles submit form review apply' }
+  ];
+
+  function closeMenu() {
+    mobileMenu.hidden = true;
+    menuButton.setAttribute('aria-expanded', 'false');
+    menuButton.setAttribute('aria-label', 'Open menu');
+  }
+  menuButton.addEventListener('click', () => {
+    mobileMenu.hidden = !mobileMenu.hidden;
+    menuButton.setAttribute('aria-expanded', String(!mobileMenu.hidden));
+    menuButton.setAttribute('aria-label', mobileMenu.hidden ? 'Open menu' : 'Close menu');
+  });
+  mobileMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
+
+  function renderResults() {
+    results.replaceChildren();
+    const query = searchInput.value.trim().toLocaleLowerCase();
+    if (!query) { searchEmpty.hidden = true; return; }
+    const matches = destinations.filter(item => {
+      const titleText = item.keys.map(k => window.i18n ? window.i18n.t(k) : '').join(' ');
+      return `${item.terms} ${titleText}`.toLocaleLowerCase().includes(query);
+    });
+    searchEmpty.hidden = matches.length > 0;
+    matches.forEach(item => {
+      const link = document.createElement('a');
+      link.href = '#' + item.id;
+      link.className = 'search-result block px-4 py-3 border-b border-[#e6e1d7]';
+      link.style.color = '#080808';
+      link.textContent = window.i18n ? window.i18n.t(item.keys[0]) : item.id;
+      link.addEventListener('click', () => {
+        searchPanel.hidden = true;
+        searchToggle.setAttribute('aria-expanded', 'false');
+        searchInput.value = '';
+        results.replaceChildren();
+      });
+      results.appendChild(link);
+    });
+  }
+  searchToggle.addEventListener('click', () => {
+    searchPanel.hidden = !searchPanel.hidden;
+    searchToggle.setAttribute('aria-expanded', String(!searchPanel.hidden));
+    if (!searchPanel.hidden) searchInput.focus();
+  });
+  searchInput.addEventListener('input', renderResults);
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') {
+      closeMenu();
+      searchPanel.hidden = true;
+      searchToggle.setAttribute('aria-expanded', 'false');
+    }
+  });
+
+  const shareStatus = document.getElementById('share-status');
+  async function copyLink() {
+    try {
+      await navigator.clipboard.writeText(location.href);
+      shareStatus.textContent = window.i18n ? window.i18n.t('share.copied') : 'Page link copied.';
+    } catch {
+      shareStatus.textContent = window.i18n ? window.i18n.t('share.copyFailed') : 'Copying is unavailable here.';
+    }
+  }
+  document.getElementById('copy-button').addEventListener('click', copyLink);
+  document.getElementById('share-button').addEventListener('click', async () => {
+    if (navigator.share) {
+      try { await navigator.share({ title: document.title, url: location.href }); }
+      catch (error) { if (error.name !== 'AbortError') shareStatus.textContent = window.i18n ? window.i18n.t('share.failed') : 'Sharing is unavailable here.'; }
+    } else await copyLink();
+  });
+
+  document.addEventListener('languagechange', renderResults);
+</script>
+
+<script src="js/i18n.js" defer></script>
+</body>
+</html>

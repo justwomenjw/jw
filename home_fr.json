@@ -1,0 +1,74 @@
+{
+    "page.title": "Just Women — Pour le changement social",
+    "brand.name": "JUST WOMEN",
+    "brand.tagline": "Peut changer la société",
+  
+    "nav.home": "Accueil",
+    "nav.about": "À propos",
+    "nav.media": "Médias & Récits",
+    "nav.education": "Éducation & Formation",
+    "nav.team": "Rejoignez-nous",
+    "nav.story": "Partagez votre histoire",
+    "nav.partner": "Partenaires & Soutien",
+    "nav.contact": "Contact",
+  
+    "search.label": "RECHERCHER DES HISTOIRES",
+    "search.placeholder": "Rechercher par sujet ou titre…",
+  
+    "hero.kicker": "JUST WOMEN PEUT CHANGER LA SOCIÉTÉ",
+    "hero.title": "Amplifier la voix des femmes pour un avenir plus lumineux",
+    "hero.desc": "Just Women est une initiative médiatique et narrative dirigée par des femmes, créant des opportunités pour les femmes et les filles afghanes à travers le journalisme, l'éducation, la narration et les médias numériques.",
+    "hero.btn.stories": "Explorer les histoires",
+    "hero.btn.join": "Rejoignez-nous",
+  
+    "about.label": "NOTRE MISSION",
+    "about.title": "Les histoires comptent quand ce sont les femmes qui les racontent.",
+    "about.body": "Just Women réunit journalisme, éducation, narration et médias numériques pour créer un espace pour les voix des femmes afghanes. Nous croyons que les femmes doivent façonner les histoires racontées sur leur vie et leurs communautés.",
+  
+    "features.label": "CE QUE NOUS FAISONS",
+    "features.title": "Une plateforme pour les voix et les possibles",
+    "feat.media.label": "01 / VOIX",
+    "feat.media.title": "Médias & Récits",
+    "feat.media.copy": "Un espace pour un journalisme réfléchi et des perspectives à la première personne qui placent les voix des femmes au centre.",
+    "feat.media.link": "Explorer les histoires",
+    "feat.edu.label": "02 / APPRENTISSAGE",
+    "feat.edu.title": "Éducation & Formation",
+    "feat.edu.copy": "Les compétences d'apprentissage et créatives peuvent ouvrir de nouvelles façons de participer au journalisme, à la narration et aux médias numériques.",
+    "feat.edu.link": "Nous contacter",
+  
+    "stories.label": "DE LA RÉDACTION",
+    "stories.title": "Dernières histoires",
+    "stories.disclaimer": "Thèmes éditoriaux et résumés illustratifs ; les photographies représentent des sujets d'illustration, pas les personnes décrites.",
+    "stories.none": "Aucune histoire ne correspond à votre recherche. Essayez un autre mot.",
+    "stories.read": "Lire le résumé",
+  
+    "s1.cat": "NARRATION", "s1.date": "12 MAI 2024", "s1.title": "Les histoires que nous portons", "s1.sum": "Un thème éditorial sur la mémoire, la conversation intergénérationnelle et l'importance de raconter une histoire avec ses propres mots.",
+    "s2.cat": "JOURNALISME", "s2.date": "8 JUIN 2024", "s2.title": "Apprendre à poser de meilleures questions", "s2.sum": "Un regard sur l'écoute, la préparation et le soin comme éléments essentiels d'une interview et d'un reportage responsables.",
+    "s3.cat": "AUDIO", "s3.date": "19 JUIL 2024", "s3.title": "Trouver sa voix à l'antenne", "s3.sum": "Une introduction éditoriale aux possibilités de la narration audio, de la conversation au récit soigneusement produit.",
+    "s4.cat": "ÉDUCATION", "s4.date": "4 AOÛT 2024", "s4.title": "Un lieu pour continuer d'apprendre", "s4.sum": "Une réflexion sur la curiosité, le savoir partagé et la valeur de faire de la place à l'apprentissage continu des filles.",
+    "s5.cat": "MÉDIAS NUMÉRIQUES", "s5.date": "15 SEPT 2024", "s5.title": "Derrière la caméra, devant l'histoire", "s5.sum": "Une brève exploration de la manière dont les compétences visuelles et le contrôle créatif peuvent aider les conteurs à façonner leurs propres récits.",
+  
+    "banner.title": "Faites partie du changement",
+    "banner.btn": "Rejoignez-nous",
+  
+    "share.label": "VOTRE VOIX COMPTE",
+    "share.title": "Partagez votre histoire",
+    "share.body": "Vous avez un point de vue à partager ? Commencez une conversation avec notre équipe par email.",
+    "share.link": "Écrivez-nous ↗",
+    "partners.label": "TRAVAILLER ENSEMBLE",
+  "partners.title": "Partenaires & Soutien",
+  "partners.body": "Intéressé·e à soutenir les médias et la narration dirigés par des femmes ? Contactez-nous pour en discuter.",
+  "partners.link": "Nous contacter ↗",
+
+  "footer.slogan": "Les femmes ne sont pas seulement les histoires. Les femmes racontent les histoires.",
+  "footer.explore": "EXPLORER",
+  "footer.connect": "CONTACT",
+  "footer.follow": "SUIVEZ-NOUS",
+  "footer.share": "PARTAGER",
+  "footer.copyright": "© 2026 Just Women",
+  "footer.backtotop": "Retour en haut ↑",
+
+  "share.copied": "Lien de la page copié.",
+  "share.failed": "Le partage n'est pas disponible ici.",
+  "share.copyFailed": "La copie n'est pas disponible ici."
+}

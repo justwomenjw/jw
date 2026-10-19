@@ -1,0 +1,102 @@
+{
+    "page.title": "Media & Stories | Just Women Can Change Society",
+    "brand.tagline": "Can Change Society",
+  
+    "nav.home": "Home",
+    "nav.about": "About Us",
+    "nav.media": "Media & Stories",
+    "nav.education": "Education & Training",
+    "nav.team": "Join Our Team",
+    "nav.story": "Share Your Story",
+    "nav.partner": "Partners & Support",
+    "nav.contact": "Contact",
+  
+    "search.label": "SEARCH STORIES",
+    "search.placeholder": "Search titles, categories or topics…",
+  
+    "footer.slogan": "Women are not only the stories. Women tell the stories.",
+    "footer.explore": "EXPLORE",
+    "footer.connect": "CONNECT",
+    "footer.follow": "FOLLOW US",
+    "footer.share": "SHARE",
+    "footer.copyright": "© 2026 Just Women — For Social Change.",
+    "footer.backtotop": "Back to top ↑",
+  
+    "share.copied": "Page link copied.",
+    "share.failed": "Sharing is unavailable here.",
+    "share.copyFailed": "Copying is unavailable here.",
+  
+    "media.hero.kicker": "JUST WOMEN Can Change Society",
+    "media.hero.title": "Media & Stories",
+    "media.hero.subtitle": "Real stories. Real voices. Room for change.",
+    "media.hero.note": "Illustrative documentary photograph. The person pictured is not identified as a Just Women contributor or an Afghan journalist.",
+  
+    "media.browse.kicker": "THE EDITORIAL DESK",
+    "media.browse.title": "Explore the stories",
+    "media.search.label": "SEARCH THE EDITORIAL INDEX",
+    "media.search.placeholder": "Search titles, categories or topics…",
+  
+    "media.cat.all": "All Stories",
+    "media.cat.news": "News",
+    "media.cat.reports": "Reports",
+    "media.cat.analysis": "Articles & Analysis",
+    "media.cat.interviews": "Interviews",
+    "media.cat.personal": "Personal Stories",
+    "media.cat.poetry": "Poetry & Literature",
+    "media.cat.photo": "Photo Stories",
+    "media.cat.docs": "Documentaries",
+  
+    "media.featured.kicker": "FEATURED STORY · EDITORIAL PLACEHOLDER",
+    "media.featured.cat": "PERSONAL STORIES · PLACEHOLDER",
+    "media.featured.title": "A Place for Women's Voices",
+    "media.featured.summary": "Placeholder copy — this space is reserved for a verified story about women telling their own stories. No reporting or participant account has been published here yet.",
+    "media.featured.date": "Publication date to be added",
+    "media.featured.btn": "Read Story",
+  
+    "media.latest.title": "Latest Stories",
+  
+    "media.c1.cat": "NEWS · PLACEHOLDER",
+    "media.c1.title": "A Space for New Perspectives",
+    "media.c1.excerpt": "Story details to be added after verification and editorial review. This is not a published news report.",
+    "media.c1.date": "Publication date to be added",
+  
+    "media.c2.cat": "REPORTS · PLACEHOLDER",
+    "media.c2.title": "Learning Together",
+    "media.c2.excerpt": "Placeholder excerpt for a future verified report. Participants and circumstances are not represented by this image.",
+    "media.c2.date": "Publication date to be added",
+  
+    "media.c3.cat": "INTERVIEWS · PLACEHOLDER",
+    "media.c3.title": "In Conversation",
+    "media.c3.excerpt": "Story details to be added when an interview is verified and the contributor has given appropriate consent.",
+    "media.c3.date": "Publication date to be added",
+  
+    "media.c4.cat": "POETRY & LITERATURE · PLACEHOLDER",
+    "media.c4.title": "Words on the Page",
+    "media.c4.excerpt": "Placeholder for a future literary work. No poem, author, or published text is represented here.",
+    "media.c4.date": "Publication date to be added",
+  
+    "media.c5.cat": "PHOTO STORIES · PLACEHOLDER",
+    "media.c5.title": "Places in Focus",
+    "media.c5.excerpt": "Story details to be added after images, context, permissions, and contributor safety are reviewed.",
+    "media.c5.date": "Publication date to be added",
+  
+    "media.c6.cat": "DOCUMENTARIES · PLACEHOLDER",
+    "media.c6.title": "Behind the Frame",
+    "media.c6.excerpt": "Placeholder for future documentary work. No film or contributor profile is available here yet.",
+    "media.c6.date": "Publication date to be added",
+    "media.readmore": "Read more ↗",
+  "media.none": "No placeholder stories match this search. Try another category or search term.",
+  "media.loadmore": "Load More Stories",
+
+  "media.panel.interviews.title": "Featured Interviews",
+  "media.panel.interviews.copy": "Interviews will appear here after verified material and appropriate contributor consent are available.",
+  "media.panel.poetry.title": "Poetry & Literature",
+  "media.panel.poetry.copy": "Poetry and literary work will appear here when publication permissions and editorial review are complete.",
+  "media.panel.photo.title": "Photo Stories & Documentaries",
+  "media.panel.photo.copy": "Visual stories will appear here after context, consent, image rights, and contributor-safety considerations are reviewed.",
+
+  "media.note.kicker": "A NOTE ON PUBLICATION",
+  "media.note.title": "Editorial note",
+  "media.note.copy": "Editorial note: Stories are published only after appropriate fact-checking, consent, privacy review, and contributor-safety considerations. Source protection and the safety of contributors should guide publication decisions.",
+  "media.note.disclosure": "The stories and excerpts on this page are editorial placeholders awaiting verified material. Illustrative photographs do not depict identified contributors to these proposed stories."
+}

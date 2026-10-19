@@ -1,0 +1,95 @@
+{
+    "page.title": "Education & Training | Just Women Can Change Society",
+    "brand.tagline": "Can Change Society",
+  
+    "nav.home": "Home",
+    "nav.about": "About Us",
+    "nav.media": "Media & Stories",
+    "nav.education": "Education & Training",
+    "nav.team": "Join Our Team",
+    "nav.story": "Share Your Story",
+    "nav.partner": "Partners & Support",
+    "nav.contact": "Contact",
+  
+    "search.label": "SEARCH THIS PAGE",
+    "search.placeholder": "Search classes or sections…",
+    "search.empty": "No matching sections. Try another word.",
+  
+    "footer.slogan": "Women are not only the stories. Women tell the stories.",
+    "footer.explore": "EXPLORE",
+    "footer.connect": "CONNECT",
+    "footer.follow": "FOLLOW US",
+    "footer.share": "SHARE",
+    "footer.copyright": "© 2026 Just Women — For Social Change.",
+    "footer.backtotop": "Back to top ↑",
+  
+    "share.copied": "Page link copied.",
+    "share.failed": "Sharing is unavailable here.",
+    "share.copyFailed": "Copying is unavailable here.",
+  
+    "education.hero.kicker": "JUST WOMEN FOR SOCIAL CHANGE",
+    "education.hero.title": "Education & Training",
+    "education.hero.subtitle": "Skills today. Opportunities tomorrow.",
+    "education.hero.note": "Illustrative documentary photograph; subjects are not identified as members of Just Women.",
+  
+    "education.overview.kicker": "WHAT WE DO",
+    "education.overview.title": "Building Skills, Opening Doors",
+    "education.overview.body": "Just Women develops training and mentorship opportunities for Afghan women and girls. We create space to learn practical media skills, build confidence, and explore storytelling with care. Registration is currently open for some classes — see below.",
+  
+    "education.programs.kicker": "CLASSES & REGISTRATION",
+    "education.programs.title": "Our classes",
+    "education.programs.intro": "Some classes are open for registration. Others are still in preparation. All registration links go to the organization's official Google Forms.",
+    "education.programs.badge.open": "Registration Open",
+    "education.programs.badge.soon": "Coming Soon",
+    "education.programs.btn.register": "Register for this class",
+    "education.programs.btn.soon": "Registration opens soon",
+    "education.programs.note": "All registration goes to the organization's official Google Forms. Submitting a form does not guarantee a seat; we will review registrations and follow up.",
+  
+    "education.p1.title": "Journalism & Reporting",
+    "education.p1.copy": "Foundations of accurate, ethical reporting: story development, interviewing, and editorial responsibility.",
+  
+    "education.p2.title": "GED Preparation",
+    "education.p2.copy": "Structured preparation for the General Educational Development tests, building academic confidence step by step.",
+  
+    "education.p3.title": "Health & Mental Health",
+    "education.p3.copy": "Practical knowledge on physical wellbeing, emotional health, self-care, and where to seek support, approached with dignity and care.",
+  
+    "education.p4.title": "Human Rights & Women Rights",
+    "education.p4.copy": "An introduction to fundamental human rights, women's rights, and the frameworks that protect dignity, equality, and participation.",
+  
+    "education.p5.title": "Documentation",
+    "education.p5.copy": "Learning to record and preserve Afghan women's stories responsibly — field notes, archives, and careful documentation practices.",
+  
+    "education.p6.title": "Conference",
+    "education.p6.copy": "A gathering for learning, dialogue, and exchange — bringing together participants, mentors, and partners.",
+  
+    "education.skills.kicker": "SKILLS WE SUPPORT",
+    "education.skills.title": "Areas of learning",
+    "education.skills.s1.title": "Journalism & Reporting",
+    "education.skills.s1.copy": "Foundations of accurate, ethical reporting and story development.",
+    "education.skills.s2.title": "Writing & Editing",
+    "education.skills.s2.copy": "Clear writing, structure, and editorial craft.",
+  "education.skills.s3.title": "Interviewing & Research",
+  "education.skills.s3.copy": "Listening, preparation, and responsible research.",
+  "education.skills.s4.title": "Fact-Checking & Verification",
+  "education.skills.s4.copy": "Checking sources and distinguishing fact from uncertainty.",
+  "education.skills.s5.title": "Photography & Documentary Production",
+  "education.skills.s5.copy": "Visual storytelling with care, context, and consent.",
+  "education.skills.s6.title": "Digital Storytelling & Mentorship",
+  "education.skills.s6.copy": "Using digital media and guidance to shape narratives.",
+
+  "education.how.kicker": "HOW LEARNING WORKS",
+  "education.how.title": "Our approach",
+  "education.how.h1.title": "Workshops",
+  "education.how.h1.copy": "Short, guided sessions on specific skills.",
+  "education.how.h2.title": "Peer Learning",
+  "education.how.h2.copy": "Shared practice and feedback among participants.",
+  "education.how.h3.title": "Mentoring",
+  "education.how.h3.copy": "One-to-one guidance from experienced volunteers.",
+  "education.how.h4.title": "Practical Exercises",
+  "education.how.h4.copy": "Small assignments that build confidence over time.",
+
+  "education.cta.title": "Interested in Teaching or Mentoring?",
+  "education.cta.btn.mentor": "Volunteer as a Mentor",
+  "education.cta.btn.contact": "Contact Us"
+}

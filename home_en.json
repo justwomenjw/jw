@@ -1,0 +1,74 @@
+{
+    "page.title": "Just Women — For Social Change",
+    "brand.name": "JUST WOMEN",
+    "brand.tagline": "Can Change Society",
+  
+    "nav.home": "Home",
+    "nav.about": "About Us",
+    "nav.media": "Media & Stories",
+    "nav.education": "Education & Training",
+    "nav.team": "Join Our Team",
+    "nav.story": "Share Your Story",
+    "nav.partner": "Partners & Support",
+    "nav.contact": "Contact",
+  
+    "search.label": "SEARCH STORIES",
+    "search.placeholder": "Search stories by topic or title…",
+  
+    "hero.kicker": "JUST WOMEN Can CHANGE Society",
+    "hero.title": "Amplifying Women's Voices for a Brighter Future",
+    "hero.desc": "Just Women is a women-led media and storytelling initiative creating opportunities for Afghan women and girls through journalism, education, storytelling and digital media.",
+    "hero.btn.stories": "Explore Stories",
+    "hero.btn.join": "Join Our Team",
+  
+    "about.label": "OUR PURPOSE",
+    "about.title": "Stories matter when women tell them.",
+    "about.body": "Just Women brings together journalism, education, storytelling and digital media to create space for Afghan women's voices. We believe women should shape the stories told about their lives and communities.",
+  
+    "features.label": "WHAT WE DO",
+    "features.title": "A platform for voices and possibility",
+    "feat.media.label": "01 / VOICES",
+    "feat.media.title": "Media & Stories",
+    "feat.media.copy": "A space for thoughtful reporting and first-person perspectives that place women's voices at the center.",
+    "feat.media.link": "Explore stories",
+    "feat.edu.label": "02 / LEARNING",
+    "feat.edu.title": "Education & Training",
+    "feat.edu.copy": "Learning and creative skills can open new ways to participate in journalism, storytelling and digital media.",
+    "feat.edu.link": "Get in touch",
+  
+    "stories.label": "FROM THE EDITORIAL DESK",
+    "stories.title": "Latest Stories",
+    "stories.disclaimer": "Editorial themes and illustrative summaries; photographs depict stock subjects, not the people described.",
+    "stories.none": "No stories match your search. Try another word.",
+    "stories.read": "Read summary",
+  
+    "s1.cat": "STORYTELLING", "s1.date": "12 MAY 2024", "s1.title": "The Stories We Carry Forward", "s1.sum": "An editorial theme about memory, intergenerational conversation and the importance of telling a story in one's own words.",
+    "s2.cat": "JOURNALISM", "s2.date": "8 JUN 2024", "s2.title": "Learning to Ask Better Questions", "s2.sum": "A look at listening, preparation and care as essential parts of responsible interviewing and reporting.",
+    "s3.cat": "AUDIO", "s3.date": "19 JUL 2024", "s3.title": "Finding a Voice on Air", "s3.sum": "An editorial introduction to the possibilities of audio storytelling, from conversation to carefully produced narrative.",
+    "s4.cat": "EDUCATION", "s4.date": "4 AUG 2024", "s4.title": "A Place to Keep Learning", "s4.sum": "A reflection on curiosity, shared knowledge and the value of making room for girls' continued learning.",
+    "s5.cat": "DIGITAL MEDIA", "s5.date": "15 SEP 2024", "s5.title": "Behind the Camera, Ahead of the Story", "s5.sum": "A short exploration of how visual skills and creative control can help storytellers shape their own narratives.",
+  
+    "banner.title": "Be Part of the Change",
+    "banner.btn": "Join Our Team",
+  
+    "share.label": "YOUR VOICE MATTERS",
+    "share.title": "Share Your Story",
+    "share.body": "Have a perspective you would like to share? Start a conversation with our team by email.",
+    "share.link": "Write to us ↗",
+  
+    "partners.label": "WORK TOGETHER",
+    "partners.title": "Partners & Support",
+    "partners.body": "Interested in supporting women-led media and storytelling? Reach out to explore a conversation.",
+    "partners.link": "Get in touch ↗",
+  
+    "footer.slogan": "Women are not only the stories. Women tell the stories.",
+    "footer.explore": "EXPLORE",
+    "footer.connect": "CONNECT",
+    "footer.follow": "FOLLOW US",
+    "footer.share": "SHARE",
+    "footer.copyright": "© 2026 Just Women",
+    "footer.backtotop": "Back to top ↑",
+    "share.copied": "Page link copied.",
+  "share.failed": "Sharing is unavailable here.",
+  "share.copyFailed": "Copying is unavailable here."
+}

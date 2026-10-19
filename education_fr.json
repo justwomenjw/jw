@@ -1,0 +1,94 @@
+{
+    "page.title": "Éducation & Formation | Just Women",
+    "brand.tagline": "Peut changer la société",
+  
+    "nav.home": "Accueil",
+    "nav.about": "À propos",
+    "nav.media": "Médias & Récits",
+    "nav.education": "Éducation & Formation",
+    "nav.team": "Rejoignez-nous",
+    "nav.story": "Partagez votre histoire",
+    "nav.partner": "Partenaires & Soutien",
+    "nav.contact": "Contact",
+  
+    "search.label": "RECHERCHER SUR CETTE PAGE",
+    "search.placeholder": "Rechercher des classes ou sections…",
+    "search.empty": "Aucune section correspondante. Essayez un autre mot.",
+  
+    "footer.slogan": "Les femmes ne sont pas seulement les histoires. Les femmes racontent les histoires.",
+    "footer.explore": "EXPLORER",
+    "footer.connect": "CONTACT",
+    "footer.follow": "SUIVEZ-NOUS",
+    "footer.share": "PARTAGER",
+    "footer.copyright": "© 2026 Just Women — Pour le changement social.",
+    "footer.backtotop": "Retour en haut ↑",
+  
+    "share.copied": "Lien de la page copié.",
+    "share.failed": "Le partage n'est pas disponible ici.",
+    "share.copyFailed": "La copie n'est pas disponible ici.",
+  
+    "education.hero.kicker": "JUST WOMEN POUR LE CHANGEMENT SOCIAL",
+    "education.hero.title": "Éducation & Formation",
+    "education.hero.subtitle": "Des compétences aujourd'hui. Des opportunités demain.",
+    "education.hero.note": "Photographie documentaire d'illustration ; les personnes représentées ne sont pas identifiées comme membres de Just Women.",
+  
+    "education.overview.kicker": "CE QUE NOUS FAISONS",
+    "education.overview.title": "Développer des compétences, ouvrir des portes",
+    "education.overview.body": "Just Women développe des opportunités de formation et de mentorat pour les femmes et les filles afghanes. Nous créons un espace pour apprendre des compétences médiatiques pratiques, renforcer la confiance et explorer la narration avec soin. L'inscription est actuellement ouverte pour certaines classes — voir ci-dessous.",
+  
+    "education.programs.kicker": "CLASSES & INSCRIPTION",
+    "education.programs.title": "Nos classes",
+    "education.programs.intro": "Certaines classes sont ouvertes à l'inscription. D'autres sont encore en préparation. Tous les liens d'inscription mènent aux formulaires Google officiels de l'organisation.",
+    "education.programs.badge.open": "Inscription ouverte",
+    "education.programs.badge.soon": "Bientôt",
+    "education.programs.btn.register": "S'inscrire à cette classe",
+    "education.programs.btn.soon": "L'inscription ouvrira bientôt",
+    "education.programs.note": "Toute inscription passe par les formulaires Google officiels de l'organisation. Soumettre un formulaire ne garantit pas une place ; nous examinerons les inscriptions et ferons un suivi.",
+  
+    "education.p1.title": "Journalisme & Reportage",
+    "education.p1.copy": "Fondements d'un reportage précis et éthique : développement de l'histoire, entretien et responsabilité éditoriale.",
+  
+    "education.p2.title": "Préparation au GED",
+    "education.p2.copy": "Préparation structurée aux tests du General Educational Development, renforçant la confiance académique étape par étape.",
+  
+    "education.p3.title": "Santé & Santé mentale",
+    "education.p3.copy": "Connaissances pratiques sur le bien-être physique, la santé émotionnelle, les soins personnels et où chercher du soutien, abordées avec dignité et soin.",
+  
+    "education.p4.title": "Droits humains & Droits des femmes",
+    "education.p4.copy": "Une introduction aux droits humains fondamentaux, aux droits des femmes et aux cadres qui protègent la dignité, l'égalité et la participation.",
+  
+    "education.p5.title": "Documentation",
+    "education.p5.copy": "Apprendre à enregistrer et préserver les histoires des femmes afghanes de manière responsable — notes de terrain, archives et pratiques de documentation rigoureuses.",
+  
+    "education.p6.title": "Conférence",
+    "education.p6.copy": "Un rassemblement pour l'apprentissage, le dialogue et l'échange — réunissant participants, mentors et partenaires.",
+    "education.skills.kicker": "COMPÉTENCES QUE NOUS SOUTENONS",
+  "education.skills.title": "Domaines d'apprentissage",
+  "education.skills.s1.title": "Journalisme & Reportage",
+  "education.skills.s1.copy": "Fondements d'un reportage précis et éthique et du développement de l'histoire.",
+  "education.skills.s2.title": "Écriture & Édition",
+  "education.skills.s2.copy": "Écriture claire, structure et savoir-faire éditorial.",
+  "education.skills.s3.title": "Entretien & Recherche",
+  "education.skills.s3.copy": "Écoute, préparation et recherche responsable.",
+  "education.skills.s4.title": "Vérification des faits & Validation",
+  "education.skills.s4.copy": "Vérifier les sources et distinguer le fait de l'incertitude.",
+  "education.skills.s5.title": "Photographie & Production documentaire",
+  "education.skills.s5.copy": "Narration visuelle avec soin, contexte et consentement.",
+  "education.skills.s6.title": "Narration numérique & Mentorat",
+  "education.skills.s6.copy": "Utiliser les médias numériques et l'accompagnement pour façonner les récits.",
+
+  "education.how.kicker": "COMMENT L'APPRENTISSAGE FONCTIONNE",
+  "education.how.title": "Notre approche",
+  "education.how.h1.title": "Ateliers",
+  "education.how.h1.copy": "Sessions courtes et guidées sur des compétences spécifiques.",
+  "education.how.h2.title": "Apprentissage entre pairs",
+  "education.how.h2.copy": "Pratique et retours partagés entre participants.",
+  "education.how.h3.title": "Mentorat",
+  "education.how.h3.copy": "Accompagnement individuel par des bénévoles expérimentés.",
+  "education.how.h4.title": "Exercices pratiques",
+  "education.how.h4.copy": "Petits devoirs qui renforcent la confiance avec le temps.",
+
+  "education.cta.title": "Intéressé·e par l'enseignement ou le mentorat ?",
+  "education.cta.btn.mentor": "Devenir mentor bénévole",
+  "education.cta.btn.contact": "Contactez-nous"
+}
