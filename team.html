@@ -34,9 +34,49 @@
     .gold-button:hover{background:#e6c783;transform:translateY(-2px)}
     .editorial-rule{border-top:1px solid #D4AF63}
     .search-result:hover{background:#f0e9db}
-    .step-number{width:40px;height:40px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-family:"Playfair Display",serif;color:#806022;font-size:18px}
-    @media(max-width:1190px){.desktop-nav{display:none!important}.menu-trigger{display:inline-flex!important}}
-    @media(max-width:640px){.hero{min-height:580px}.hero-image{object-position:62% center}.hero-shade{background:linear-gradient(0deg,rgba(0,0,0,.91),rgba(0,0,0,.42))}.brand-mark{width:42px;height:42px}}
+    .step-number{width:40px;height:40px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;font-family:"Playfair Display",serif;color:#806022;font-size:18px;flex-shrink:0}
+
+    /* ═══════════ Fluid typography — overrides inline font-size ═══════════ */
+    [data-i18n="team.hero.title"] { font-size: clamp(2.5rem, 5.4vw, 5rem) !important; }
+    [data-i18n="team.intro.title"],
+    [data-i18n="team.roles.title"],
+    [data-i18n="team.cond.title"],
+    [data-i18n="team.apply.title"] { font-size: clamp(1.75rem, 3vw, 2.75rem) !important; }
+    [data-i18n="team.r1.title"],
+    [data-i18n="team.r2.title"],
+    [data-i18n="team.r3.title"],
+    [data-i18n="team.r4.title"],
+    [data-i18n="team.r5.title"],
+    [data-i18n="team.r6.title"],
+    [data-i18n="team.r7.title"],
+    [data-i18n="team.r8.title"],
+    [data-i18n="team.c1.title"],
+    [data-i18n="team.c2.title"],
+    [data-i18n="team.c3.title"],
+    [data-i18n="team.step1.title"],
+    [data-i18n="team.step2.title"],
+    [data-i18n="team.step3.title"] { font-size: clamp(1.05rem, 1.4vw, 1.25rem) !important; }
+
+    /* ═══════════ Responsive header ═══════════ */
+    @media (max-width: 1279px) {
+      .desktop-nav { display: none !important; }
+      .menu-trigger { display: inline-flex !important; }
+    }
+    @media (min-width: 1280px) and (max-width: 1439px) {
+      .desktop-nav { gap: 10px !important; }
+      .desktop-nav .nav-link { font-size: 12px !important; }
+    }
+    @media (min-width: 1440px) {
+      .desktop-nav { gap: 16px !important; }
+      .desktop-nav .nav-link { font-size: 14px !important; }
+    }
+
+    @media(max-width:640px){
+      .hero{min-height:580px}
+      .hero-image{object-position:62% center}
+      .hero-shade{background:linear-gradient(0deg,rgba(0,0,0,.91),rgba(0,0,0,.42))}
+      .brand-mark{width:42px;height:42px}
+    }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
   </style>
 
@@ -46,8 +86,8 @@
 <body class="w-full" style="background:#fff;">
 
 <header class="canva-header sticky top-0 z-50 border-b border-white/15 text-white" style="background:#080808;">
-  <div class="w-full max-w-[1600px] mx-auto px-5 sm:px-8 xl:px-12 min-h-[78px] flex items-center justify-between gap-4">
-    <a href="home.html" class="flex items-center gap-3 shrink-0" aria-label="Just Women — Home">
+  <div class="w-full max-w-[1600px] mx-auto px-4 sm:px-8 xl:px-12 min-h-[78px] flex items-center justify-between gap-3">
+    <a href="home.html" class="flex items-center gap-2 sm:gap-3 shrink-0" aria-label="Just Women — Home">
       <span class="brand-mark" aria-hidden="true">
         <img src="cropped_circle_image.png" alt="" width="48" height="48" style="width:48px;height:48px;object-fit:contain;display:block;">
       </span>
@@ -69,7 +109,7 @@
     </nav>
 
     <div class="flex items-center gap-2 sm:gap-3 shrink-0">
-      <div class="flex items-center gap-1 font-semibold text-[11px]" aria-label="Language">
+      <div class="hidden sm:flex items-center gap-1 font-semibold text-[11px]" aria-label="Language">
         <button type="button" data-lang-switch="en" aria-pressed="true" class="px-1 text-[#D4AF63]">EN</button>
         <span aria-hidden="true" class="text-white/40">/</span>
         <button type="button" data-lang-switch="fa" aria-pressed="false" class="px-1 text-white/70">دری</button>
@@ -103,6 +143,16 @@
       <a href="partner.html" class="canva-link nav-link" data-i18n="nav.partner" style="color:#fff;font-size:16px;">Partners &amp; Support</a>
       <a href="contact.html" class="canva-link nav-link" data-i18n="nav.contact" style="color:#fff;font-size:16px;">Contact</a>
     </div>
+
+    <div class="border-t border-white/15 mt-5 pt-5 sm:hidden">
+      <p class="canva-text text-[#D4AF63] text-xs mb-3" style="letter-spacing:.19em;text-transform:uppercase;">LANGUAGE</p>
+      <div class="flex items-center gap-2 flex-wrap">
+        <button type="button" data-lang-switch="en" aria-pressed="true" class="border border-white/30 px-3 py-1.5 text-sm text-[#D4AF63]">EN</button>
+        <button type="button" data-lang-switch="fa" aria-pressed="false" class="border border-white/30 px-3 py-1.5 text-sm text-white/70">دری</button>
+        <button type="button" data-lang-switch="ps" aria-pressed="false" class="border border-white/30 px-3 py-1.5 text-sm text-white/70">پشتو</button>
+        <button type="button" data-lang-switch="fr" aria-pressed="false" class="border border-white/30 px-3 py-1.5 text-sm text-white/70">FR</button>
+      </div>
+    </div>
   </nav>
 </header>
 
@@ -114,7 +164,7 @@
     <div class="relative w-full max-w-[1450px] mx-auto px-6 sm:px-12 lg:px-20 py-24">
       <div class="gold-line mb-7"></div>
       <p class="canva-text eyebrow text-xs mb-6" data-i18n="team.hero.kicker" style="color:#D4AF63;font-size:16px;">JUST WOMEN FOR SOCIAL CHANGE</p>
-      <h1 class="canva-text max-w-[850px] leading-[1.12] font-medium" data-i18n="team.hero.title" style="color:#fff;font-weight:500;font-size:76px;">Join Our Team</h1>
+      <h1 class="canva-text max-w-[850px] leading-[1.12] font-medium" data-i18n="team.hero.title" style="color:#fff;font-weight:500;">Join Our Team</h1>
       <p class="canva-text max-w-[640px] mt-7 leading-[1.8]" data-i18n="team.hero.subtitle" style="color:#fff;font-size:19px;">Your skills. Our mission. Greater impact.</p>
       <p class="canva-text mt-12 max-w-md text-xs leading-relaxed" data-i18n="team.hero.note" style="color:#fff;font-size:12px;">Illustrative documentary photograph; subjects are not identified as members of Just Women.</p>
     </div>
@@ -127,7 +177,7 @@
         <div class="gold-line mt-5"></div>
       </div>
       <div>
-        <h2 class="canva-text leading-tight mb-8" data-i18n="team.intro.title" style="color:#080808;font-weight:500;font-size:24px;">Skills with Purpose</h2>
+        <h2 class="canva-text leading-tight mb-8" data-i18n="team.intro.title" style="color:#080808;font-weight:500;">Skills with Purpose</h2>
         <p class="canva-text max-w-3xl leading-[1.95]" data-i18n="team.intro.body" style="color:#44413D;font-size:16px;">Just Women welcomes volunteers from Afghanistan and internationally who want to support women-led media, storytelling, and future educational activities. Every contribution is valued, and we aim to match skills with needs carefully.</p>
       </div>
     </div>
@@ -136,46 +186,46 @@
   <section id="roles" class="px-6 py-20 sm:py-28" style="background:#fff;">
     <div class="max-w-[1260px] mx-auto">
       <p class="canva-text eyebrow text-xs mb-4" data-i18n="team.roles.kicker" style="color:#88692F;font-size:16px;">WHO WE'RE LOOKING FOR</p>
-      <h2 class="canva-text mb-12" data-i18n="team.roles.title" style="color:#080808;font-size:24px;">Volunteer roles</h2>
+      <h2 class="canva-text mb-12" data-i18n="team.roles.title" style="color:#080808;">Volunteer roles</h2>
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
         <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
           <i data-lucide="newspaper" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="team.r1.title" style="color:#080808;font-size:18px;">Journalists and Reporters</h3>
+          <h3 class="canva-text mb-3" data-i18n="team.r1.title" style="color:#080808;">Journalists and Reporters</h3>
           <p class="canva-text leading-[1.8]" data-i18n="team.r1.copy" style="color:#55514D;font-size:15px;">Reporting, interviews, and story development.</p>
         </article>
         <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
           <i data-lucide="pen-line" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="team.r2.title" style="color:#080808;font-size:18px;">Writers and Editors</h3>
+          <h3 class="canva-text mb-3" data-i18n="team.r2.title" style="color:#080808;">Writers and Editors</h3>
           <p class="canva-text leading-[1.8]" data-i18n="team.r2.copy" style="color:#55514D;font-size:15px;">Drafting, structure, and editorial review.</p>
         </article>
         <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
           <i data-lucide="languages" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="team.r3.title" style="color:#080808;font-size:18px;">Researchers and Translators</h3>
+          <h3 class="canva-text mb-3" data-i18n="team.r3.title" style="color:#080808;">Researchers and Translators</h3>
           <p class="canva-text leading-[1.8]" data-i18n="team.r3.copy" style="color:#55514D;font-size:15px;">Research support and careful translation.</p>
         </article>
         <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
           <i data-lucide="camera" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="team.r4.title" style="color:#080808;font-size:18px;">Photographers and Documentary Filmmakers</h3>
+          <h3 class="canva-text mb-3" data-i18n="team.r4.title" style="color:#080808;">Photographers and Documentary Filmmakers</h3>
           <p class="canva-text leading-[1.8]" data-i18n="team.r4.copy" style="color:#55514D;font-size:15px;">Visual storytelling with care and consent.</p>
         </article>
         <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
           <i data-lucide="graduation-cap" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="team.r5.title" style="color:#080808;font-size:18px;">Journalism Instructors and Mentors</h3>
+          <h3 class="canva-text mb-3" data-i18n="team.r5.title" style="color:#080808;">Journalism Instructors and Mentors</h3>
           <p class="canva-text leading-[1.8]" data-i18n="team.r5.copy" style="color:#55514D;font-size:15px;">Teaching, mentoring, and sharing experience.</p>
         </article>
         <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
           <i data-lucide="code" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="team.r6.title" style="color:#080808;font-size:18px;">Front-End, Back-End and Full-Stack Developers</h3>
+          <h3 class="canva-text mb-3" data-i18n="team.r6.title" style="color:#080808;">Front-End, Back-End and Full-Stack Developers</h3>
           <p class="canva-text leading-[1.8]" data-i18n="team.r6.copy" style="color:#55514D;font-size:15px;">Building and maintaining web tools.</p>
         </article>
         <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
           <i data-lucide="layout" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="team.r7.title" style="color:#080808;font-size:18px;">UI/UX Designers</h3>
+          <h3 class="canva-text mb-3" data-i18n="team.r7.title" style="color:#080808;">UI/UX Designers</h3>
           <p class="canva-text leading-[1.8]" data-i18n="team.r7.copy" style="color:#55514D;font-size:15px;">Readable, accessible design.</p>
         </article>
         <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
           <i data-lucide="shield" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="team.r8.title" style="color:#080808;font-size:18px;">Cybersecurity Specialists &amp; Website Maintenance</h3>
+          <h3 class="canva-text mb-3" data-i18n="team.r8.title" style="color:#080808;">Cybersecurity Specialists &amp; Website Maintenance</h3>
           <p class="canva-text leading-[1.8]" data-i18n="team.r8.copy" style="color:#55514D;font-size:15px;">Safety, privacy, and reliable upkeep.</p>
         </article>
       </div>
@@ -185,18 +235,18 @@
   <section id="conditions" class="px-6 py-20 sm:py-28" style="background:#F8F7F4;">
     <div class="max-w-[1260px] mx-auto">
       <p class="canva-text eyebrow text-xs mb-4" data-i18n="team.cond.kicker" style="color:#88692F;font-size:16px;">VOLUNTEER CONDITIONS</p>
-      <h2 class="canva-text mb-10" data-i18n="team.cond.title" style="color:#080808;font-size:24px;">What to know</h2>
+      <h2 class="canva-text mb-10" data-i18n="team.cond.title" style="color:#080808;">What to know</h2>
       <div class="grid md:grid-cols-3 gap-5">
         <article class="editorial-rule pt-7">
-          <h3 class="canva-text mb-3" data-i18n="team.c1.title" style="color:#080808;font-size:19px;">Voluntary and unpaid</h3>
+          <h3 class="canva-text mb-3" data-i18n="team.c1.title" style="color:#080808;">Voluntary and unpaid</h3>
           <p class="canva-text leading-[1.85]" data-i18n="team.c1.copy" style="color:#55514D;font-size:16px;">Positions are voluntary and unpaid. Contributions are offered freely.</p>
         </article>
         <article class="editorial-rule pt-7">
-          <h3 class="canva-text mb-3" data-i18n="team.c2.title" style="color:#080808;font-size:19px;">Dependent on needs</h3>
+          <h3 class="canva-text mb-3" data-i18n="team.c2.title" style="color:#080808;">Dependent on needs</h3>
           <p class="canva-text leading-[1.85]" data-i18n="team.c2.copy" style="color:#55514D;font-size:16px;">Collaboration depends on organizational needs and availability.</p>
         </article>
         <article class="editorial-rule pt-7">
-          <h3 class="canva-text mb-3" data-i18n="team.c3.title" style="color:#080808;font-size:19px;">No guarantee</h3>
+          <h3 class="canva-text mb-3" data-i18n="team.c3.title" style="color:#080808;">No guarantee</h3>
           <p class="canva-text leading-[1.85]" data-i18n="team.c3.copy" style="color:#55514D;font-size:16px;">Submitting an application does not guarantee selection.</p>
         </article>
       </div>
@@ -206,26 +256,26 @@
   <section id="apply" class="px-6 py-20 sm:py-28" style="background:#fff;">
     <div class="max-w-[1260px] mx-auto">
       <p class="canva-text eyebrow text-xs mb-4" data-i18n="team.apply.kicker" style="color:#88692F;font-size:16px;">HOW TO APPLY</p>
-      <h2 class="canva-text mb-10" data-i18n="team.apply.title" style="color:#080808;font-size:24px;">Three simple steps</h2>
+      <h2 class="canva-text mb-10" data-i18n="team.apply.title" style="color:#080808;">Three simple steps</h2>
       <div class="grid md:grid-cols-3 gap-6 mb-12">
         <div class="flex items-start gap-5">
           <span class="step-number" aria-hidden="true">1</span>
           <div>
-            <h3 class="canva-text mb-2" data-i18n="team.step1.title" style="color:#080808;font-size:19px;">Explore Roles</h3>
+            <h3 class="canva-text mb-2" data-i18n="team.step1.title" style="color:#080808;">Explore Roles</h3>
             <p class="canva-text leading-[1.8]" data-i18n="team.step1.copy" style="color:#55514D;font-size:16px;">Read through the volunteer roles above.</p>
           </div>
         </div>
         <div class="flex items-start gap-5">
           <span class="step-number" aria-hidden="true">2</span>
           <div>
-            <h3 class="canva-text mb-2" data-i18n="team.step2.title" style="color:#080808;font-size:19px;">Submit the Volunteer Form</h3>
+            <h3 class="canva-text mb-2" data-i18n="team.step2.title" style="color:#080808;">Submit the Volunteer Form</h3>
             <p class="canva-text leading-[1.8]" data-i18n="team.step2.copy" style="color:#55514D;font-size:16px;">Use the secure form linked below.</p>
           </div>
         </div>
         <div class="flex items-start gap-5">
           <span class="step-number" aria-hidden="true">3</span>
           <div>
-            <h3 class="canva-text mb-2" data-i18n="team.step3.title" style="color:#080808;font-size:19px;">Wait for Review</h3>
+            <h3 class="canva-text mb-2" data-i18n="team.step3.title" style="color:#080808;">Wait for Review</h3>
             <p class="canva-text leading-[1.8]" data-i18n="team.step3.copy" style="color:#55514D;font-size:16px;">We will review applications as capacity allows.</p>
           </div>
         </div>

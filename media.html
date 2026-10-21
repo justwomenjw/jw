@@ -37,8 +37,78 @@
     .category-button{border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
     .category-button:hover,.category-button[aria-pressed="true"]{color:var(--ink);border-color:var(--gold)}
     .editorial-link:hover{color:#806022}
-    @media(max-width:1190px){.desktop-nav{display:none!important}.menu-trigger{display:inline-flex!important}}
-    @media(max-width:640px){.hero{min-height:540px}.hero-image{object-position:60% center}.hero-shade{background:linear-gradient(0deg,rgba(0,0,0,.9),rgba(0,0,0,.36))}.brand-mark{width:42px;height:42px}.story-image{height:220px}}
+
+    /* ═══════════ Fluid typography — overrides inline font-size ═══════════ */
+    [data-i18n="media.hero.title"] { font-size: clamp(2.5rem, 5.4vw, 5rem) !important; }
+    [data-i18n="media.browse.title"],
+    [data-i18n="media.latest.title"],
+    [data-i18n="media.panel.interviews.title"],
+    [data-i18n="media.panel.poetry.title"],
+    [data-i18n="media.panel.photo.title"],
+    [data-i18n="media.note.title"] { font-size: clamp(1.75rem, 3vw, 2.75rem) !important; }
+    [data-i18n="media.featured.title"] { font-size: clamp(1.35rem, 2.2vw, 2rem) !important; }
+    [data-i18n="media.c1.title"],
+    [data-i18n="media.c2.title"],
+    [data-i18n="media.c3.title"],
+    [data-i18n="media.c4.title"],
+    [data-i18n="media.c5.title"],
+    [data-i18n="media.c6.title"] { font-size: clamp(1.15rem, 1.6vw, 1.45rem) !important; }
+
+    /* ═══════════ Responsive header ═══════════ */
+    @media (max-width: 1279px) {
+      .desktop-nav { display: none !important; }
+      .menu-trigger { display: inline-flex !important; }
+    }
+    @media (min-width: 1280px) and (max-width: 1439px) {
+      .desktop-nav { gap: 10px !important; }
+      .desktop-nav .nav-link { font-size: 12px !important; }
+    }
+    @media (min-width: 1440px) {
+      .desktop-nav { gap: 16px !important; }
+      .desktop-nav .nav-link { font-size: 14px !important; }
+    }
+
+    /* ═══════════ Category filter — tighter on mobile ═══════════ */
+    @media (max-width: 767px) {
+      #stories { padding-left: 1rem; padding-right: 1rem; }
+
+      .category-filter {
+        gap: 0.5rem 1rem !important;
+      }
+      .category-filter .category-button {
+        padding-top: 0.5rem !important;
+        padding-bottom: 0.5rem !important;
+        font-size: 14px !important;
+      }
+    }
+
+    /* ═══════════ Featured story — smaller image on mobile ═══════════ */
+    @media (max-width: 767px) {
+      #featured-story > div:first-child,
+      #featured-story > div:first-child img {
+        min-height: 220px !important;
+      }
+      #featured-story > div:last-child {
+        padding: 1.5rem !important;
+      }
+    }
+
+    /* ═══════════ Ultra small screens — header fit ═══════════ */
+    @media (max-width: 360px) {
+      .brand-text { font-size: 13px !important; letter-spacing: .06em !important; }
+      .brand-tagline { font-size: 8px !important; letter-spacing: .12em !important; }
+      .brand-mark { width: 36px !important; height: 36px !important; }
+      .brand-mark img { width: 36px !important; height: 36px !important; }
+      #search-toggle, #menu-toggle { padding: 6px !important; }
+    }
+
+    @media(max-width:640px){
+      .hero{min-height:540px}
+      .hero-image{object-position:60% center}
+      .hero-shade{background:linear-gradient(0deg,rgba(0,0,0,.9),rgba(0,0,0,.36))}
+      .brand-mark{width:42px;height:42px}
+      .story-image{height:220px}
+    }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
   </style>
 
@@ -48,15 +118,15 @@
 <body class="w-full" style="background:#fff;">
 
 <header class="canva-header sticky top-0 z-50 border-b border-white/15 text-white" style="background:#080808;">
-  <div class="w-full max-w-[1600px] mx-auto px-5 sm:px-8 xl:px-12 min-h-[78px] flex items-center justify-between gap-4">
+  <div class="w-full max-w-[1600px] mx-auto px-4 sm:px-8 xl:px-12 min-h-[78px] flex items-center justify-between gap-3">
 
-    <a href="home.html" class="flex items-center gap-3 shrink-0" aria-label="Just Women — Home">
+    <a href="home.html" class="flex items-center gap-2 sm:gap-3 shrink-0" aria-label="Just Women — Home">
       <span class="brand-mark" aria-hidden="true">
         <img src="cropped_circle_image.png" alt="" width="48" height="48" style="width:48px;height:48px;object-fit:contain;display:block;">
       </span>
       <span class="flex flex-col leading-none">
-        <strong class="canva-text tracking-[.13em]" style="color:#fff;font-weight:700;font-size:16px;">JUST WOMEN</strong>
-        <small class="canva-text tracking-[.22em] mt-2" data-i18n="brand.tagline" style="color:#D4AF63;font-size:10px;">Can Change Society</small>
+        <strong class="brand-text canva-text tracking-[.13em]" style="color:#fff;font-weight:700;font-size:16px;">JUST WOMEN</strong>
+        <small class="brand-tagline canva-text tracking-[.22em] mt-2" data-i18n="brand.tagline" style="color:#D4AF63;font-size:10px;">Can Change Society</small>
       </span>
     </a>
 
@@ -72,7 +142,7 @@
     </nav>
 
     <div class="flex items-center gap-2 sm:gap-3 shrink-0">
-      <div class="flex items-center gap-1 font-semibold text-[11px]" aria-label="Language">
+      <div class="hidden sm:flex items-center gap-1 font-semibold text-[11px]" aria-label="Language">
         <button type="button" data-lang-switch="en" aria-pressed="true" class="px-1 text-[#D4AF63]">EN</button>
         <span aria-hidden="true" class="text-white/40">/</span>
         <button type="button" data-lang-switch="fa" aria-pressed="false" class="px-1 text-white/70">دری</button>
@@ -104,6 +174,16 @@
       <a href="partner.html" class="canva-link nav-link" data-i18n="nav.partner" style="color:#fff;font-size:16px;">Partners &amp; Support</a>
       <a href="contact.html" class="canva-link nav-link" data-i18n="nav.contact" style="color:#fff;font-size:16px;">Contact</a>
     </div>
+
+    <div class="border-t border-white/15 mt-5 pt-5 sm:hidden">
+      <p class="canva-text text-[#D4AF63] text-xs mb-3" style="letter-spacing:.19em;text-transform:uppercase;">LANGUAGE</p>
+      <div class="flex items-center gap-2 flex-wrap">
+        <button type="button" data-lang-switch="en" aria-pressed="true" class="border border-white/30 px-3 py-1.5 text-sm text-[#D4AF63]">EN</button>
+        <button type="button" data-lang-switch="fa" aria-pressed="false" class="border border-white/30 px-3 py-1.5 text-sm text-white/70">دری</button>
+        <button type="button" data-lang-switch="ps" aria-pressed="false" class="border border-white/30 px-3 py-1.5 text-sm text-white/70">پشتو</button>
+        <button type="button" data-lang-switch="fr" aria-pressed="false" class="border border-white/30 px-3 py-1.5 text-sm text-white/70">FR</button>
+      </div>
+    </div>
   </nav>
 </header>
 
@@ -115,7 +195,7 @@
     <div class="relative w-full max-w-[1450px] mx-auto px-6 sm:px-12 lg:px-20 py-24">
       <div class="gold-line mb-7"></div>
       <p class="canva-text eyebrow text-xs mb-6" data-i18n="media.hero.kicker" style="color:#D4AF63;font-size:16px;">JUST WOMEN Can Change Society</p>
-      <h1 class="canva-text max-w-[850px] leading-[1.12] font-medium" data-i18n="media.hero.title" style="color:#fff;font-weight:500;font-size:76px;">Media &amp; Stories</h1>
+      <h1 class="canva-text max-w-[850px] leading-[1.12] font-medium" data-i18n="media.hero.title" style="color:#fff;font-weight:500;">Media &amp; Stories</h1>
       <p class="canva-text max-w-[640px] mt-7 leading-[1.8]" data-i18n="media.hero.subtitle" style="color:#fff;font-size:19px;">Real stories. Real voices. Room for change.</p>
       <p class="canva-text mt-12 max-w-lg text-xs leading-relaxed" data-i18n="media.hero.note" style="color:#fff;font-size:12px;">Illustrative documentary photograph. The person pictured is not identified as a Just Women contributor or an Afghan journalist.</p>
     </div>
@@ -126,7 +206,7 @@
       <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-8">
         <div>
           <p class="canva-text eyebrow text-xs mb-4" data-i18n="media.browse.kicker" style="color:#806022;font-size:16px;">THE EDITORIAL DESK</p>
-          <h2 class="canva-text leading-tight" data-i18n="media.browse.title" style="color:#080808;font-weight:500;font-size:24px;">Explore the stories</h2>
+          <h2 class="canva-text leading-tight" data-i18n="media.browse.title" style="color:#080808;font-weight:500;">Explore the stories</h2>
         </div>
         <div class="w-full lg:max-w-sm">
           <label class="canva-text block text-xs font-semibold mb-2" for="story-search" data-i18n="media.search.label" style="color:#080808;font-size:16px;">SEARCH THE EDITORIAL INDEX</label>
@@ -137,7 +217,7 @@
         </div>
       </div>
 
-      <div class="mt-9 border-y border-[#ded8ca] flex flex-wrap gap-x-6 gap-y-2" role="group" aria-label="Filter by story category">
+      <div class="category-filter mt-9 border-y border-[#ded8ca] flex flex-wrap gap-x-6 gap-y-2" role="group" aria-label="Filter by story category">
         <button type="button" data-category="All Stories" class="canva-button category-button py-4 font-semibold" aria-pressed="true" data-i18n="media.cat.all" style="color:#080808;font-size:16px;">All Stories</button>
         <button type="button" data-category="News" class="canva-button category-button py-4" aria-pressed="false" data-i18n="media.cat.news" style="color:#080808;font-size:16px;">News</button>
         <button type="button" data-category="Reports" class="canva-button category-button py-4" aria-pressed="false" data-i18n="media.cat.reports" style="color:#080808;font-size:16px;">Reports</button>
@@ -164,7 +244,7 @@
         </div>
         <div class="p-8 sm:p-12 lg:p-16 flex flex-col justify-center">
           <p class="canva-text eyebrow text-xs mb-5" data-i18n="media.featured.cat" style="color:#806022;font-size:16px;">PERSONAL STORIES · PLACEHOLDER</p>
-          <h3 class="canva-text leading-tight mb-6" data-i18n="media.featured.title" style="color:#080808;font-weight:500;font-size:19px;">A Place for Women's Voices</h3>
+          <h3 class="canva-text leading-tight mb-6" data-i18n="media.featured.title" style="color:#080808;font-weight:500;">A Place for Women's Voices</h3>
           <p class="canva-text leading-[1.85] mb-7" data-i18n="media.featured.summary" style="color:#494641;font-size:16px;">Placeholder copy — this space is reserved for a verified story about women telling their own stories.</p>
           <p class="canva-text text-xs mb-8" data-i18n="media.featured.date" style="color:#57534d;font-size:16px;">Publication date to be added</p>
           <a href="#editorial-note" class="gold-button self-start px-7 py-4 font-semibold" data-i18n="media.featured.btn" style="font-size:16px;">Read Story</a>
@@ -176,7 +256,7 @@
   <section id="latest" class="px-6 py-20 sm:py-24">
     <div class="max-w-[1260px] mx-auto">
       <div class="flex items-center gap-5 mb-10">
-        <h2 class="canva-text shrink-0" data-i18n="media.latest.title" style="color:#080808;font-weight:500;font-size:24px;">Latest Stories</h2>
+        <h2 class="canva-text shrink-0" data-i18n="media.latest.title" style="color:#080808;font-weight:500;">Latest Stories</h2>
         <div class="h-px bg-[#D4AF63] flex-1"></div>
       </div>
       <div id="story-grid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-x-7 gap-y-12">
@@ -185,7 +265,7 @@
           <div class="overflow-hidden"><img class="canva-image story-image" loading="lazy" src="https://images.pexels.com/photos/19527315/pexels-photo-19527315.jpeg" alt="Woman writing in a notebook beside a window"></div>
           <div class="pt-5">
             <p class="canva-text eyebrow text-xs mb-3" data-i18n="media.c1.cat" style="color:#806022;font-size:16px;">NEWS · PLACEHOLDER</p>
-            <h3 class="canva-text leading-snug mb-3" data-i18n="media.c1.title" style="color:#080808;font-size:23px;">A Space for New Perspectives</h3>
+            <h3 class="canva-text leading-snug mb-3" data-i18n="media.c1.title" style="color:#080808;">A Space for New Perspectives</h3>
             <p class="canva-text leading-[1.75] mb-4" data-i18n="media.c1.excerpt" style="color:#494641;font-size:16px;">Story details to be added after verification and editorial review.</p>
             <p class="canva-text text-xs mb-4" data-i18n="media.c1.date" style="color:#57534d;font-size:16px;">Publication date to be added</p>
             <a href="#editorial-note" class="editorial-link inline-flex border-b border-[#D4AF63] pb-1 font-semibold" data-i18n="media.readmore" style="color:#080808;font-size:16px;">Read more ↗</a>
@@ -196,7 +276,7 @@
           <div class="overflow-hidden"><img class="canva-image story-image" loading="lazy" src="https://images.pexels.com/photos/17898884/pexels-photo-17898884.jpeg" alt="Women participating in an indoor educational gathering"></div>
           <div class="pt-5">
             <p class="canva-text eyebrow text-xs mb-3" data-i18n="media.c2.cat" style="color:#806022;font-size:16px;">REPORTS · PLACEHOLDER</p>
-            <h3 class="canva-text leading-snug mb-3" data-i18n="media.c2.title" style="color:#080808;font-size:23px;">Learning Together</h3>
+            <h3 class="canva-text leading-snug mb-3" data-i18n="media.c2.title" style="color:#080808;">Learning Together</h3>
             <p class="canva-text leading-[1.75] mb-4" data-i18n="media.c2.excerpt" style="color:#494641;font-size:16px;">Placeholder excerpt for a future verified report.</p>
             <p class="canva-text text-xs mb-4" data-i18n="media.c2.date" style="color:#57534d;font-size:16px;">Publication date to be added</p>
             <a href="#editorial-note" class="editorial-link inline-flex border-b border-[#D4AF63] pb-1 font-semibold" data-i18n="media.readmore" style="color:#080808;font-size:16px;">Read more ↗</a>
@@ -207,7 +287,7 @@
           <div class="overflow-hidden"><img class="canva-image story-image" loading="lazy" src="https://images.pexels.com/photos/7859553/pexels-photo-7859553.jpeg" alt="Two women in an indoor interview setting"></div>
           <div class="pt-5">
             <p class="canva-text eyebrow text-xs mb-3" data-i18n="media.c3.cat" style="color:#806022;font-size:16px;">INTERVIEWS · PLACEHOLDER</p>
-            <h3 class="canva-text leading-snug mb-3" data-i18n="media.c3.title" style="color:#080808;font-size:23px;">In Conversation</h3>
+            <h3 class="canva-text leading-snug mb-3" data-i18n="media.c3.title" style="color:#080808;">In Conversation</h3>
             <p class="canva-text leading-[1.75] mb-4" data-i18n="media.c3.excerpt" style="color:#494641;font-size:16px;">Story details to be added when an interview is verified and the contributor has given appropriate consent.</p>
             <p class="canva-text text-xs mb-4" data-i18n="media.c3.date" style="color:#57534d;font-size:16px;">Publication date to be added</p>
             <a href="#editorial-note" class="editorial-link inline-flex border-b border-[#D4AF63] pb-1 font-semibold" data-i18n="media.readmore" style="color:#080808;font-size:16px;">Read more ↗</a>
@@ -218,7 +298,7 @@
           <div class="overflow-hidden"><img class="canva-image story-image" loading="lazy" src="https://images.pexels.com/photos/17548877/pexels-photo-17548877.jpeg" alt="Woman reading beside bookshelves"></div>
           <div class="pt-5">
             <p class="canva-text eyebrow text-xs mb-3" data-i18n="media.c4.cat" style="color:#806022;font-size:16px;">POETRY &amp; LITERATURE · PLACEHOLDER</p>
-            <h3 class="canva-text leading-snug mb-3" data-i18n="media.c4.title" style="color:#080808;font-size:23px;">Words on the Page</h3>
+            <h3 class="canva-text leading-snug mb-3" data-i18n="media.c4.title" style="color:#080808;">Words on the Page</h3>
             <p class="canva-text leading-[1.75] mb-4" data-i18n="media.c4.excerpt" style="color:#494641;font-size:16px;">Placeholder for a future literary work.</p>
             <p class="canva-text text-xs mb-4" data-i18n="media.c4.date" style="color:#57534d;font-size:16px;">Publication date to be added</p>
             <a href="#editorial-note" class="editorial-link inline-flex border-b border-[#D4AF63] pb-1 font-semibold" data-i18n="media.readmore" style="color:#080808;font-size:16px;">Read more ↗</a>
@@ -229,7 +309,7 @@
           <div class="overflow-hidden"><img class="canva-image story-image" loading="lazy" src="https://images.pexels.com/photos/31093708/pexels-photo-31093708.jpeg" alt="Aerial view of Kabul and its surrounding mountains"></div>
           <div class="pt-5">
             <p class="canva-text eyebrow text-xs mb-3" data-i18n="media.c5.cat" style="color:#806022;font-size:16px;">PHOTO STORIES · PLACEHOLDER</p>
-            <h3 class="canva-text leading-snug mb-3" data-i18n="media.c5.title" style="color:#080808;font-size:23px;">Places in Focus</h3>
+            <h3 class="canva-text leading-snug mb-3" data-i18n="media.c5.title" style="color:#080808;">Places in Focus</h3>
             <p class="canva-text leading-[1.75] mb-4" data-i18n="media.c5.excerpt" style="color:#494641;font-size:16px;">Story details to be added after images, context, permissions, and contributor safety are reviewed.</p>
             <p class="canva-text text-xs mb-4" data-i18n="media.c5.date" style="color:#57534d;font-size:16px;">Publication date to be added</p>
             <a href="#editorial-note" class="editorial-link inline-flex border-b border-[#D4AF63] pb-1 font-semibold" data-i18n="media.readmore" style="color:#080808;font-size:16px;">Read more ↗</a>
@@ -240,7 +320,7 @@
           <div class="overflow-hidden"><img class="canva-image story-image" loading="lazy" src="https://images.pexels.com/photos/9908656/pexels-photo-9908656.jpeg" alt="Woman working at a desk with a camera and laptop"></div>
           <div class="pt-5">
             <p class="canva-text eyebrow text-xs mb-3" data-i18n="media.c6.cat" style="color:#806022;font-size:16px;">DOCUMENTARIES · PLACEHOLDER</p>
-            <h3 class="canva-text leading-snug mb-3" data-i18n="media.c6.title" style="color:#080808;font-size:23px;">Behind the Frame</h3>
+            <h3 class="canva-text leading-snug mb-3" data-i18n="media.c6.title" style="color:#080808;">Behind the Frame</h3>
             <p class="canva-text leading-[1.75] mb-4" data-i18n="media.c6.excerpt" style="color:#494641;font-size:16px;">Placeholder for future documentary work.</p>
             <p class="canva-text text-xs mb-4" data-i18n="media.c6.date" style="color:#57534d;font-size:16px;">Publication date to be added</p>
             <a href="#editorial-note" class="editorial-link inline-flex border-b border-[#D4AF63] pb-1 font-semibold" data-i18n="media.readmore" style="color:#080808;font-size:16px;">Read more ↗</a>
@@ -259,17 +339,17 @@
     <div class="max-w-[1260px] mx-auto grid lg:grid-cols-3 gap-6">
       <article class="border border-[#e0d9ca] p-8 sm:p-10" style="background:#fff;">
         <div class="gold-line mb-8"></div>
-        <h2 class="canva-text leading-tight mb-5" data-i18n="media.panel.interviews.title" style="color:#080808;font-size:24px;">Featured Interviews</h2>
+        <h2 class="canva-text leading-tight mb-5" data-i18n="media.panel.interviews.title" style="color:#080808;">Featured Interviews</h2>
         <p class="canva-text leading-[1.85]" data-i18n="media.panel.interviews.copy" style="color:#494641;font-size:16px;">Interviews will appear here after verified material and appropriate contributor consent are available.</p>
       </article>
       <article class="border border-[#e0d9ca] p-8 sm:p-10" style="background:#fff;">
         <div class="gold-line mb-8"></div>
-        <h2 class="canva-text leading-tight mb-5" data-i18n="media.panel.poetry.title" style="color:#080808;font-size:24px;">Poetry &amp; Literature</h2>
+        <h2 class="canva-text leading-tight mb-5" data-i18n="media.panel.poetry.title" style="color:#080808;">Poetry &amp; Literature</h2>
         <p class="canva-text leading-[1.85]" data-i18n="media.panel.poetry.copy" style="color:#494641;font-size:16px;">Poetry and literary work will appear here when publication permissions and editorial review are complete.</p>
       </article>
       <article class="border border-[#e0d9ca] p-8 sm:p-10" style="background:#fff;">
         <div class="gold-line mb-8"></div>
-        <h2 class="canva-text leading-tight mb-5" data-i18n="media.panel.photo.title" style="color:#080808;font-size:24px;">Photo Stories &amp; Documentaries</h2>
+        <h2 class="canva-text leading-tight mb-5" data-i18n="media.panel.photo.title" style="color:#080808;">Photo Stories &amp; Documentaries</h2>
         <p class="canva-text leading-[1.85]" data-i18n="media.panel.photo.copy" style="color:#494641;font-size:16px;">Visual stories will appear here after context, consent, image rights, and contributor-safety considerations are reviewed.</p>
       </article>
     </div>
@@ -279,7 +359,7 @@
     <div class="max-w-[1260px] mx-auto border-t border-[#D4AF63] pt-9 grid md:grid-cols-[1fr_2fr] gap-8 md:gap-16">
       <div>
         <p class="canva-text eyebrow text-xs mb-4" data-i18n="media.note.kicker" style="color:#806022;font-size:16px;">A NOTE ON PUBLICATION</p>
-        <h2 id="note-title" class="canva-text" data-i18n="media.note.title" style="color:#080808;font-size:24px;">Editorial note</h2>
+        <h2 id="note-title" class="canva-text" data-i18n="media.note.title" style="color:#080808;">Editorial note</h2>
       </div>
       <div>
         <p class="canva-text leading-[1.9] max-w-3xl" data-i18n="media.note.copy" style="color:#080808;font-size:16px;">Editorial note: Stories are published only after appropriate fact-checking, consent, privacy review, and contributor-safety considerations.</p>

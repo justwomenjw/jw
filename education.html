@@ -38,8 +38,51 @@
     .status-soon{display:inline-block;letter-spacing:.14em;text-transform:uppercase;font-size:10px;font-weight:600;border:1px solid #D4AF63;color:#806022;padding:4px 11px;border-radius:999px}
     .program-card{display:flex;flex-direction:column;height:100%;transition:border-color .2s}
     .program-card:hover{border-color:#D4AF63}
-    @media(max-width:1190px){.desktop-nav{display:none!important}.menu-trigger{display:inline-flex!important}}
-    @media(max-width:640px){.hero{min-height:580px}.hero-image{object-position:62% center}.hero-shade{background:linear-gradient(0deg,rgba(0,0,0,.91),rgba(0,0,0,.42))}.brand-mark{width:42px;height:42px}}
+
+    /* ═══════════ Fluid typography — overrides inline font-size ═══════════ */
+    [data-i18n="education.hero.title"] { font-size: clamp(2.5rem, 5.4vw, 5rem) !important; }
+    [data-i18n="education.overview.title"],
+    [data-i18n="education.programs.title"],
+    [data-i18n="education.skills.title"],
+    [data-i18n="education.how.title"] { font-size: clamp(1.75rem, 3vw, 2.75rem) !important; }
+    [data-i18n="education.p1.title"],
+    [data-i18n="education.p2.title"],
+    [data-i18n="education.p3.title"],
+    [data-i18n="education.p4.title"],
+    [data-i18n="education.p5.title"],
+    [data-i18n="education.p6.title"],
+    [data-i18n="education.skills.s1.title"],
+    [data-i18n="education.skills.s2.title"],
+    [data-i18n="education.skills.s3.title"],
+    [data-i18n="education.skills.s4.title"],
+    [data-i18n="education.skills.s5.title"],
+    [data-i18n="education.skills.s6.title"],
+    [data-i18n="education.how.h1.title"],
+    [data-i18n="education.how.h2.title"],
+    [data-i18n="education.how.h3.title"],
+    [data-i18n="education.how.h4.title"] { font-size: clamp(1.1rem, 1.5vw, 1.35rem) !important; }
+    [data-i18n="education.cta.title"] { font-size: clamp(2rem, 4.5vw, 3.25rem) !important; }
+
+    /* ═══════════ Responsive header ═══════════ */
+    @media (max-width: 1279px) {
+      .desktop-nav { display: none !important; }
+      .menu-trigger { display: inline-flex !important; }
+    }
+    @media (min-width: 1280px) and (max-width: 1439px) {
+      .desktop-nav { gap: 10px !important; }
+      .desktop-nav .nav-link { font-size: 12px !important; }
+    }
+    @media (min-width: 1440px) {
+      .desktop-nav { gap: 16px !important; }
+      .desktop-nav .nav-link { font-size: 14px !important; }
+    }
+
+    @media(max-width:640px){
+      .hero{min-height:580px}
+      .hero-image{object-position:62% center}
+      .hero-shade{background:linear-gradient(0deg,rgba(0,0,0,.91),rgba(0,0,0,.42))}
+      .brand-mark{width:42px;height:42px}
+    }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
   </style>
 
@@ -49,8 +92,8 @@
 <body class="w-full" style="background:#fff;">
 
 <header class="canva-header sticky top-0 z-50 border-b border-white/15 text-white" style="background:#080808;">
-  <div class="w-full max-w-[1600px] mx-auto px-5 sm:px-8 xl:px-12 min-h-[78px] flex items-center justify-between gap-4">
-    <a href="home.html" class="flex items-center gap-3 shrink-0" aria-label="Just Women — Home">
+  <div class="w-full max-w-[1600px] mx-auto px-4 sm:px-8 xl:px-12 min-h-[78px] flex items-center justify-between gap-3">
+    <a href="home.html" class="flex items-center gap-2 sm:gap-3 shrink-0" aria-label="Just Women — Home">
       <span class="brand-mark" aria-hidden="true">
         <img src="cropped_circle_image.png" alt="" width="48" height="48" style="width:48px;height:48px;object-fit:contain;display:block;">
       </span>
@@ -72,7 +115,7 @@
     </nav>
 
     <div class="flex items-center gap-2 sm:gap-3 shrink-0">
-      <div class="flex items-center gap-1 font-semibold text-[11px]" aria-label="Language">
+      <div class="hidden sm:flex items-center gap-1 font-semibold text-[11px]" aria-label="Language">
         <button type="button" data-lang-switch="en" aria-pressed="true" class="px-1 text-[#D4AF63]">EN</button>
         <span aria-hidden="true" class="text-white/40">/</span>
         <button type="button" data-lang-switch="fa" aria-pressed="false" class="px-1 text-white/70">دری</button>
@@ -106,6 +149,16 @@
       <a href="partner.html" class="canva-link nav-link" data-i18n="nav.partner" style="color:#fff;font-size:16px;">Partners &amp; Support</a>
       <a href="contact.html" class="canva-link nav-link" data-i18n="nav.contact" style="color:#fff;font-size:16px;">Contact</a>
     </div>
+
+    <div class="border-t border-white/15 mt-5 pt-5 sm:hidden">
+      <p class="canva-text text-[#D4AF63] text-xs mb-3" style="letter-spacing:.19em;text-transform:uppercase;">LANGUAGE</p>
+      <div class="flex items-center gap-2 flex-wrap">
+        <button type="button" data-lang-switch="en" aria-pressed="true" class="border border-white/30 px-3 py-1.5 text-sm text-[#D4AF63]">EN</button>
+        <button type="button" data-lang-switch="fa" aria-pressed="false" class="border border-white/30 px-3 py-1.5 text-sm text-white/70">دری</button>
+        <button type="button" data-lang-switch="ps" aria-pressed="false" class="border border-white/30 px-3 py-1.5 text-sm text-white/70">پشتو</button>
+        <button type="button" data-lang-switch="fr" aria-pressed="false" class="border border-white/30 px-3 py-1.5 text-sm text-white/70">FR</button>
+      </div>
+    </div>
   </nav>
 </header>
 
@@ -117,7 +170,7 @@
     <div class="relative w-full max-w-[1450px] mx-auto px-6 sm:px-12 lg:px-20 py-24">
       <div class="gold-line mb-7"></div>
       <p class="canva-text eyebrow text-xs mb-6" data-i18n="education.hero.kicker" style="color:#D4AF63;font-size:16px;">JUST WOMEN FOR SOCIAL CHANGE</p>
-      <h1 class="canva-text max-w-[850px] leading-[1.12] font-medium" data-i18n="education.hero.title" style="color:#fff;font-weight:500;font-size:76px;">Education &amp; Training</h1>
+      <h1 class="canva-text max-w-[850px] leading-[1.12] font-medium" data-i18n="education.hero.title" style="color:#fff;font-weight:500;">Education &amp; Training</h1>
       <p class="canva-text max-w-[640px] mt-7 leading-[1.8]" data-i18n="education.hero.subtitle" style="color:#fff;font-size:19px;">Skills today. Opportunities tomorrow.</p>
       <p class="canva-text mt-12 max-w-md text-xs leading-relaxed" data-i18n="education.hero.note" style="color:#fff;font-size:12px;">Illustrative documentary photograph; subjects are not identified as members of Just Women.</p>
     </div>
@@ -130,7 +183,7 @@
         <div class="gold-line mt-5"></div>
       </div>
       <div>
-        <h2 class="canva-text leading-tight mb-8" data-i18n="education.overview.title" style="color:#080808;font-weight:500;font-size:24px;">Building Skills, Opening Doors</h2>
+        <h2 class="canva-text leading-tight mb-8" data-i18n="education.overview.title" style="color:#080808;font-weight:500;">Building Skills, Opening Doors</h2>
         <p class="canva-text max-w-3xl leading-[1.95]" data-i18n="education.overview.body" style="color:#44413D;font-size:16px;">Just Women develops training and mentorship opportunities for Afghan women and girls. We create space to learn practical media skills, build confidence, and explore storytelling with care. Registration is currently open for some classes — see below.</p>
       </div>
     </div>
@@ -139,73 +192,67 @@
   <section id="programs" class="px-6 py-20 sm:py-28" style="background:#fff;">
     <div class="max-w-[1260px] mx-auto">
       <p class="canva-text eyebrow text-xs mb-4" data-i18n="education.programs.kicker" style="color:#88692F;font-size:16px;">CLASSES &amp; REGISTRATION</p>
-      <h2 class="canva-text mb-4" data-i18n="education.programs.title" style="color:#080808;font-size:24px;">Our classes</h2>
+      <h2 class="canva-text mb-4" data-i18n="education.programs.title" style="color:#080808;">Our classes</h2>
       <p class="canva-text max-w-3xl leading-[1.9] mb-10" data-i18n="education.programs.intro" style="color:#55514D;font-size:16px;">Some classes are open for registration. Others are still in preparation. All registration links go to the organization's official Google Forms.</p>
 
       <div class="grid md:grid-cols-3 gap-5">
 
-        <!-- 1. Journalism & Reporting — OPEN -->
         <article class="program-card border border-[#e6e1d7] p-8" style="background:#fff;">
           <div class="flex items-start justify-between gap-3 mb-6">
             <i data-lucide="newspaper" class="w-7 h-7 text-[#D4AF63]" aria-hidden="true"></i>
             <span class="status-open" data-i18n="education.programs.badge.open">Registration Open</span>
           </div>
-          <h3 class="canva-text mb-3" data-i18n="education.p1.title" style="color:#080808;font-size:21px;">Journalism &amp; Reporting</h3>
+          <h3 class="canva-text mb-3" data-i18n="education.p1.title" style="color:#080808;">Journalism &amp; Reporting</h3>
           <p class="canva-text leading-[1.85] mb-6 flex-1" data-i18n="education.p1.copy" style="color:#55514D;font-size:16px;">Foundations of accurate, ethical reporting: story development, interviewing, and editorial responsibility.</p>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSevHj-IFz_Bl8u676fte950ugXAtSsH__e2z5q1HHs8rKwkrQ/viewform?usp=header" target="_blank" rel="noopener" class="gold-button inline-flex items-center justify-center px-6 py-3.5 font-semibold self-start" data-i18n="education.programs.btn.register" style="font-size:16px;">Register for this class</a>
         </article>
 
-        <!-- 2. GED Preparation — OPEN -->
         <article class="program-card border border-[#e6e1d7] p-8" style="background:#fff;">
           <div class="flex items-start justify-between gap-3 mb-6">
             <i data-lucide="graduation-cap" class="w-7 h-7 text-[#D4AF63]" aria-hidden="true"></i>
             <span class="status-open" data-i18n="education.programs.badge.open">Registration Open</span>
           </div>
-          <h3 class="canva-text mb-3" data-i18n="education.p2.title" style="color:#080808;font-size:21px;">GED Preparation</h3>
+          <h3 class="canva-text mb-3" data-i18n="education.p2.title" style="color:#080808;">GED Preparation</h3>
           <p class="canva-text leading-[1.85] mb-6 flex-1" data-i18n="education.p2.copy" style="color:#55514D;font-size:16px;">Structured preparation for the General Educational Development tests, building academic confidence step by step.</p>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSfH2r6EnkUVfNuUcmcZ2Wn31v_uk2vYohPGaH-xk1seYEArxQ/viewform?usp=header" target="_blank" rel="noopener" class="gold-button inline-flex items-center justify-center px-6 py-3.5 font-semibold self-start" data-i18n="education.programs.btn.register" style="font-size:16px;">Register for this class</a>
         </article>
 
-        <!-- 3. Human Rights & Women Rights — SOON -->
         <article class="program-card border border-[#e6e1d7] p-8" style="background:#fff;">
           <div class="flex items-start justify-between gap-3 mb-6">
             <i data-lucide="scale" class="w-7 h-7 text-[#D4AF63]" aria-hidden="true"></i>
             <span class="status-soon" data-i18n="education.programs.badge.soon">Coming Soon</span>
           </div>
-          <h3 class="canva-text mb-3" data-i18n="education.p4.title" style="color:#080808;font-size:21px;">Human Rights &amp; Women Rights</h3>
+          <h3 class="canva-text mb-3" data-i18n="education.p4.title" style="color:#080808;">Human Rights &amp; Women Rights</h3>
           <p class="canva-text leading-[1.85] mb-6 flex-1" data-i18n="education.p4.copy" style="color:#55514D;font-size:16px;">An introduction to fundamental human rights, women's rights, and the frameworks that protect dignity, equality, and participation.</p>
           <a href="https://docs.google.com/forms/d/e/1FAIpQLSeWQ_nZE9gaOQr_MHKy3qvt2J8s7DJa3Z9l5TMIRpEsZnvx4w/viewform?usp=publish-editor" target="_blank" rel="noopener" class="gold-button inline-flex items-center justify-center px-6 py-3.5 font-semibold self-start" data-i18n="education.programs.btn.register" style="font-size:16px;">Register for this class</a>
         </article>
 
-        <!-- 4. Health & Mental Health — SOON -->
         <article class="program-card border border-[#e6e1d7] p-8" style="background:#fff;">
           <div class="flex items-start justify-between gap-3 mb-6">
             <i data-lucide="heart-plus" class="w-7 h-7 text-[#D4AF63]" aria-hidden="true"></i>
             <span class="status-soon" data-i18n="education.programs.badge.soon">Coming Soon</span>
           </div>
-          <h3 class="canva-text mb-3" data-i18n="education.p3.title" style="color:#080808;font-size:21px;">Health &amp; Mental Health</h3>
+          <h3 class="canva-text mb-3" data-i18n="education.p3.title" style="color:#080808;">Health &amp; Mental Health</h3>
           <p class="canva-text leading-[1.85] mb-6 flex-1" data-i18n="education.p3.copy" style="color:#55514D;font-size:16px;">Practical knowledge on physical wellbeing, emotional health, self-care, and where to seek support, approached with dignity and care.</p>
           <span class="inline-flex items-center justify-center px-6 py-3.5 font-semibold self-start border border-[#d7d0c1] text-[#806022]" data-i18n="education.programs.btn.soon" style="font-size:16px;cursor:not-allowed;">Registration opens soon</span>
         </article>
 
-        <!-- 5. Documentation — SOON -->
         <article class="program-card border border-[#e6e1d7] p-8" style="background:#fff;">
           <div class="flex items-start justify-between gap-3 mb-6">
             <i data-lucide="camera" class="w-7 h-7 text-[#D4AF63]" aria-hidden="true"></i>
             <span class="status-soon" data-i18n="education.programs.badge.soon">Coming Soon</span>
           </div>
-          <h3 class="canva-text mb-3" data-i18n="education.p5.title" style="color:#080808;font-size:21px;">Documentation</h3>
+          <h3 class="canva-text mb-3" data-i18n="education.p5.title" style="color:#080808;">Documentation</h3>
           <p class="canva-text leading-[1.85] mb-6 flex-1" data-i18n="education.p5.copy" style="color:#55514D;font-size:16px;">Learning to record and preserve Afghan women's stories responsibly — field notes, archives, and careful documentation practices.</p>
           <span class="inline-flex items-center justify-center px-6 py-3.5 font-semibold self-start border border-[#d7d0c1] text-[#806022]" data-i18n="education.programs.btn.soon" style="font-size:16px;cursor:not-allowed;">Registration opens soon</span>
         </article>
 
-        <!-- 6. Conference — SOON -->
         <article class="program-card border border-[#e6e1d7] p-8" style="background:#fff;">
           <div class="flex items-start justify-between gap-3 mb-6">
             <i data-lucide="mic" class="w-7 h-7 text-[#D4AF63]" aria-hidden="true"></i>
             <span class="status-soon" data-i18n="education.programs.badge.soon">Coming Soon</span>
           </div>
-          <h3 class="canva-text mb-3" data-i18n="education.p6.title" style="color:#080808;font-size:21px;">Conference</h3>
+          <h3 class="canva-text mb-3" data-i18n="education.p6.title" style="color:#080808;">Conference</h3>
           <p class="canva-text leading-[1.85] mb-6 flex-1" data-i18n="education.p6.copy" style="color:#55514D;font-size:16px;">A gathering for learning, dialogue, and exchange — bringing together participants, mentors, and partners.</p>
           <span class="inline-flex items-center justify-center px-6 py-3.5 font-semibold self-start border border-[#d7d0c1] text-[#806022]" data-i18n="education.programs.btn.soon" style="font-size:16px;cursor:not-allowed;">Registration opens soon</span>
         </article>
@@ -219,36 +266,36 @@
   <section id="skills" class="px-6 py-20 sm:py-28" style="background:#F8F7F4;">
     <div class="max-w-[1260px] mx-auto">
       <p class="canva-text eyebrow text-xs mb-4" data-i18n="education.skills.kicker" style="color:#88692F;font-size:16px;">SKILLS WE SUPPORT</p>
-      <h2 class="canva-text mb-12" data-i18n="education.skills.title" style="color:#080808;font-size:24px;">Areas of learning</h2>
+      <h2 class="canva-text mb-12" data-i18n="education.skills.title" style="color:#080808;">Areas of learning</h2>
       <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         <article class="border border-[#e6e1d7] p-8 h-full" style="background:#fff;">
           <i data-lucide="newspaper" class="w-7 h-7 text-[#D4AF63] mb-7" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="education.skills.s1.title" style="color:#080808;font-size:19px;">Journalism &amp; Reporting</h3>
+          <h3 class="canva-text mb-3" data-i18n="education.skills.s1.title" style="color:#080808;">Journalism &amp; Reporting</h3>
           <p class="canva-text leading-[1.85]" data-i18n="education.skills.s1.copy" style="color:#55514D;font-size:16px;">Foundations of accurate, ethical reporting and story development.</p>
         </article>
         <article class="border border-[#e6e1d7] p-8 h-full" style="background:#fff;">
           <i data-lucide="pen-line" class="w-7 h-7 text-[#D4AF63] mb-7" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="education.skills.s2.title" style="color:#080808;font-size:19px;">Writing &amp; Editing</h3>
+          <h3 class="canva-text mb-3" data-i18n="education.skills.s2.title" style="color:#080808;">Writing &amp; Editing</h3>
           <p class="canva-text leading-[1.85]" data-i18n="education.skills.s2.copy" style="color:#55514D;font-size:16px;">Clear writing, structure, and editorial craft.</p>
         </article>
         <article class="border border-[#e6e1d7] p-8 h-full" style="background:#fff;">
           <i data-lucide="mic" class="w-7 h-7 text-[#D4AF63] mb-7" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="education.skills.s3.title" style="color:#080808;font-size:19px;">Interviewing &amp; Research</h3>
+          <h3 class="canva-text mb-3" data-i18n="education.skills.s3.title" style="color:#080808;">Interviewing &amp; Research</h3>
           <p class="canva-text leading-[1.85]" data-i18n="education.skills.s3.copy" style="color:#55514D;font-size:16px;">Listening, preparation, and responsible research.</p>
         </article>
         <article class="border border-[#e6e1d7] p-8 h-full" style="background:#fff;">
           <i data-lucide="badge-check" class="w-7 h-7 text-[#D4AF63] mb-7" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="education.skills.s4.title" style="color:#080808;font-size:19px;">Fact-Checking &amp; Verification</h3>
+          <h3 class="canva-text mb-3" data-i18n="education.skills.s4.title" style="color:#080808;">Fact-Checking &amp; Verification</h3>
           <p class="canva-text leading-[1.85]" data-i18n="education.skills.s4.copy" style="color:#55514D;font-size:16px;">Checking sources and distinguishing fact from uncertainty.</p>
         </article>
         <article class="border border-[#e6e1d7] p-8 h-full" style="background:#fff;">
           <i data-lucide="camera" class="w-7 h-7 text-[#D4AF63] mb-7" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="education.skills.s5.title" style="color:#080808;font-size:19px;">Photography &amp; Documentary Production</h3>
+          <h3 class="canva-text mb-3" data-i18n="education.skills.s5.title" style="color:#080808;">Photography &amp; Documentary Production</h3>
           <p class="canva-text leading-[1.85]" data-i18n="education.skills.s5.copy" style="color:#55514D;font-size:16px;">Visual storytelling with care, context, and consent.</p>
         </article>
         <article class="border border-[#e6e1d7] p-8 h-full" style="background:#fff;">
           <i data-lucide="clapperboard" class="w-7 h-7 text-[#D4AF63] mb-7" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="education.skills.s6.title" style="color:#080808;font-size:19px;">Digital Storytelling &amp; Mentorship</h3>
+          <h3 class="canva-text mb-3" data-i18n="education.skills.s6.title" style="color:#080808;">Digital Storytelling &amp; Mentorship</h3>
           <p class="canva-text leading-[1.85]" data-i18n="education.skills.s6.copy" style="color:#55514D;font-size:16px;">Using digital media and guidance to shape narratives.</p>
         </article>
       </div>
@@ -258,26 +305,26 @@
   <section id="how" class="px-6 py-20 sm:py-28" style="background:#fff;">
     <div class="max-w-[1260px] mx-auto">
       <p class="canva-text eyebrow text-xs mb-4" data-i18n="education.how.kicker" style="color:#88692F;font-size:16px;">HOW LEARNING WORKS</p>
-      <h2 class="canva-text mb-10" data-i18n="education.how.title" style="color:#080808;font-size:24px;">Our approach</h2>
+      <h2 class="canva-text mb-10" data-i18n="education.how.title" style="color:#080808;">Our approach</h2>
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
         <article class="editorial-rule pt-7">
           <i data-lucide="presentation" class="w-7 h-7 text-[#D4AF63] mb-5" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="education.how.h1.title" style="color:#080808;font-size:19px;">Workshops</h3>
+          <h3 class="canva-text mb-3" data-i18n="education.how.h1.title" style="color:#080808;">Workshops</h3>
           <p class="canva-text leading-[1.85]" data-i18n="education.how.h1.copy" style="color:#55514D;font-size:16px;">Short, guided sessions on specific skills.</p>
         </article>
         <article class="editorial-rule pt-7">
           <i data-lucide="users" class="w-7 h-7 text-[#D4AF63] mb-5" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="education.how.h2.title" style="color:#080808;font-size:19px;">Peer Learning</h3>
+          <h3 class="canva-text mb-3" data-i18n="education.how.h2.title" style="color:#080808;">Peer Learning</h3>
           <p class="canva-text leading-[1.85]" data-i18n="education.how.h2.copy" style="color:#55514D;font-size:16px;">Shared practice and feedback among participants.</p>
         </article>
         <article class="editorial-rule pt-7">
           <i data-lucide="handshake" class="w-7 h-7 text-[#D4AF63] mb-5" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="education.how.h3.title" style="color:#080808;font-size:19px;">Mentoring</h3>
+          <h3 class="canva-text mb-3" data-i18n="education.how.h3.title" style="color:#080808;">Mentoring</h3>
           <p class="canva-text leading-[1.85]" data-i18n="education.how.h3.copy" style="color:#55514D;font-size:16px;">One-to-one guidance from experienced volunteers.</p>
         </article>
         <article class="editorial-rule pt-7">
           <i data-lucide="clipboard-check" class="w-7 h-7 text-[#D4AF63] mb-5" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="education.how.h4.title" style="color:#080808;font-size:19px;">Practical Exercises</h3>
+          <h3 class="canva-text mb-3" data-i18n="education.how.h4.title" style="color:#080808;">Practical Exercises</h3>
           <p class="canva-text leading-[1.85]" data-i18n="education.how.h4.copy" style="color:#55514D;font-size:16px;">Small assignments that build confidence over time.</p>
         </article>
       </div>
@@ -287,7 +334,7 @@
   <section id="cta" class="px-6 py-20 sm:py-28 text-white" style="background:#080808;">
     <div class="max-w-[1260px] mx-auto">
       <div class="gold-line mb-8"></div>
-      <h2 class="canva-text max-w-[900px] leading-tight mb-9" data-i18n="education.cta.title" style="color:#fff;font-weight:500;font-size:52px;">Interested in Teaching or Mentoring?</h2>
+      <h2 class="canva-text max-w-[900px] leading-tight mb-9" data-i18n="education.cta.title" style="color:#fff;font-weight:500;">Interested in Teaching or Mentoring?</h2>
       <div class="flex flex-wrap gap-3">
         <a href="mailto:justwomenorganization@gmail.com?subject=Volunteer%20as%20a%20Mentor" class="gold-button inline-block px-8 py-4 font-semibold" data-i18n="education.cta.btn.mentor" style="font-size:16px;">Volunteer as a Mentor</a>
         <a href="contact.html" class="inline-block px-8 py-4 font-semibold border border-white/40 hover:bg-white hover:text-[#080808] transition-colors" data-i18n="education.cta.btn.contact" style="color:#fff;font-size:16px;">Contact Us</a>

@@ -55,7 +55,47 @@
       .hero-shade { background:linear-gradient(0deg,rgba(0,0,0,.91),rgba(0,0,0,.48)); }
       .brand-mark { width:42px; height:42px; }
     }
-    @media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto !important; transition:none !important; animation:none !important; } }
+    @media(max-width:400px) {
+      .brand-tagline { display: none; }
+      .brand-text { font-size: 14px !important; }
+    }
+    @media(prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto !important;
+       transition:none !important; animation:none !important; } }
+       /* ═══════════════════════════════════════════════════════════════
+   1) Fluid typography — overrides Canva inline font-size
+   ═══════════════════════════════════════════════════════════════ */
+[data-i18n="hero.title"]                                  { font-size: clamp(2.7rem, 5.4vw, 5.5rem) !important; }
+[data-i18n="about.title"]                                 { font-size: clamp(2rem, 3.3vw, 3.3rem) !important; }
+[data-i18n="features.title"]                              { font-size: clamp(2rem, 3.2vw, 3.2rem) !important; }
+[data-i18n="feat.media.title"],
+[data-i18n="feat.edu.title"]                              { font-size: clamp(1.7rem, 2.5vw, 2.5rem) !important; }
+[data-i18n="stories.title"]                               { font-size: clamp(2.2rem, 4vw, 4rem) !important; }
+[data-i18n="banner.title"]                                { font-size: clamp(2.6rem, 5vw, 5rem) !important; }
+[data-i18n="share.title"],
+[data-i18n="partners.title"]                              { font-size: clamp(2rem, 3vw, 3rem) !important; }
+[data-i18n="s1.title"],
+[data-i18n="s2.title"],
+[data-i18n="s3.title"],
+[data-i18n="s4.title"],
+[data-i18n="s5.title"]                                    { font-size: clamp(1.3rem, 1.5vw, 1.6rem) !important; }
+[data-i18n="footer.slogan"]                               { font-size: clamp(1.05rem, 1.4vw, 1.25rem) !important; }
+
+@media (min-width: 1400px) {
+  .desktop-nav .nav-link         { font-size: 14px !important; }
+  .desktop-nav                   { gap: 16px !important; }
+  .brand-tagline                 { display: block; }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .desktop-nav .nav-link         { font-size: 12px !important; }
+  .desktop-nav                   { gap: 8px !important; }
+  .brand-tagline                 { display: none; }
+}
+
+@media (max-width: 1199px) {
+  .desktop-nav                   { display: none !important; }
+  .menu-trigger                  { display: inline-flex !important; }
+}
   </style>
 
   <script src="https://cdn.tailwindcss.com/3.4.17"></script>
@@ -64,15 +104,15 @@
 <body class="w-full" style="background:#fff;">
 
 <header class="site-header canva-header sticky top-0 z-50" style="background:#080808;">
-  <div class="w-full max-w-[1600px] mx-auto px-5 sm:px-8 xl:px-12 min-h-[78px] flex items-center justify-between gap-4">
+  <div class="w-full max-w-[1600px] mx-auto px-4 sm:px-8 xl:px-12 min-h-[78px] flex items-center justify-between gap-3">
 
-    <a href="index.html" class="flex items-center gap-3 shrink-0 text-white" aria-label="Just Women — Home">
+    <a href="index.html" class="flex items-center gap-2 sm:gap-3 shrink-0 text-white" aria-label="Just Women — Home">
       <span class="brand-mark" aria-hidden="true">
         <img src="cropped_circle_image.png" alt="" width="48" height="48" style="width:48px;height:48px;object-fit:contain;display:block;">
       </span>
       <span class="flex flex-col leading-none">
-        <strong class="canva-text tracking-[.13em]" style="color:#fff;font-weight:700;font-size:16px;">JUST WOMEN</strong>
-        <small class="canva-text tracking-[.22em] mt-2" data-i18n="brand.tagline" style="color:#D4AF63;font-size:10px;">Can Change Society</small>
+        <strong class="brand-text canva-text tracking-[.13em]" style="color:#fff;font-weight:700;font-size:16px;">JUST WOMEN</strong>
+        <small class="brand-tagline canva-text tracking-[.22em] mt-2" data-i18n="brand.tagline" style="color:#D4AF63;font-size:10px;">Can Change Society</small>
       </span>
     </a>
 
@@ -88,7 +128,7 @@
     </nav>
 
     <div class="flex items-center gap-2 sm:gap-4 text-white shrink-0">
-      <div class="flex items-center gap-1 font-semibold text-[11px]" aria-label="Language">
+      <div class="hidden sm:flex items-center gap-1 font-semibold text-[11px]" aria-label="Language">
         <button type="button" data-lang-switch="en" aria-pressed="true" class="px-1 text-[#D4AF63]">EN</button>
         <span aria-hidden="true" class="text-white/40">/</span>
         <button type="button" data-lang-switch="fa" aria-pressed="false" class="px-1 text-white/70">دری</button>
@@ -120,6 +160,17 @@
       <a href="partner.html" class="canva-link" data-i18n="nav.partner" style="color:#fff;font-size:16px;">Partners &amp; Support</a>
       <a href="contact.html" class="canva-link" data-i18n="nav.contact" style="color:#fff;font-size:16px;">Contact</a>
     </div>
+
+    <!-- Language switcher inside mobile menu -->
+    <div class="border-t border-white/15 mt-5 pt-5 sm:hidden">
+      <p class="canva-text text-[#D4AF63] text-xs mb-3" data-i18n="footer.language" style="letter-spacing:.19em;text-transform:uppercase;">LANGUAGE</p>
+      <div class="flex items-center gap-2 flex-wrap">
+        <button type="button" data-lang-switch="en" aria-pressed="true" class="border border-white/30 px-3 py-1.5 text-sm text-[#D4AF63]">EN</button>
+        <button type="button" data-lang-switch="fa" aria-pressed="false" class="border border-white/30 px-3 py-1.5 text-sm text-white/70">دری</button>
+        <button type="button" data-lang-switch="ps" aria-pressed="false" class="border border-white/30 px-3 py-1.5 text-sm text-white/70">پشتو</button>
+        <button type="button" data-lang-switch="fr" aria-pressed="false" class="border border-white/30 px-3 py-1.5 text-sm text-white/70">FR</button>
+      </div>
+    </div>
   </nav>
 </header>
 
@@ -131,7 +182,7 @@
     <div class="relative w-full max-w-[1450px] mx-auto px-6 sm:px-12 lg:px-20 py-24">
       <div class="gold-line mb-7"></div>
       <p class="canva-text eyebrow text-[#D4AF63] text-xs mb-6" data-i18n="hero.kicker" style="font-size:16px;">JUST WOMEN Can CHANGE Society</p>
-      <h1 class="canva-text max-w-[810px] text-[clamp(2.7rem,5.4vw,5.5rem)] leading-[1.13] font-medium" data-i18n="hero.title" style="color:#fff;font-weight:500;font-size:32px;">Amplifying Women's Voices for a Brighter Future</h1>
+      <h1 class="canva-text max-w-[810px] text-[clamp(2.7rem,5.4vw,5.5rem)] leading-[1.13] font-medium" data-i18n="hero.title" style="color:#fff;font-weight:500;">Amplifying Women's Voices for a Brighter Future</h1>
       <p class="canva-text max-w-[620px] mt-7 text-base sm:text-lg leading-[1.85] text-white/90" data-i18n="hero.desc" style="font-size:16px;">Just Women is a women-led media and storytelling initiative creating opportunities for Afghan women and girls through journalism, education, storytelling and digital media.</p>
       <div class="flex flex-wrap gap-3 mt-10">
         <a href="#stories" class="canva-button gold-button px-7 py-4 font-semibold text-sm" data-i18n="hero.btn.stories" style="font-size:16px;">Explore Stories</a>
@@ -147,7 +198,7 @@
         <div class="gold-line mt-5"></div>
       </div>
       <div>
-        <h2 class="canva-text text-[clamp(2rem,3.3vw,3.3rem)] leading-tight mb-5" data-i18n="about.title" style="color:#080808;font-size:24px;">Stories matter when women tell them.</h2>
+        <h2 class="canva-text text-[clamp(2rem,3.3vw,3.3rem)] leading-tight mb-5" data-i18n="about.title" style="color:#080808;">Stories matter when women tell them.</h2>
         <p class="canva-text text-[#44413d] leading-[1.9] max-w-2xl" data-i18n="about.body" style="font-size:16px;">Just Women brings together journalism, education, storytelling and digital media to create space for Afghan women's voices. We believe women should shape the stories told about their lives and communities.</p>
       </div>
     </div>
@@ -158,7 +209,7 @@
       <div class="flex items-end justify-between gap-5 mb-10">
         <div>
           <p class="canva-text eyebrow text-[#88692f] text-xs mb-3" data-i18n="features.label" style="font-size:16px;">WHAT WE DO</p>
-          <h2 class="canva-text text-[clamp(2rem,3.2vw,3.2rem)]" data-i18n="features.title" style="color:#080808;font-size:24px;">A platform for voices and possibility</h2>
+          <h2 class="canva-text text-[clamp(2rem,3.2vw,3.2rem)]" data-i18n="features.title" style="color:#080808;">A platform for voices and possibility</h2>
         </div>
         <div class="gold-line mb-3 hidden sm:block"></div>
       </div>
@@ -170,7 +221,7 @@
           </div>
           <div class="p-7 sm:p-9">
             <p class="canva-text eyebrow text-[#88692f] text-xs mb-4" data-i18n="feat.media.label" style="font-size:16px;">01 / VOICES</p>
-            <h3 class="canva-text text-[clamp(1.7rem,2.5vw,2.5rem)] mb-3" data-i18n="feat.media.title" style="color:#080808;font-size:19px;">Media &amp; Stories</h3>
+            <h3 class="canva-text text-[clamp(1.7rem,2.5vw,2.5rem)] mb-3" data-i18n="feat.media.title" style="color:#080808;">Media &amp; Stories</h3>
             <p class="canva-text text-[#55514d] leading-relaxed mb-6" data-i18n="feat.media.copy" style="font-size:16px;">A space for thoughtful reporting and first-person perspectives that place women's voices at the center.</p>
             <a href="#stories" class="inline-flex items-center gap-3 text-sm font-semibold border-b border-[#D4AF63] pb-2">
               <span data-i18n="feat.media.link" style="color:#080808;font-size:16px;">Explore stories</span>
@@ -185,7 +236,7 @@
           </div>
           <div class="p-7 sm:p-9">
             <p class="canva-text eyebrow text-[#88692f] text-xs mb-4" data-i18n="feat.edu.label" style="font-size:16px;">02 / LEARNING</p>
-            <h3 class="canva-text text-[clamp(1.7rem,2.5vw,2.5rem)] mb-3" data-i18n="feat.edu.title" style="color:#080808;font-size:19px;">Education &amp; Training</h3>
+            <h3 class="canva-text text-[clamp(1.7rem,2.5vw,2.5rem)] mb-3" data-i18n="feat.edu.title" style="color:#080808;">Education &amp; Training</h3>
             <p class="canva-text text-[#55514d] leading-relaxed mb-6" data-i18n="feat.edu.copy" style="font-size:16px;">Learning and creative skills can open new ways to participate in journalism, storytelling and digital media.</p>
             <a href="#contact" class="inline-flex items-center gap-3 text-sm font-semibold border-b border-[#D4AF63] pb-2">
               <span data-i18n="feat.edu.link" style="color:#080808;font-size:16px;">Get in touch</span>
@@ -202,7 +253,7 @@
     <div class="max-w-[1260px] mx-auto">
       <p class="canva-text eyebrow text-[#88692f] text-xs mb-3" data-i18n="stories.label" style="font-size:16px;">FROM THE EDITORIAL DESK</p>
       <div class="flex items-end justify-between gap-5 mb-5">
-        <h2 class="canva-text text-[clamp(2.2rem,4vw,4rem)]" data-i18n="stories.title" style="color:#080808;font-size:24px;">Latest Stories</h2>
+        <h2 class="canva-text text-[clamp(2.2rem,4vw,4rem)]" data-i18n="stories.title" style="color:#080808;">Latest Stories</h2>
         <div class="gold-line mb-3 hidden sm:block"></div>
       </div>
       <p class="canva-text text-sm text-[#65605a] mb-10" data-i18n="stories.disclaimer" style="font-size:16px;">Editorial themes and illustrative summaries; photographs depict stock subjects, not the people described.</p>
@@ -219,7 +270,7 @@
               <span class="canva-tag eyebrow text-[#88692f]" data-i18n="s1.cat" style="font-size:16px;">STORYTELLING</span>
               <time datetime="2024-05-12" class="canva-text text-[#68645e]" data-i18n="s1.date" style="font-size:16px;">12 MAY 2024</time>
             </div>
-            <h3 class="canva-text text-[1.6rem] leading-snug mt-4 mb-4" data-i18n="s1.title" style="color:#080808;font-size:19px;">The Stories We Carry Forward</h3>
+            <h3 class="canva-text text-[1.6rem] leading-snug mt-4 mb-4" data-i18n="s1.title" style="color:#080808;">The Stories We Carry Forward</h3>
             <button type="button" class="story-toggle flex items-center gap-2 text-sm font-semibold border-b border-[#D4AF63] pb-2" aria-expanded="false">
               <span data-i18n="stories.read" style="color:#080808;font-size:16px;">Read summary</span>
               <i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i>
@@ -237,7 +288,7 @@
               <span class="canva-tag eyebrow text-[#88692f]" data-i18n="s2.cat" style="font-size:16px;">JOURNALISM</span>
               <time datetime="2024-06-08" class="canva-text text-[#68645e]" data-i18n="s2.date" style="font-size:16px;">8 JUN 2024</time>
             </div>
-            <h3 class="canva-text text-[1.6rem] leading-snug mt-4 mb-4" data-i18n="s2.title" style="color:#080808;font-size:19px;">Learning to Ask Better Questions</h3>
+            <h3 class="canva-text text-[1.6rem] leading-snug mt-4 mb-4" data-i18n="s2.title" style="color:#080808;">Learning to Ask Better Questions</h3>
             <button type="button" class="story-toggle flex items-center gap-2 text-sm font-semibold border-b border-[#D4AF63] pb-2" aria-expanded="false">
               <span data-i18n="stories.read" style="color:#080808;font-size:16px;">Read summary</span>
               <i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i>
@@ -255,7 +306,7 @@
               <span class="canva-tag eyebrow text-[#88692f]" data-i18n="s3.cat" style="font-size:16px;">AUDIO</span>
               <time datetime="2024-07-19" class="canva-text text-[#68645e]" data-i18n="s3.date" style="font-size:16px;">19 JUL 2024</time>
             </div>
-            <h3 class="canva-text text-[1.6rem] leading-snug mt-4 mb-4" data-i18n="s3.title" style="color:#080808;font-size:19px;">Finding a Voice on Air</h3>
+            <h3 class="canva-text text-[1.6rem] leading-snug mt-4 mb-4" data-i18n="s3.title" style="color:#080808;">Finding a Voice on Air</h3>
             <button type="button" class="story-toggle flex items-center gap-2 text-sm font-semibold border-b border-[#D4AF63] pb-2" aria-expanded="false">
               <span data-i18n="stories.read" style="color:#080808;font-size:16px;">Read summary</span>
               <i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i>
@@ -273,7 +324,7 @@
               <span class="canva-tag eyebrow text-[#88692f]" data-i18n="s4.cat" style="font-size:16px;">EDUCATION</span>
               <time datetime="2024-08-04" class="canva-text text-[#68645e]" data-i18n="s4.date" style="font-size:16px;">4 AUG 2024</time>
             </div>
-            <h3 class="canva-text text-[1.6rem] leading-snug mt-4 mb-4" data-i18n="s4.title" style="color:#080808;font-size:19px;">A Place to Keep Learning</h3>
+            <h3 class="canva-text text-[1.6rem] leading-snug mt-4 mb-4" data-i18n="s4.title" style="color:#080808;">A Place to Keep Learning</h3>
             <button type="button" class="story-toggle flex items-center gap-2 text-sm font-semibold border-b border-[#D4AF63] pb-2" aria-expanded="false">
               <span data-i18n="stories.read" style="color:#080808;font-size:16px;">Read summary</span>
               <i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i>
@@ -291,7 +342,7 @@
               <span class="canva-tag eyebrow text-[#88692f]" data-i18n="s5.cat" style="font-size:16px;">DIGITAL MEDIA</span>
               <time datetime="2024-09-15" class="canva-text text-[#68645e]" data-i18n="s5.date" style="font-size:16px;">15 SEP 2024</time>
             </div>
-            <h3 class="canva-text text-[1.6rem] leading-snug mt-4 mb-4" data-i18n="s5.title" style="color:#080808;font-size:19px;">Behind the Camera, Ahead of the Story</h3>
+            <h3 class="canva-text text-[1.6rem] leading-snug mt-4 mb-4" data-i18n="s5.title" style="color:#080808;">Behind the Camera, Ahead of the Story</h3>
             <button type="button" class="story-toggle flex items-center gap-2 text-sm font-semibold border-b border-[#D4AF63] pb-2" aria-expanded="false">
               <span data-i18n="stories.read" style="color:#080808;font-size:16px;">Read summary</span>
               <i data-lucide="arrow-up-right" class="w-4 h-4" aria-hidden="true"></i>
@@ -309,7 +360,7 @@
     <div class="banner-shade" aria-hidden="true"></div>
     <div class="relative w-full max-w-[1260px] mx-auto px-6 py-20">
       <div class="gold-line mb-7"></div>
-      <h2 class="canva-text text-[clamp(2.6rem,5vw,5rem)] mb-8" data-i18n="banner.title" style="color:#fff;font-size:24px;">Be Part of the Change</h2>
+      <h2 class="canva-text text-[clamp(2.6rem,5vw,5rem)] mb-8" data-i18n="banner.title" style="color:#fff;">Be Part of the Change</h2>
       <a href="mailto:justwomenorganization@gmail.com?subject=Join%20Our%20Team" class="canva-button gold-button inline-block px-8 py-4 font-semibold text-sm" data-i18n="banner.btn" style="font-size:16px;">Join Our Team</a>
     </div>
   </section>
@@ -318,13 +369,13 @@
     <div class="max-w-[1260px] mx-auto grid md:grid-cols-2 gap-12 md:gap-20">
       <div id="share">
         <p class="canva-text eyebrow text-[#88692f] text-xs mb-3" data-i18n="share.label" style="font-size:16px;">YOUR VOICE MATTERS</p>
-        <h2 class="canva-text text-[clamp(2rem,3vw,3rem)] mb-4" data-i18n="share.title" style="color:#080808;font-size:24px;">Share Your Story</h2>
+        <h2 class="canva-text text-[clamp(2rem,3vw,3rem)] mb-4" data-i18n="share.title" style="color:#080808;">Share Your Story</h2>
         <p class="canva-text text-[#55514d] leading-[1.85] mb-6" data-i18n="share.body" style="font-size:16px;">Have a perspective you would like to share? Start a conversation with our team by email.</p>
         <a href="mailto:justwomenorganization@gmail.com?subject=Share%20Your%20Story" class="canva-link inline-block border-b border-[#D4AF63] pb-2 font-semibold text-sm" data-i18n="share.link" style="color:#080808;font-size:16px;">Write to us ↗</a>
       </div>
       <div id="partners" class="md:border-l md:border-[#e7dfd0] md:pl-16">
         <p class="canva-text eyebrow text-[#88692f] text-xs mb-3" data-i18n="partners.label" style="font-size:16px;">WORK TOGETHER</p>
-        <h2 class="canva-text text-[clamp(2rem,3vw,3rem)] mb-4" data-i18n="partners.title" style="color:#080808;font-size:24px;">Partners &amp; Support</h2>
+        <h2 class="canva-text text-[clamp(2rem,3vw,3rem)] mb-4" data-i18n="partners.title" style="color:#080808;">Partners &amp; Support</h2>
         <p class="canva-text text-[#55514d] leading-[1.85] mb-6" data-i18n="partners.body" style="font-size:16px;">Interested in supporting women-led media and storytelling? Reach out to explore a conversation.</p>
         <a href="mailto:justwomenorganization@gmail.com?subject=Partners%20and%20Support" class="canva-link inline-block border-b border-[#D4AF63] pb-2 font-semibold text-sm" data-i18n="partners.link" style="color:#080808;font-size:16px;">Get in touch ↗</a>
       </div>
@@ -348,7 +399,7 @@
             <small class="canva-text block tracking-[.2em] mt-1" data-i18n="brand.tagline" style="color:#D4AF63;font-size:10px;">Can Change Society</small>
           </span>
         </div>
-        <p class="canva-text font-serif text-xl leading-relaxed max-w-xs" data-i18n="footer.slogan" style="color:#fff;font-size:16px;">Women are not only the stories. Women tell the stories.</p>
+        <p class="canva-text font-serif text-xl leading-relaxed max-w-xs" data-i18n="footer.slogan" style="color:#fff;">Women are not only the stories. Women tell the stories.</p>
       </div>
 
       <nav aria-label="Footer navigation">

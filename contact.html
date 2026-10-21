@@ -34,11 +34,42 @@
     .gold-button:hover{background:#e6c783;transform:translateY(-2px)}
     .editorial-rule{border-top:1px solid #D4AF63}
     .search-result:hover{background:#f0e9db}
-    .form-field{width:100%;border:1px solid #d7d0c1;background:#fff;color:#080808;padding:13px 16px;font-size:16px;font-family:Inter,sans-serif;}
+    .form-field{width:100%;border:1px solid #d7d0c1;background:#fff;color:#080808;padding:13px 16px;font-size:16px;font-family:Inter,sans-serif}
     .form-field:focus{outline:2px solid var(--gold);outline-offset:1px}
-    .form-label{display:block;font-size:12px;font-weight:600;color:#080808;margin-bottom:8px;letter-spacing:.04em;}
-    @media(max-width:1190px){.desktop-nav{display:none!important}.menu-trigger{display:inline-flex!important}}
-    @media(max-width:640px){.hero{min-height:580px}.hero-image{object-position:62% center}.hero-shade{background:linear-gradient(0deg,rgba(0,0,0,.91),rgba(0,0,0,.42))}.brand-mark{width:42px;height:42px}}
+    .form-label{display:block;font-size:12px;font-weight:600;color:#080808;margin-bottom:8px;letter-spacing:.04em}
+
+    /* ═══════════ Fluid typography — overrides inline font-size ═══════════ */
+    [data-i18n="contact.hero.title"] { font-size: clamp(2.5rem, 5.4vw, 5rem) !important; }
+    [data-i18n="contact.info.title"],
+    [data-i18n="contact.form.title"],
+    [data-i18n="contact.other.title"] { font-size: clamp(1.75rem, 3vw, 2.75rem) !important; }
+    [data-i18n="contact.other.c1.title"],
+    [data-i18n="contact.other.c2.title"],
+    [data-i18n="contact.other.c3.title"] { font-size: clamp(1.1rem, 1.5vw, 1.35rem) !important; }
+
+    /* Email link — responsive font */
+    a[href^="mailto:justwomenorganization"] { font-size: clamp(1rem, 1.6vw, 1.3rem) !important; }
+
+    /* ═══════════ Responsive header ═══════════ */
+    @media (max-width: 1279px) {
+      .desktop-nav { display: none !important; }
+      .menu-trigger { display: inline-flex !important; }
+    }
+    @media (min-width: 1280px) and (max-width: 1439px) {
+      .desktop-nav { gap: 10px !important; }
+      .desktop-nav .nav-link { font-size: 12px !important; }
+    }
+    @media (min-width: 1440px) {
+      .desktop-nav { gap: 16px !important; }
+      .desktop-nav .nav-link { font-size: 14px !important; }
+    }
+
+    @media(max-width:640px){
+      .hero{min-height:580px}
+      .hero-image{object-position:62% center}
+      .hero-shade{background:linear-gradient(0deg,rgba(0,0,0,.91),rgba(0,0,0,.42))}
+      .brand-mark{width:42px;height:42px}
+    }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
   </style>
 
@@ -48,8 +79,8 @@
 <body class="w-full" style="background:#fff;">
 
 <header class="canva-header sticky top-0 z-50 border-b border-white/15 text-white" style="background:#080808;">
-  <div class="w-full max-w-[1600px] mx-auto px-5 sm:px-8 xl:px-12 min-h-[78px] flex items-center justify-between gap-4">
-    <a href="home.html" class="flex items-center gap-3 shrink-0" aria-label="Just Women — Home">
+  <div class="w-full max-w-[1600px] mx-auto px-4 sm:px-8 xl:px-12 min-h-[78px] flex items-center justify-between gap-3">
+    <a href="home.html" class="flex items-center gap-2 sm:gap-3 shrink-0" aria-label="Just Women — Home">
       <span class="brand-mark" aria-hidden="true">
         <img src="cropped_circle_image.png" alt="" width="48" height="48" style="width:48px;height:48px;object-fit:contain;display:block;">
       </span>
@@ -71,7 +102,7 @@
     </nav>
 
     <div class="flex items-center gap-2 sm:gap-3 shrink-0">
-      <div class="flex items-center gap-1 font-semibold text-[11px]" aria-label="Language">
+      <div class="hidden sm:flex items-center gap-1 font-semibold text-[11px]" aria-label="Language">
         <button type="button" data-lang-switch="en" aria-pressed="true" class="px-1 text-[#D4AF63]">EN</button>
         <span aria-hidden="true" class="text-white/40">/</span>
         <button type="button" data-lang-switch="fa" aria-pressed="false" class="px-1 text-white/70">دری</button>
@@ -105,6 +136,16 @@
       <a href="partner.html" class="canva-link nav-link" data-i18n="nav.partner" style="color:#fff;font-size:16px;">Partners &amp; Support</a>
       <a href="contact.html" class="canva-link nav-current" data-i18n="nav.contact" style="color:#D4AF63;font-size:16px;">Contact</a>
     </div>
+
+    <div class="border-t border-white/15 mt-5 pt-5 sm:hidden">
+      <p class="canva-text text-[#D4AF63] text-xs mb-3" style="letter-spacing:.19em;text-transform:uppercase;">LANGUAGE</p>
+      <div class="flex items-center gap-2 flex-wrap">
+        <button type="button" data-lang-switch="en" aria-pressed="true" class="border border-white/30 px-3 py-1.5 text-sm text-[#D4AF63]">EN</button>
+        <button type="button" data-lang-switch="fa" aria-pressed="false" class="border border-white/30 px-3 py-1.5 text-sm text-white/70">دری</button>
+        <button type="button" data-lang-switch="ps" aria-pressed="false" class="border border-white/30 px-3 py-1.5 text-sm text-white/70">پشتو</button>
+        <button type="button" data-lang-switch="fr" aria-pressed="false" class="border border-white/30 px-3 py-1.5 text-sm text-white/70">FR</button>
+      </div>
+    </div>
   </nav>
 </header>
 
@@ -116,7 +157,7 @@
     <div class="relative w-full max-w-[1450px] mx-auto px-6 sm:px-12 lg:px-20 py-24">
       <div class="gold-line mb-7"></div>
       <p class="canva-text eyebrow text-xs mb-6" data-i18n="contact.hero.kicker" style="color:#D4AF63;font-size:16px;">JUST WOMEN FOR SOCIAL CHANGE</p>
-      <h1 class="canva-text max-w-[850px] leading-[1.12] font-medium" data-i18n="contact.hero.title" style="color:#fff;font-weight:500;font-size:76px;">Contact Us</h1>
+      <h1 class="canva-text max-w-[850px] leading-[1.12] font-medium" data-i18n="contact.hero.title" style="color:#fff;font-weight:500;">Contact Us</h1>
       <p class="canva-text max-w-[640px] mt-7 leading-[1.8]" data-i18n="contact.hero.subtitle" style="color:#fff;font-size:19px;">We'd love to hear from you.</p>
       <p class="canva-text mt-12 max-w-md text-xs leading-relaxed" data-i18n="contact.hero.note" style="color:#fff;font-size:12px;">Illustrative documentary photograph; subjects are not identified as members of Just Women.</p>
     </div>
@@ -129,8 +170,8 @@
         <div class="gold-line mt-5"></div>
       </div>
       <div>
-        <h2 class="canva-text leading-tight mb-8" data-i18n="contact.info.title" style="color:#080808;font-weight:500;font-size:24px;">Our public email</h2>
-        <a href="mailto:justwomenorganization@gmail.com" class="canva-link inline-block text-lg font-semibold border-b border-[#D4AF63] pb-2" style="color:#080808;font-size:21px;word-break:break-all;">justwomenorganization@gmail.com</a>
+        <h2 class="canva-text leading-tight mb-8" data-i18n="contact.info.title" style="color:#080808;font-weight:500;">Our public email</h2>
+        <a href="mailto:justwomenorganization@gmail.com" class="canva-link inline-block font-semibold border-b border-[#D4AF63] pb-2" style="color:#080808;word-break:break-all;">justwomenorganization@gmail.com</a>
         <p class="canva-text mt-6 max-w-2xl leading-[1.85]" data-i18n="contact.info.body" style="color:#55514D;font-size:16px;">Verified social media accounts will be listed here once confirmed by the organization. We do not publish physical addresses or phone numbers that have not been officially confirmed.</p>
       </div>
     </div>
@@ -140,7 +181,7 @@
     <div class="max-w-[1260px] mx-auto grid lg:grid-cols-[1fr_1.25fr] gap-12 lg:gap-20">
       <div>
         <p class="canva-text eyebrow text-xs mb-4" data-i18n="contact.form.kicker" style="color:#88692F;font-size:16px;">SEND A MESSAGE</p>
-        <h2 class="canva-text leading-tight mb-5" data-i18n="contact.form.title" style="color:#080808;font-weight:500;font-size:24px;">Contact form</h2>
+        <h2 class="canva-text leading-tight mb-5" data-i18n="contact.form.title" style="color:#080808;font-weight:500;">Contact form</h2>
         <p class="canva-text leading-[1.9]" data-i18n="contact.form.intro" style="color:#55514D;font-size:16px;">This form is a visual mockup. A secure form handler has not yet been connected.</p>
         <div class="gold-line mt-8"></div>
       </div>
@@ -199,21 +240,21 @@
   <section id="other" class="px-6 py-20 sm:py-28" style="background:#F8F7F4;">
     <div class="max-w-[1260px] mx-auto">
       <p class="canva-text eyebrow text-xs mb-4" data-i18n="contact.other.kicker" style="color:#88692F;font-size:16px;">OTHER WAYS TO COLLABORATE</p>
-      <h2 class="canva-text mb-12" data-i18n="contact.other.title" style="color:#080808;font-size:24px;">More ways to reach us</h2>
+      <h2 class="canva-text mb-12" data-i18n="contact.other.title" style="color:#080808;">More ways to reach us</h2>
       <div class="grid md:grid-cols-3 gap-5">
         <article class="editorial-rule pt-7">
           <i data-lucide="newspaper" class="w-7 h-7 text-[#D4AF63] mb-5" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="contact.other.c1.title" style="color:#080808;font-size:19px;">Media Inquiries</h3>
+          <h3 class="canva-text mb-3" data-i18n="contact.other.c1.title" style="color:#080808;">Media Inquiries</h3>
           <p class="canva-text leading-[1.85]" data-i18n="contact.other.c1.copy" style="color:#55514D;font-size:16px;">Questions from journalists and media partners.</p>
         </article>
         <article class="editorial-rule pt-7">
           <i data-lucide="users" class="w-7 h-7 text-[#D4AF63] mb-5" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="contact.other.c2.title" style="color:#080808;font-size:19px;">Volunteer Questions</h3>
+          <h3 class="canva-text mb-3" data-i18n="contact.other.c2.title" style="color:#080808;">Volunteer Questions</h3>
           <p class="canva-text leading-[1.85]" data-i18n="contact.other.c2.copy" style="color:#55514D;font-size:16px;">Ask about roles, conditions, and the application process.</p>
         </article>
         <article class="editorial-rule pt-7">
           <i data-lucide="handshake" class="w-7 h-7 text-[#D4AF63] mb-5" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="contact.other.c3.title" style="color:#080808;font-size:19px;">Partnership Proposals</h3>
+          <h3 class="canva-text mb-3" data-i18n="contact.other.c3.title" style="color:#080808;">Partnership Proposals</h3>
           <p class="canva-text leading-[1.85]" data-i18n="contact.other.c3.copy" style="color:#55514D;font-size:16px;">Share a thoughtful proposal for collaboration.</p>
         </article>
       </div>

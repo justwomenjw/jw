@@ -34,8 +34,49 @@
     .gold-button:hover{background:#e6c783;transform:translateY(-2px)}
     .editorial-rule{border-top:1px solid #D4AF63}
     .search-result:hover{background:#f0e9db}
-    @media(max-width:1190px){.desktop-nav{display:none!important}.menu-trigger{display:inline-flex!important}}
-    @media(max-width:640px){.hero{min-height:580px}.hero-image{object-position:62% center}.hero-shade{background:linear-gradient(0deg,rgba(0,0,0,.91),rgba(0,0,0,.42))}.brand-mark{width:42px;height:42px}}
+
+    /* ═══════════ Fluid typography ═══════════ */
+    [data-i18n="about.hero.title"] { font-size: clamp(2.5rem, 5.4vw, 5rem) !important; }
+    [data-i18n="about.story.title"],
+    [data-i18n="about.mission.title"],
+    [data-i18n="about.goals.title"],
+    [data-i18n="about.principles.title"],
+    [data-i18n="about.media.title"] { font-size: clamp(1.75rem, 3vw, 2.75rem) !important; }
+    [data-i18n="about.mission.c1.title"],
+    [data-i18n="about.mission.c2.title"],
+    [data-i18n="about.mission.c3.title"],
+    [data-i18n="about.goals.short.title"],
+    [data-i18n="about.goals.long.title"],
+    [data-i18n="about.principles.p1.title"],
+    [data-i18n="about.principles.p2.title"],
+    [data-i18n="about.principles.p3.title"],
+    [data-i18n="about.principles.p4.title"],
+    [data-i18n="about.principles.p5.title"],
+    [data-i18n="about.principles.p6.title"] { font-size: clamp(1.1rem, 1.5vw, 1.4rem) !important; }
+    [data-i18n="about.founder.title"] { font-size: clamp(1.75rem, 3vw, 2.25rem) !important; }
+    [data-i18n="about.cta.title"] { font-size: clamp(2rem, 4.5vw, 3.5rem) !important; }
+    #founder h3 { font-size: clamp(1.75rem, 2.5vw, 2rem) !important; }
+
+    /* ═══════════ Responsive header ═══════════ */
+    @media (max-width: 1279px) {
+      .desktop-nav { display: none !important; }
+      .menu-trigger { display: inline-flex !important; }
+    }
+    @media (min-width: 1280px) and (max-width: 1439px) {
+      .desktop-nav { gap: 10px !important; }
+      .desktop-nav .nav-link { font-size: 12px !important; }
+    }
+    @media (min-width: 1440px) {
+      .desktop-nav { gap: 16px !important; }
+      .desktop-nav .nav-link { font-size: 14px !important; }
+    }
+
+    @media(max-width:640px){
+      .hero{min-height:580px}
+      .hero-image{object-position:62% center}
+      .hero-shade{background:linear-gradient(0deg,rgba(0,0,0,.91),rgba(0,0,0,.42))}
+      .brand-mark{width:42px;height:42px}
+    }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
   </style>
 
@@ -45,9 +86,9 @@
 <body class="w-full" style="background:#fff;">
 
 <header class="canva-header sticky top-0 z-50 border-b border-white/15 text-white" style="background:#080808;">
-  <div class="w-full max-w-[1600px] mx-auto px-5 sm:px-8 xl:px-12 min-h-[78px] flex items-center justify-between gap-4">
+  <div class="w-full max-w-[1600px] mx-auto px-4 sm:px-8 xl:px-12 min-h-[78px] flex items-center justify-between gap-3">
 
-    <a href="home.html" class="flex items-center gap-3 shrink-0" aria-label="Just Women — Home">
+    <a href="index.html" class="flex items-center gap-2 sm:gap-3 shrink-0" aria-label="Just Women — Home">
       <span class="brand-mark" aria-hidden="true">
         <img src="cropped_circle_image.png" alt="" width="48" height="48" style="width:48px;height:48px;object-fit:contain;display:block;">
       </span>
@@ -69,7 +110,7 @@
     </nav>
 
     <div class="flex items-center gap-2 sm:gap-3 shrink-0">
-      <div class="flex items-center gap-1 font-semibold text-[11px]" aria-label="Language">
+      <div class="hidden sm:flex items-center gap-1 font-semibold text-[11px]" aria-label="Language">
         <button type="button" data-lang-switch="en" aria-pressed="true" class="px-1 text-[#D4AF63]">EN</button>
         <span aria-hidden="true" class="text-white/40">/</span>
         <button type="button" data-lang-switch="fa" aria-pressed="false" class="px-1 text-white/70">دری</button>
@@ -103,6 +144,16 @@
       <a href="partner.html" class="canva-link nav-link" data-i18n="nav.partner" style="color:#fff;font-size:16px;">Partners &amp; Support</a>
       <a href="contact.html" class="canva-link nav-link" data-i18n="nav.contact" style="color:#fff;font-size:16px;">Contact</a>
     </div>
+
+    <div class="border-t border-white/15 mt-5 pt-5 sm:hidden">
+      <p class="canva-text text-[#D4AF63] text-xs mb-3" style="letter-spacing:.19em;text-transform:uppercase;">LANGUAGE</p>
+      <div class="flex items-center gap-2 flex-wrap">
+        <button type="button" data-lang-switch="en" aria-pressed="true" class="border border-white/30 px-3 py-1.5 text-sm text-[#D4AF63]">EN</button>
+        <button type="button" data-lang-switch="fa" aria-pressed="false" class="border border-white/30 px-3 py-1.5 text-sm text-white/70">دری</button>
+        <button type="button" data-lang-switch="ps" aria-pressed="false" class="border border-white/30 px-3 py-1.5 text-sm text-white/70">پشتو</button>
+        <button type="button" data-lang-switch="fr" aria-pressed="false" class="border border-white/30 px-3 py-1.5 text-sm text-white/70">FR</button>
+      </div>
+    </div>
   </nav>
 </header>
 
@@ -114,7 +165,7 @@
     <div class="relative w-full max-w-[1450px] mx-auto px-6 sm:px-12 lg:px-20 py-24">
       <div class="gold-line mb-7"></div>
       <p class="canva-text eyebrow text-xs mb-6" data-i18n="about.hero.kicker" style="color:#D4AF63;font-size:16px;">JUST WOMEN Can CHANGE Society</p>
-      <h1 class="canva-text max-w-[850px] leading-[1.12] font-medium" data-i18n="about.hero.title" style="color:#fff;font-weight:500;font-size:76px;">About Just Women</h1>
+      <h1 class="canva-text max-w-[850px] leading-[1.12] font-medium" data-i18n="about.hero.title" style="color:#fff;font-weight:500;">About Just Women</h1>
       <p class="canva-text max-w-[640px] mt-7 leading-[1.8]" data-i18n="about.hero.subtitle" style="color:#fff;font-size:19px;">Creating space for women's voices, stories, and opportunities.</p>
       <p class="canva-text mt-12 max-w-md text-xs leading-relaxed" data-i18n="about.hero.note" style="color:#fff;font-size:12px;">Illustrative documentary photograph; subjects are not identified as members of Just Women.</p>
     </div>
@@ -127,7 +178,7 @@
         <div class="gold-line mt-5"></div>
       </div>
       <div>
-        <h2 class="canva-text leading-tight mb-8" data-i18n="about.story.title" style="color:#080808;font-weight:500;font-size:24px;">Our Story</h2>
+        <h2 class="canva-text leading-tight mb-8" data-i18n="about.story.title" style="color:#080808;font-weight:500;">Our Story</h2>
         <p class="canva-text max-w-3xl leading-[1.95]" data-i18n="about.story.body" style="color:#44413D;font-size:16px;">Just Women is a women-led initiative working to strengthen the voices of Afghan women and girls through independent storytelling, journalism, education, and digital media…</p>
       </div>
     </div>
@@ -136,21 +187,21 @@
   <section id="mission" class="px-6 py-20 sm:py-28" style="background:#fff;">
     <div class="max-w-[1260px] mx-auto">
       <p class="canva-text eyebrow text-xs mb-4" data-i18n="about.mission.kicker" style="color:#88692F;font-size:16px;">WHAT GUIDES US</p>
-      <h2 class="canva-text leading-tight mb-12" data-i18n="about.mission.title" style="color:#080808;font-size:24px;">Mission, Vision &amp; Values</h2>
+      <h2 class="canva-text leading-tight mb-12" data-i18n="about.mission.title" style="color:#080808;">Mission, Vision &amp; Values</h2>
       <div class="grid md:grid-cols-3 gap-5">
         <article class="border border-[#e6e1d7] p-8 sm:p-10 h-full" style="background:#fff;">
           <i data-lucide="megaphone" class="w-7 h-7 text-[#D4AF63] mb-9" aria-hidden="true"></i>
-          <h3 class="canva-text mb-5" data-i18n="about.mission.c1.title" style="color:#080808;font-size:19px;">Mission</h3>
+          <h3 class="canva-text mb-5" data-i18n="about.mission.c1.title" style="color:#080808;">Mission</h3>
           <p class="canva-text leading-[1.85]" data-i18n="about.mission.c1.copy" style="color:#55514D;font-size:16px;">To amplify women's voices and expand opportunities for Afghan women and girls through media, education, and storytelling.</p>
         </article>
         <article class="border border-[#e6e1d7] p-8 sm:p-10 h-full" style="background:#fff;">
           <i data-lucide="sunrise" class="w-7 h-7 text-[#D4AF63] mb-9" aria-hidden="true"></i>
-          <h3 class="canva-text mb-5" data-i18n="about.mission.c2.title" style="color:#080808;font-size:19px;">Vision</h3>
+          <h3 class="canva-text mb-5" data-i18n="about.mission.c2.title" style="color:#080808;">Vision</h3>
           <p class="canva-text leading-[1.85]" data-i18n="about.mission.c2.copy" style="color:#55514D;font-size:16px;">A future where women can tell their own stories, access learning opportunities, and participate meaningfully in society.</p>
         </article>
         <article class="border border-[#e6e1d7] p-8 sm:p-10 h-full" style="background:#fff;">
           <i data-lucide="scale" class="w-7 h-7 text-[#D4AF63] mb-9" aria-hidden="true"></i>
-          <h3 class="canva-text mb-5" data-i18n="about.mission.c3.title" style="color:#080808;font-size:19px;">Values</h3>
+          <h3 class="canva-text mb-5" data-i18n="about.mission.c3.title" style="color:#080808;">Values</h3>
           <p class="canva-text leading-[1.85]" data-i18n="about.mission.c3.copy" style="color:#55514D;font-size:16px;">Editorial integrity, dignity, inclusion, respect, safety, transparency, and accountability.</p>
         </article>
       </div>
@@ -160,14 +211,14 @@
   <section id="goals" class="px-6 py-20 sm:py-28" style="background:#F8F7F4;">
     <div class="max-w-[1260px] mx-auto">
       <p class="canva-text eyebrow text-xs mb-4" data-i18n="about.goals.kicker" style="color:#88692F;font-size:16px;">LOOKING AHEAD</p>
-      <h2 class="canva-text mb-12" data-i18n="about.goals.title" style="color:#080808;font-size:24px;">Our Goals</h2>
+      <h2 class="canva-text mb-12" data-i18n="about.goals.title" style="color:#080808;">Our Goals</h2>
       <div class="grid md:grid-cols-2 gap-8 md:gap-16">
         <article class="editorial-rule pt-7">
-          <h3 class="canva-text mb-5" data-i18n="about.goals.short.title" style="color:#080808;font-size:19px;">Short-Term Goals</h3>
+          <h3 class="canva-text mb-5" data-i18n="about.goals.short.title" style="color:#080808;">Short-Term Goals</h3>
           <p class="canva-text leading-[1.9]" data-i18n="about.goals.short.copy" style="color:#55514D;font-size:16px;">We aim to build a media presence…</p>
         </article>
         <article class="editorial-rule pt-7">
-          <h3 class="canva-text mb-5" data-i18n="about.goals.long.title" style="color:#080808;font-size:19px;">Long-Term Goals</h3>
+          <h3 class="canva-text mb-5" data-i18n="about.goals.long.title" style="color:#080808;">Long-Term Goals</h3>
           <p class="canva-text leading-[1.9]" data-i18n="about.goals.long.copy" style="color:#55514D;font-size:16px;">Over time, we hope to establish thoughtful partnerships…</p>
         </article>
       </div>
@@ -178,31 +229,31 @@
     <div class="max-w-[1260px] mx-auto grid lg:grid-cols-[1fr_2fr] gap-10 lg:gap-20">
       <div>
         <p class="canva-text eyebrow text-xs mb-4" data-i18n="about.principles.kicker" style="color:#88692F;font-size:16px;">HOW WE WORK</p>
-        <h2 class="canva-text leading-tight" data-i18n="about.principles.title" style="color:#080808;font-size:24px;">Our Principles</h2>
+        <h2 class="canva-text leading-tight" data-i18n="about.principles.title" style="color:#080808;">Our Principles</h2>
       </div>
       <div class="grid sm:grid-cols-2 gap-x-10">
         <article class="editorial-rule py-6">
-          <h3 class="canva-text mb-3" data-i18n="about.principles.p1.title" style="color:#080808;font-size:19px;">Editorial independence</h3>
+          <h3 class="canva-text mb-3" data-i18n="about.principles.p1.title" style="color:#080808;">Editorial independence</h3>
           <p class="canva-text leading-[1.8]" data-i18n="about.principles.p1.copy" style="color:#55514D;font-size:16px;">Editorial decisions should be led by evidence, care, and public interest—not outside pressure.</p>
         </article>
         <article class="editorial-rule py-6">
-          <h3 class="canva-text mb-3" data-i18n="about.principles.p2.title" style="color:#080808;font-size:19px;">Informed consent</h3>
+          <h3 class="canva-text mb-3" data-i18n="about.principles.p2.title" style="color:#080808;">Informed consent</h3>
           <p class="canva-text leading-[1.8]" data-i18n="about.principles.p2.copy" style="color:#55514D;font-size:16px;">People should understand how their words or images may be used…</p>
         </article>
         <article class="editorial-rule py-6">
-          <h3 class="canva-text mb-3" data-i18n="about.principles.p3.title" style="color:#080808;font-size:19px;">Fact-checking</h3>
+          <h3 class="canva-text mb-3" data-i18n="about.principles.p3.title" style="color:#080808;">Fact-checking</h3>
           <p class="canva-text leading-[1.8]" data-i18n="about.principles.p3.copy" style="color:#55514D;font-size:16px;">We seek to verify information…</p>
         </article>
         <article class="editorial-rule py-6">
-          <h3 class="canva-text mb-3" data-i18n="about.principles.p4.title" style="color:#080808;font-size:19px;">Privacy</h3>
+          <h3 class="canva-text mb-3" data-i18n="about.principles.p4.title" style="color:#080808;">Privacy</h3>
           <p class="canva-text leading-[1.8]" data-i18n="about.principles.p4.copy" style="color:#55514D;font-size:16px;">Personal details should be handled with restraint…</p>
         </article>
         <article class="editorial-rule py-6">
-          <h3 class="canva-text mb-3" data-i18n="about.principles.p5.title" style="color:#080808;font-size:19px;">Source protection</h3>
+          <h3 class="canva-text mb-3" data-i18n="about.principles.p5.title" style="color:#080808;">Source protection</h3>
           <p class="canva-text leading-[1.8]" data-i18n="about.principles.p5.copy" style="color:#55514D;font-size:16px;">We consider potential risks before identifying a source…</p>
         </article>
         <article class="editorial-rule py-6">
-          <h3 class="canva-text mb-3" data-i18n="about.principles.p6.title" style="color:#080808;font-size:19px;">Corrections</h3>
+          <h3 class="canva-text mb-3" data-i18n="about.principles.p6.title" style="color:#080808;">Corrections</h3>
           <p class="canva-text leading-[1.8]" data-i18n="about.principles.p6.copy" style="color:#55514D;font-size:16px;">When an error is identified, we aim to review it…</p>
         </article>
       </div>
@@ -211,15 +262,15 @@
 
   <section id="team" class="px-6 py-20 sm:py-28" style="background:#F8F7F4;">
     <div class="max-w-[1260px] mx-auto">
-      <h2 class="canva-text mb-6" data-i18n="about.founder.title" style="color:#080808;font-size:30px;">Founder</h2>  
-      <!-- Founder feature -->
-      <article id="founder" class="bg-white border border-[#e6e1d7] p-8 sm:p-12 mb-8">
+      <h2 class="canva-text mb-6" data-i18n="about.founder.title" style="color:#080808;">Founder</h2>
+
+      <article id="founder" class="bg-white border border-[#e6e1d7] p-8 sm:p-12">
         <div class="grid lg:grid-cols-[1fr_1.8fr] gap-10 lg:gap-16">
-  
+
           <div>
             <div class="gold-line mb-6"></div>
             <p class="canva-text eyebrow mb-4" data-i18n="about.founder.label" style="color:#88692F;letter-spacing:.19em;font-size:13px;">FOUNDER &amp; LEAD</p>
-            <h3 class="canva-text mb-2" style="color:#080808;font-size:32px;">Marwa Habibi</h3>
+            <h3 class="canva-text mb-2" style="color:#080808;">Marwa Habibi</h3>
             <p class="mb-5" dir="rtl" style="font-family:'Vazirmatn',sans-serif;font-size:20px;color:#88692F;">مروه حبیبی</p>
             <p class="text-[#55514D] mb-6" data-i18n="about.founder.role" style="font-size:16px;">Human Rights Activist &amp; Journalist</p>
             <a href="https://bio.site/MarwaHabibi" target="_blank" rel="noopener" class="canva-link inline-flex items-center gap-2 border-b border-[#D4AF63] pb-2 font-semibold hover:text-[#806022]" style="color:#080808;font-size:15px;">
@@ -227,10 +278,10 @@
               <span aria-hidden="true">↗</span>
             </a>
           </div>
-  
+
           <div>
             <p class="text-[#44413D] leading-[1.9] mb-10" data-i18n="about.founder.bio" style="font-size:16px;">Marwa Habibi is an Afghan human rights activist and journalist whose work spans independent reporting, documentary translation, poetry, and public speaking. Her writing and interviews have appeared through the BBC World Service, Afghanistan International, Amu TV, and independent literary platforms. She founded Just Women — Can Change Society to create space for Afghan women's voices in media, education, and storytelling.</p>
-  
+
             <h4 class="canva-text eyebrow mb-4" data-i18n="about.founder.work.title" style="color:#88692F;letter-spacing:.19em;font-size:13px;">SELECTED WORK</h4>
             <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-3 mb-10" style="font-size:14px;">
               <li>
@@ -264,7 +315,7 @@
                 </a>
               </li>
             </ul>
-  
+
             <h4 class="canva-text eyebrow mb-4" data-i18n="about.founder.speaking.title" style="color:#88692F;letter-spacing:.19em;font-size:13px;">SPEAKING &amp; ENGAGEMENT</h4>
             <ul class="grid sm:grid-cols-2 gap-x-6 gap-y-3" style="font-size:14px;">
               <li>
@@ -291,7 +342,7 @@
             </ul>
           </div>
         </div>
-      </article>    
+      </article>
     </div>
   </section>
 
@@ -302,7 +353,7 @@
         <div class="gold-line mt-5"></div>
       </div>
       <div>
-        <h2 class="canva-text mb-5" data-i18n="about.media.title" style="color:#080808;font-size:24px;">Media &amp; Stories</h2>
+        <h2 class="canva-text mb-5" data-i18n="about.media.title" style="color:#080808;">Media &amp; Stories</h2>
         <p class="canva-text leading-[1.9] max-w-2xl mb-6" data-i18n="about.media.copy" style="color:#55514D;font-size:16px;">Independent reporting and storytelling are part of the space we hope to build…</p>
         <a href="mailto:justwomenorganization@gmail.com?subject=Media%20and%20Stories" class="canva-link inline-block font-semibold border-b border-[#D4AF63] pb-2" data-i18n="about.media.link" style="color:#080808;font-size:16px;">Start a conversation ↗</a>
       </div>
@@ -312,7 +363,7 @@
   <section class="px-6 py-20 sm:py-28 text-white" style="background:#080808;">
     <div class="max-w-[1260px] mx-auto">
       <div class="gold-line mb-8"></div>
-      <h2 class="canva-text max-w-[900px] leading-tight mb-9" data-i18n="about.cta.title" style="color:#fff;font-weight:500;font-size:52px;">Help Us Build a More Just and Inclusive Future</h2>
+      <h2 class="canva-text max-w-[900px] leading-tight mb-9" data-i18n="about.cta.title" style="color:#fff;font-weight:500;">Help Us Build a More Just and Inclusive Future</h2>
       <a href="#media-stories" class="gold-button inline-block px-8 py-4 font-semibold" data-i18n="about.cta.btn" style="font-size:16px;">Explore Our Work</a>
     </div>
   </section>
@@ -339,7 +390,7 @@
       <nav aria-label="Footer navigation">
         <p class="canva-text eyebrow mb-6" data-i18n="footer.explore" style="color:#D4AF63;letter-spacing:.19em;font-size:13px;">EXPLORE</p>
         <div class="grid grid-cols-2 gap-4">
-          <a href="home.html" class="canva-link hover:text-[#D4AF63]" data-i18n="nav.home" style="color:#fff;font-size:15px;">Home</a>
+          <a href="index.html" class="canva-link hover:text-[#D4AF63]" data-i18n="nav.home" style="color:#fff;font-size:15px;">Home</a>
           <a href="about.html" class="canva-link hover:text-[#D4AF63]" data-i18n="nav.about" style="color:#fff;font-size:15px;">About Us</a>
           <a href="media.html" class="canva-link hover:text-[#D4AF63]" data-i18n="nav.media" style="color:#fff;font-size:15px;">Media &amp; Stories</a>
           <a href="education.html" class="canva-link hover:text-[#D4AF63]" data-i18n="nav.education" style="color:#fff;font-size:15px;">Education &amp; Training</a>
@@ -403,7 +454,7 @@
     { id:'mission', terms:'mission vision values dignity inclusion transparency', keys:['about.mission.title'] },
     { id:'goals', terms:'education training volunteers partnerships learning short long term', keys:['about.goals.title'] },
     { id:'principles', terms:'editorial independence consent fact checking privacy source protection corrections', keys:['about.principles.title'] },
-    { id:'team', terms:'founder team privacy consent profile', keys:['about.team.title'] },
+    { id:'team', terms:'founder marwa habibi team privacy consent profile', keys:['about.founder.title'] },
     { id:'media-stories', terms:'media stories journalism reporting share', keys:['about.media.title'] }
   ];
 

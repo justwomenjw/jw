@@ -34,8 +34,39 @@
     .gold-button:hover{background:#e6c783;transform:translateY(-2px)}
     .editorial-rule{border-top:1px solid #D4AF63}
     .search-result:hover{background:#f0e9db}
-    @media(max-width:1190px){.desktop-nav{display:none!important}.menu-trigger{display:inline-flex!important}}
-    @media(max-width:640px){.hero{min-height:580px}.hero-image{object-position:62% center}.hero-shade{background:linear-gradient(0deg,rgba(0,0,0,.91),rgba(0,0,0,.42))}.brand-mark{width:42px;height:42px}}
+
+    /* ═══════════ Fluid typography — overrides inline font-size ═══════════ */
+    [data-i18n="partner.hero.title"] { font-size: clamp(2.5rem, 5.4vw, 5rem) !important; }
+    [data-i18n="partner.intro.title"],
+    [data-i18n="partner.opp.title"],
+    [data-i18n="partner.commit.title"],
+    [data-i18n="partner.updates.title"] { font-size: clamp(1.75rem, 3vw, 2.75rem) !important; }
+    [data-i18n="partner.o1.title"],
+    [data-i18n="partner.o2.title"],
+    [data-i18n="partner.o3.title"],
+    [data-i18n="partner.o4.title"] { font-size: clamp(1.2rem, 1.8vw, 1.5rem) !important; }
+    [data-i18n="partner.cta.title"] { font-size: clamp(2rem, 4.5vw, 3.25rem) !important; }
+
+    /* ═══════════ Responsive header ═══════════ */
+    @media (max-width: 1279px) {
+      .desktop-nav { display: none !important; }
+      .menu-trigger { display: inline-flex !important; }
+    }
+    @media (min-width: 1280px) and (max-width: 1439px) {
+      .desktop-nav { gap: 10px !important; }
+      .desktop-nav .nav-link { font-size: 12px !important; }
+    }
+    @media (min-width: 1440px) {
+      .desktop-nav { gap: 16px !important; }
+      .desktop-nav .nav-link { font-size: 14px !important; }
+    }
+
+    @media(max-width:640px){
+      .hero{min-height:580px}
+      .hero-image{object-position:62% center}
+      .hero-shade{background:linear-gradient(0deg,rgba(0,0,0,.91),rgba(0,0,0,.42))}
+      .brand-mark{width:42px;height:42px}
+    }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
   </style>
 
@@ -45,8 +76,8 @@
 <body class="w-full" style="background:#fff;">
 
 <header class="canva-header sticky top-0 z-50 border-b border-white/15 text-white" style="background:#080808;">
-  <div class="w-full max-w-[1600px] mx-auto px-5 sm:px-8 xl:px-12 min-h-[78px] flex items-center justify-between gap-4">
-    <a href="home.html" class="flex items-center gap-3 shrink-0" aria-label="Just Women — Home">
+  <div class="w-full max-w-[1600px] mx-auto px-4 sm:px-8 xl:px-12 min-h-[78px] flex items-center justify-between gap-3">
+    <a href="home.html" class="flex items-center gap-2 sm:gap-3 shrink-0" aria-label="Just Women — Home">
       <span class="brand-mark" aria-hidden="true">
         <img src="cropped_circle_image.png" alt="" width="48" height="48" style="width:48px;height:48px;object-fit:contain;display:block;">
       </span>
@@ -68,7 +99,7 @@
     </nav>
 
     <div class="flex items-center gap-2 sm:gap-3 shrink-0">
-      <div class="flex items-center gap-1 font-semibold text-[11px]" aria-label="Language">
+      <div class="hidden sm:flex items-center gap-1 font-semibold text-[11px]" aria-label="Language">
         <button type="button" data-lang-switch="en" aria-pressed="true" class="px-1 text-[#D4AF63]">EN</button>
         <span aria-hidden="true" class="text-white/40">/</span>
         <button type="button" data-lang-switch="fa" aria-pressed="false" class="px-1 text-white/70">دری</button>
@@ -102,6 +133,16 @@
       <a href="partner.html" class="canva-link nav-current" data-i18n="nav.partner" style="color:#D4AF63;font-size:16px;">Partners &amp; Support</a>
       <a href="contact.html" class="canva-link nav-link" data-i18n="nav.contact" style="color:#fff;font-size:16px;">Contact</a>
     </div>
+
+    <div class="border-t border-white/15 mt-5 pt-5 sm:hidden">
+      <p class="canva-text text-[#D4AF63] text-xs mb-3" style="letter-spacing:.19em;text-transform:uppercase;">LANGUAGE</p>
+      <div class="flex items-center gap-2 flex-wrap">
+        <button type="button" data-lang-switch="en" aria-pressed="true" class="border border-white/30 px-3 py-1.5 text-sm text-[#D4AF63]">EN</button>
+        <button type="button" data-lang-switch="fa" aria-pressed="false" class="border border-white/30 px-3 py-1.5 text-sm text-white/70">دری</button>
+        <button type="button" data-lang-switch="ps" aria-pressed="false" class="border border-white/30 px-3 py-1.5 text-sm text-white/70">پشتو</button>
+        <button type="button" data-lang-switch="fr" aria-pressed="false" class="border border-white/30 px-3 py-1.5 text-sm text-white/70">FR</button>
+      </div>
+    </div>
   </nav>
 </header>
 
@@ -113,7 +154,7 @@
     <div class="relative w-full max-w-[1450px] mx-auto px-6 sm:px-12 lg:px-20 py-24">
       <div class="gold-line mb-7"></div>
       <p class="canva-text eyebrow text-xs mb-6" data-i18n="partner.hero.kicker" style="color:#D4AF63;font-size:16px;">JUST WOMEN FOR SOCIAL CHANGE</p>
-      <h1 class="canva-text max-w-[850px] leading-[1.12] font-medium" data-i18n="partner.hero.title" style="color:#fff;font-weight:500;font-size:76px;">Partners &amp; Support</h1>
+      <h1 class="canva-text max-w-[850px] leading-[1.12] font-medium" data-i18n="partner.hero.title" style="color:#fff;font-weight:500;">Partners &amp; Support</h1>
       <p class="canva-text max-w-[640px] mt-7 leading-[1.8]" data-i18n="partner.hero.subtitle" style="color:#fff;font-size:19px;">Together for greater impact.</p>
       <p class="canva-text mt-12 max-w-md text-xs leading-relaxed" data-i18n="partner.hero.note" style="color:#fff;font-size:12px;">Illustrative documentary photograph; subjects are not identified as members of Just Women.</p>
     </div>
@@ -126,7 +167,7 @@
         <div class="gold-line mt-5"></div>
       </div>
       <div>
-        <h2 class="canva-text leading-tight mb-8" data-i18n="partner.intro.title" style="color:#080808;font-weight:500;font-size:24px;">A thoughtful collaboration</h2>
+        <h2 class="canva-text leading-tight mb-8" data-i18n="partner.intro.title" style="color:#080808;font-weight:500;">A thoughtful collaboration</h2>
         <p class="canva-text max-w-3xl leading-[1.95]" data-i18n="partner.intro.body" style="color:#44413D;font-size:16px;">Just Women welcomes thoughtful collaboration with media organizations, human rights groups, educators, journalists, researchers, and technical professionals who share our commitment to women's voices, ethical storytelling, and learning opportunities.</p>
       </div>
     </div>
@@ -135,26 +176,26 @@
   <section id="opportunities" class="px-6 py-20 sm:py-28" style="background:#fff;">
     <div class="max-w-[1260px] mx-auto">
       <p class="canva-text eyebrow text-xs mb-4" data-i18n="partner.opp.kicker" style="color:#88692F;font-size:16px;">PARTNERSHIP OPPORTUNITIES</p>
-      <h2 class="canva-text mb-12" data-i18n="partner.opp.title" style="color:#080808;font-size:24px;">Ways to collaborate</h2>
+      <h2 class="canva-text mb-12" data-i18n="partner.opp.title" style="color:#080808;">Ways to collaborate</h2>
       <div class="grid sm:grid-cols-2 gap-5">
         <article class="border border-[#e6e1d7] p-8 sm:p-10" style="background:#fff;">
           <i data-lucide="newspaper" class="w-7 h-7 text-[#D4AF63] mb-7" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="partner.o1.title" style="color:#080808;font-size:21px;">Media Partnerships</h3>
+          <h3 class="canva-text mb-3" data-i18n="partner.o1.title" style="color:#080808;">Media Partnerships</h3>
           <p class="canva-text leading-[1.85]" data-i18n="partner.o1.copy" style="color:#55514D;font-size:16px;">Editorial collaboration, interviews, reporting, and story development.</p>
         </article>
         <article class="border border-[#e6e1d7] p-8 sm:p-10" style="background:#fff;">
           <i data-lucide="users" class="w-7 h-7 text-[#D4AF63] mb-7" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="partner.o2.title" style="color:#080808;font-size:21px;">Professional Experts</h3>
+          <h3 class="canva-text mb-3" data-i18n="partner.o2.title" style="color:#080808;">Professional Experts</h3>
           <p class="canva-text leading-[1.85]" data-i18n="partner.o2.copy" style="color:#55514D;font-size:16px;">Journalism, research, translation, editing, and technical expertise.</p>
         </article>
         <article class="border border-[#e6e1d7] p-8 sm:p-10" style="background:#fff;">
           <i data-lucide="graduation-cap" class="w-7 h-7 text-[#D4AF63] mb-7" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="partner.o3.title" style="color:#080808;font-size:21px;">Educational Partners</h3>
+          <h3 class="canva-text mb-3" data-i18n="partner.o3.title" style="color:#080808;">Educational Partners</h3>
           <p class="canva-text leading-[1.85]" data-i18n="partner.o3.copy" style="color:#55514D;font-size:16px;">Potential workshops, mentorship, and learning initiatives.</p>
         </article>
         <article class="border border-[#e6e1d7] p-8 sm:p-10" style="background:#fff;">
           <i data-lucide="heart-handshake" class="w-7 h-7 text-[#D4AF63] mb-7" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="partner.o4.title" style="color:#080808;font-size:21px;">Responsible Support</h3>
+          <h3 class="canva-text mb-3" data-i18n="partner.o4.title" style="color:#080808;">Responsible Support</h3>
           <p class="canva-text leading-[1.85]" data-i18n="partner.o4.copy" style="color:#55514D;font-size:16px;">Transparent, verified, and appropriate forms of support.</p>
         </article>
       </div>
@@ -165,7 +206,7 @@
     <div class="max-w-[1260px] mx-auto border-t border-[#D4AF63] pt-9 grid md:grid-cols-[1fr_2fr] gap-8 md:gap-16">
       <div>
         <p class="canva-text eyebrow text-xs mb-4" data-i18n="partner.commit.kicker" style="color:#88692F;font-size:16px;">OUR COMMITMENT</p>
-        <h2 class="canva-text" data-i18n="partner.commit.title" style="color:#080808;font-size:24px;">How we work together</h2>
+        <h2 class="canva-text" data-i18n="partner.commit.title" style="color:#080808;">How we work together</h2>
       </div>
       <div>
         <p class="canva-text leading-[1.9] max-w-3xl" data-i18n="partner.commit.body" style="color:#080808;font-size:16px;">We emphasize editorial independence, transparency, informed consent, safety, and the responsible use of resources in every collaboration.</p>
@@ -180,7 +221,7 @@
         <div class="gold-line mt-5"></div>
       </div>
       <div>
-        <h2 class="canva-text leading-tight mb-8" data-i18n="partner.updates.title" style="color:#080808;font-weight:500;font-size:24px;">A space for verified activities</h2>
+        <h2 class="canva-text leading-tight mb-8" data-i18n="partner.updates.title" style="color:#080808;font-weight:500;">A space for verified activities</h2>
         <p class="canva-text max-w-3xl leading-[1.95]" data-i18n="partner.updates.body" style="color:#44413D;font-size:16px;">We will share verified activities, public reports, and genuine achievements here as they become available. Formal partnerships, grants, and impact reports are not yet listed. If you would like to explore a collaboration, we welcome a conversation.</p>
       </div>
     </div>
@@ -189,7 +230,7 @@
   <section id="cta" class="px-6 py-20 sm:py-28 text-white" style="background:#080808;">
     <div class="max-w-[1260px] mx-auto">
       <div class="gold-line mb-8"></div>
-      <h2 class="canva-text max-w-[900px] leading-tight mb-9" data-i18n="partner.cta.title" style="color:#fff;font-weight:500;font-size:52px;">Let's Explore a Collaboration</h2>
+      <h2 class="canva-text max-w-[900px] leading-tight mb-9" data-i18n="partner.cta.title" style="color:#fff;font-weight:500;">Let's Explore a Collaboration</h2>
       <a href="mailto:justwomenorganization@gmail.com?subject=Partnership%20Inquiry" class="gold-button inline-block px-8 py-4 font-semibold" data-i18n="partner.cta.btn" style="font-size:16px;">Contact Us</a>
     </div>
   </section>
