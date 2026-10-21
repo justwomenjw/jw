@@ -8,7 +8,7 @@
   const DEFAULT_LANG = 'en';
   const SUPPORTED = ['en', 'fa', 'ps', 'fr'];
   const RTL = ['fa', 'ps'];
-  const LOCALES_PATH = 'locales/';
+  const LOCALES_PATH = "";
 
   const PAGE_ALIAS = {
     '': 'home', 'index': 'home', 'home': 'home',
