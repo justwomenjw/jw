@@ -13,7 +13,7 @@
   const PAGE_ALIAS = {
     '': 'home', 'index': 'home', 'home': 'home',
     'about': 'about', 'media': 'media', 'education': 'education',
-    'team': 'team', 'story': 'story', 'partner': 'partner', 'contact': 'contact'
+    'team': 'team', 'story': 'story', 'partner': 'partner','donate': 'donate', 'contact': 'contact'
   };
 
   let translations = {};

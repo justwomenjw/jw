@@ -7,7 +7,7 @@
     "nav.media": "Médias & Récits",
     "nav.education": "Éducation & Formation",
     "nav.team": "Rejoignez-nous",
-    "nav.story": "Partagez votre histoire",
+    "nav.story": "Partagez votre récit",
     "nav.partner": "Partenaires & Soutien",
     "nav.contact": "Contact",
   
@@ -15,12 +15,11 @@
     "search.placeholder": "Rechercher des sujets ou sections…",
     "search.empty": "Aucune section correspondante. Essayez un autre mot.",
   
-    "footer.slogan": "Les femmes ne sont pas seulement les histoires. Les femmes racontent les histoires.",
     "footer.explore": "EXPLORER",
     "footer.connect": "CONTACT",
     "footer.follow": "SUIVEZ-NOUS",
     "footer.share": "PARTAGER",
-    "footer.copyright": "© 2026 Just Women — Pour le changement social.",
+    "footer.copyright": "© 2026 Just Women",
     "footer.backtotop": "Retour en haut ↑",
   
     "share.copied": "Lien de la page copié.",
@@ -38,8 +37,8 @@
   
     "contact.form.kicker": "ENVOYER UN MESSAGE",
     "contact.form.title": "Formulaire de contact",
-    "contact.form.intro": "Ce formulaire est une maquette visuelle. Aucun gestionnaire de formulaire sécurisé n'a encore été connecté.",
-    "contact.form.name.label": "Nom (facultatif)",
+    "contact.form.intro": "Envoyez-nous un message en utilisant le formulaire ci-dessus. Nous répondrons dès que possible.",
+    "contact.form.name.label": "Nom",
     "contact.form.email.label": "E-mail",
     "contact.form.inquiry.label": "Type de demande",
     "contact.form.inquiry.general": "Demande générale",
@@ -52,7 +51,8 @@
     "contact.form.warn": "Veuillez ne pas soumettre de détails personnels sensibles vous concernant ou concernant autrui.",
     "contact.form.btn.submit": "Envoyer",
     "contact.form.status": "Ce formulaire est une maquette visuelle. Veuillez envoyer un e-mail directement à justwomenorganization@gmail.com.",
-  
+    "contact.form.success": "Merci ! Votre message a été envoyé. Nous vous répondrons bientôt.",
+    "contact.form.error.generic": "Quelque chose s'est mal passé. Veuillez réessayer ou écrire directement à justwomenorganization@gmail.com.",
     "contact.other.kicker": "AUTRES FAÇONS DE COLLABORER",
     "contact.other.title": "Plus de moyens de nous joindre",
     "contact.other.c1.title": "Demandes médias",

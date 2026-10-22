@@ -1,5 +1,5 @@
 {
-    "page.title": "Contact Us | Just Women Can Change Society",
+    "page.title": "Contact Us | Just Women",
     "brand.tagline": "Can Change Society",
   
     "nav.home": "Home",
@@ -7,27 +7,25 @@
     "nav.media": "Media & Stories",
     "nav.education": "Education & Training",
     "nav.team": "Join Our Team",
-    "nav.story": "Share Your Story",
+    "nav.story": "Share Your Write",
     "nav.partner": "Partners & Support",
     "nav.contact": "Contact",
   
     "search.label": "SEARCH THIS PAGE",
     "search.placeholder": "Search topics or sections…",
     "search.empty": "No matching sections. Try another word.",
-  
-    "footer.slogan": "Women are not only the stories. Women tell the stories.",
-    "footer.explore": "EXPLORE",
+      "footer.explore": "EXPLORE",
     "footer.connect": "CONNECT",
     "footer.follow": "FOLLOW US",
     "footer.share": "SHARE",
-    "footer.copyright": "© 2026 Just Women — For Social Change.",
+    "footer.copyright": "© 2026 Just Women",
     "footer.backtotop": "Back to top ↑",
   
     "share.copied": "Page link copied.",
     "share.failed": "Sharing is unavailable here.",
     "share.copyFailed": "Copying is unavailable here.",
   
-    "contact.hero.kicker": "JUST WOMEN FOR SOCIAL CHANGE",
+    "contact.hero.kicker": "JUST WOMEN Can Change Society",
     "contact.hero.title": "Contact Us",
     "contact.hero.subtitle": "We'd love to hear from you.",
     "contact.hero.note": "Illustrative documentary photograph; subjects are not identified as members of Just Women.",
@@ -38,8 +36,8 @@
   
     "contact.form.kicker": "SEND A MESSAGE",
     "contact.form.title": "Contact form",
-    "contact.form.intro": "This form is a visual mockup. A secure form handler has not yet been connected.",
-    "contact.form.name.label": "Name (optional)",
+    "contact.form.intro": "Send us a message using the form above. We will respond as soon as possible.",
+    "contact.form.name.label": "Name",
     "contact.form.email.label": "Email",
     "contact.form.inquiry.label": "Inquiry type",
     "contact.form.inquiry.general": "General Inquiry",
@@ -54,6 +52,8 @@
     "contact.form.status": "This form is a visual mockup. Please email justwomenorganization@gmail.com directly.",
   
     "contact.other.kicker": "OTHER WAYS TO COLLABORATE",
+    "contact.form.success": "Thank you! Your message has been sent. We'll reply soon.",
+    "contact.form.error.generic": "Something went wrong. Please try again or email justwomenorganization@gmail.com directly.",
     "contact.other.title": "More ways to reach us",
     "contact.other.c1.title": "Media Inquiries",
     "contact.other.c1.copy": "Questions from journalists and media partners.",

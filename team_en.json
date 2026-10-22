@@ -1,5 +1,5 @@
 {
-    "page.title": "Join Our Team | Just Women Can Change Society",
+    "page.title": "Join Our Team | Just Women",
     "brand.tagline": "Can Change Society",
   
     "nav.home": "Home",
@@ -7,7 +7,7 @@
     "nav.media": "Media & Stories",
     "nav.education": "Education & Training",
     "nav.team": "Join Our Team",
-    "nav.story": "Share Your Story",
+    "nav.story": "Share Your Write",
     "nav.partner": "Partners & Support",
     "nav.contact": "Contact",
   
@@ -15,19 +15,18 @@
     "search.placeholder": "Search roles or sections…",
     "search.empty": "No matching sections. Try another word.",
   
-    "footer.slogan": "Women are not only the stories. Women tell the stories.",
     "footer.explore": "EXPLORE",
     "footer.connect": "CONNECT",
     "footer.follow": "FOLLOW US",
     "footer.share": "SHARE",
-    "footer.copyright": "© 2026 Just Women — For Social Change.",
+    "footer.copyright": "© 2026 Just Women",
     "footer.backtotop": "Back to top ↑",
   
     "share.copied": "Page link copied.",
     "share.failed": "Sharing is unavailable here.",
     "share.copyFailed": "Copying is unavailable here.",
   
-    "team.hero.kicker": "JUST WOMEN FOR SOCIAL CHANGE",
+    "team.hero.kicker": "JUST WOMEN Can Change Society",
     "team.hero.title": "Join Our Team",
     "team.hero.subtitle": "Your skills. Our mission. Greater impact.",
     "team.hero.note": "Illustrative documentary photograph; subjects are not identified as members of Just Women.",

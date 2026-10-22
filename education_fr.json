@@ -14,13 +14,11 @@
     "search.label": "RECHERCHER SUR CETTE PAGE",
     "search.placeholder": "Rechercher des classes ou sections…",
     "search.empty": "Aucune section correspondante. Essayez un autre mot.",
-  
-    "footer.slogan": "Les femmes ne sont pas seulement les histoires. Les femmes racontent les histoires.",
-    "footer.explore": "EXPLORER",
+      "footer.explore": "EXPLORER",
     "footer.connect": "CONTACT",
     "footer.follow": "SUIVEZ-NOUS",
     "footer.share": "PARTAGER",
-    "footer.copyright": "© 2026 Just Women — Pour le changement social.",
+    "footer.copyright": "© 2026 Just Women",
     "footer.backtotop": "Retour en haut ↑",
   
     "share.copied": "Lien de la page copié.",

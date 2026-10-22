@@ -15,12 +15,11 @@
     "search.placeholder": "جستجوی موضوع‌ها یا بخش‌ها…",
     "search.empty": "بخشی مطابق جستجو یافت نشد. کلمهٔ دیگری امتحان کنید.",
   
-    "footer.slogan": "زنان فقط روایت نیستند. زنان روایت را می‌گویند.",
     "footer.explore": "کاوش",
     "footer.connect": "ارتباط",
     "footer.follow": "ما را دنبال کنید",
     "footer.share": "اشتراک",
-    "footer.copyright": "© ۲۰۲۶ جاست وومن — برای تغییر اجتماعی.",
+    "footer.copyright": "© ۲۰۲۶ Just Women",
     "footer.backtotop": "بازگشت به بالا ↑",
   
     "share.copied": "پیوند صفحه کپی شد.",
@@ -38,8 +37,8 @@
   
     "contact.form.kicker": "ارسال پیام",
     "contact.form.title": "فرم تماس",
-    "contact.form.intro": "این فرم یک نمونهٔ بصری است. هنوز سامانهٔ امنی برای پردازش فرم متصل نشده است.",
-    "contact.form.name.label": "نام (اختیاری)",
+    "contact.form.intro": "با استفاده از فرم بالا برای ما پیام بفرستید. ما در اسرع وقت پاسخ خواهیم داد.",
+    "contact.form.name.label": "نام",
     "contact.form.email.label": "ایمیل",
     "contact.form.inquiry.label": "نوع پرسش",
     "contact.form.inquiry.general": "پرسش عمومی",
@@ -52,7 +51,8 @@
     "contact.form.warn": "لطفاً جزئیات شخصی حساس دربارهٔ خود یا دیگران ارسال نکنید.",
     "contact.form.btn.submit": "ارسال",
     "contact.form.status": "این فرم یک نمونهٔ بصری است. لطفاً مستقیماً به justwomenorganization@gmail.com ایمیل بزنید.",
-  
+    "contact.form.success": "سپاسگزاریم! پیام شما ارسال شد. به‌زودی پاسخ می‌دهیم.",
+    "contact.form.error.generic": "مشکلی پیش آمد. لطفاً دوباره امتحان کنید یا مستقیماً به justwomenorganization@gmail.com ایمیل بزنید.",
     "contact.other.kicker": "راه‌های دیگر همکاری",
     "contact.other.title": "راه‌های بیشتر برای ارتباط",
     "contact.other.c1.title": "پرسش‌های رسانه‌ای",

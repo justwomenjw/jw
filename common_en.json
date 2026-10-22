@@ -8,20 +8,19 @@
     "nav.media": "Media & Stories",
     "nav.education": "Education & Training",
     "nav.team": "Join Our Team",
-    "nav.story": "Share Your Story",
+    "nav.story": "Share Your Write",
     "nav.partner": "Partners & Support",
+    "nav.donate": "Support Us",
     "nav.contact": "Contact",
   
     "search.label": "SEARCH STORIES",
     "search.placeholder": "Search stories by topic or title…",
     "search.empty": "No matching sections. Try another word.",
-  
-    "footer.slogan": "Women are not only the stories. Women tell the stories.",
     "footer.explore": "EXPLORE",
     "footer.connect": "CONNECT",
     "footer.follow": "FOLLOW US",
     "footer.share": "SHARE",
-    "footer.copyright": "© 2026 Just Women — For Social Change.",
+    "footer.copyright": "© 2026 Just Women",
     "footer.backtotop": "Back to top ↑",
   
     "share.copied": "Page link copied.",

@@ -1,5 +1,5 @@
-{
-    "page.title": "Just Women — For Social Change",
+{ 
+    "page.title": "Home | Just Women",
     "brand.name": "JUST WOMEN",
     "brand.tagline": "Can Change Society",
   
@@ -8,7 +8,7 @@
     "nav.media": "Media & Stories",
     "nav.education": "Education & Training",
     "nav.team": "Join Our Team",
-    "nav.story": "Share Your Story",
+    "nav.story": "Share Your Write",
     "nav.partner": "Partners & Support",
     "nav.contact": "Contact",
   
@@ -61,7 +61,6 @@
     "partners.body": "Interested in supporting women-led media and storytelling? Reach out to explore a conversation.",
     "partners.link": "Get in touch ↗",
   
-    "footer.slogan": "Women are not only the stories. Women tell the stories.",
     "footer.explore": "EXPLORE",
     "footer.connect": "CONNECT",
     "footer.follow": "FOLLOW US",

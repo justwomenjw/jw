@@ -15,12 +15,11 @@
     "search.placeholder": "د موضوعاتو یا برخو لټون…",
     "search.empty": "هیڅ برخه ستاسو لټون سره سمه نه ده. بله کلمه هڅه وکړئ.",
   
-    "footer.slogan": "ښځې یوازې کیسې نه دي. ښځې کیسې وایي.",
     "footer.explore": "وګورئ",
     "footer.connect": "اړیکه",
     "footer.follow": "موږ تعقیب کړئ",
     "footer.share": "شریکول",
-    "footer.copyright": "© ۲۰۲۶ جسټ وومن — د ټولنیز بدلون لپاره.",
+    "footer.copyright": "© ۲۰۲۶ Just Women",
     "footer.backtotop": "بیرته پورته ↑",
   
     "share.copied": "د پاڼې لینک کاپي شو.",
@@ -38,8 +37,8 @@
   
     "contact.form.kicker": "پیغام واستوئ",
     "contact.form.title": "د اړیکې فورمه",
-    "contact.form.intro": "دا فورمه یوه بصري نمونه ده. د سپارلو خوندي سیسټم لا نه دی نښلول شوی.",
-    "contact.form.name.label": "نوم (اختیاري)",
+    "contact.form.intro": "پورته فورمه وکاروئ ترڅو موږ ته پیغام واستوئ. موږ به ژر تر ژره ځواب ووایو.",
+    "contact.form.name.label": "نوم",
     "contact.form.email.label": "برېښنالیک",
     "contact.form.inquiry.label": "د پوښتنې ډول",
     "contact.form.inquiry.general": "عمومي پوښتنه",
@@ -52,7 +51,8 @@
     "contact.form.warn": "مهرباني وکړئ د خپل ځان یا نورو په اړه حساس شخصي جزئیات مه سپارئ.",
     "contact.form.btn.submit": "وسپارئ",
     "contact.form.status": "دا فورمه یوه بصري نمونه ده. مهرباني وکړئ مستقیم justwomenorganization@gmail.com ته ایمیل وکړئ.",
-  
+    "contact.form.success": "مننه! ستاسو پیغام ولېږل شو. ژر به ځواب درکړو.",
+    "contact.form.error.generic": "یوه ستونزه رامنځته شوه. مهرباني وکړئ بیا هڅه وکړئ یا مستقیم justwomenorganization@gmail.com ته ایمیل وکړئ.",
     "contact.other.kicker": "د همکارۍ نورې لارې",
     "contact.other.title": "زموږ سره د اړیکې نورې لارې",
     "contact.other.c1.title": "رسنیزې پوښتنې",

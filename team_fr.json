@@ -7,7 +7,7 @@
     "nav.media": "Médias & Récits",
     "nav.education": "Éducation & Formation",
     "nav.team": "Rejoignez-nous",
-    "nav.story": "Partagez votre histoire",
+    "nav.story": "Partagez votre écrit",
     "nav.partner": "Partenaires & Soutien",
     "nav.contact": "Contact",
   
@@ -15,12 +15,11 @@
     "search.placeholder": "Rechercher des rôles ou sections…",
     "search.empty": "Aucune section correspondante. Essayez un autre mot.",
   
-    "footer.slogan": "Les femmes ne sont pas seulement les histoires. Les femmes racontent les histoires.",
     "footer.explore": "EXPLORER",
     "footer.connect": "CONTACT",
     "footer.follow": "SUIVEZ-NOUS",
     "footer.share": "PARTAGER",
-    "footer.copyright": "© 2026 Just Women — Pour le changement social.",
+    "footer.copyright": "© 2026 Just Women",
     "footer.backtotop": "Retour en haut ↑",
   
     "share.copied": "Lien de la page copié.",
