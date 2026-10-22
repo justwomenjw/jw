@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title data-i18n-title="about.hero.title">About Us | Just Women Can Change Society</title>
+  <title data-i18n-title="page.title">About Us | Just Women</title>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,7 +41,7 @@
   [aria-label="Language"] { font-size: 9px !important; }
   #search-toggle, #menu-toggle { padding: 6px !important; }
 }
-    :root{--ink:#080808;--gold:#D4AF63;--paper:#F8F7F4}
+    :root{--ink:#ffffff;--gold:#D4AF63;--paper:#F8F7F4}
     html{scroll-behavior:smooth;scroll-padding-top:95px}
     body{margin:0;width:100%;font-family:Inter,sans-serif;color:var(--ink)}
     h1,h2,h3,.serif{font-family:"Playfair Display",serif}
@@ -58,7 +58,7 @@
     .nav-current{color:var(--gold);border-bottom:1px solid var(--gold);padding-bottom:5px}
     .hero{min-height:620px;min-height:calc(76 * min(var(--vh,1vh),1vh))}
     .hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 44%}
-    .hero-shade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(0,0,0,.87),rgba(0,0,0,.57) 55%,rgba(0,0,0,.29))}
+    .hero-shade{position:absolute;inset:0;}
     .gold-line{width:52px;height:2px;background:var(--gold)}
     .eyebrow{letter-spacing:.19em;text-transform:uppercase}
     .gold-button{background:var(--gold);color:var(--ink);transition:background .2s,transform .2s}
@@ -105,7 +105,7 @@
     @media(max-width:640px){
       .hero{min-height:580px}
       .hero-image{object-position:62% center}
-      .hero-shade{background:linear-gradient(0deg,rgba(0,0,0,.91),rgba(0,0,0,.42))}
+      .hero-shade{background:#fff}
       .brand-mark{width:42px;height:42px}
     }
     @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation:none!important;transition:none!important}}
@@ -193,13 +193,12 @@
 <main>
 
   <section class="hero relative flex items-center text-white overflow-hidden">
-    <img class="canva-image hero-image" loading="lazy" src="https://images.pexels.com/photos/33873547/pexels-photo-33873547.jpeg?auto=compress&cs=tinysrgb&w=1920" alt="Two women conducting an outdoor interview near a historic stone wall, with a professional video camera on a tripod">
+    <img class="canva-image hero-image" loading="lazy" src="Derechos de las mujeres en Afganistán, Women's rights in Afghanistan!! 😢🙏.jfif" alt="Two women conducting an outdoor interview near a historic stone wall, with a professional video camera on a tripod">
     <div class="hero-shade" aria-hidden="true"></div>
     <div class="relative w-full max-w-[1450px] mx-auto px-6 sm:px-12 lg:px-20 py-24">
       <div class="gold-line mb-7"></div>
       <p class="canva-text eyebrow text-xs mb-6" data-i18n="about.hero.kicker" style="color:#D4AF63;font-size:16px;">JUST WOMEN Can CHANGE Society</p>
-      <h1 class="canva-text max-w-[850px] leading-[1.12] font-medium" data-i18n="about.hero.title" style="color:#fff;font-weight:500;">About Just Women</h1>
-      <p class="canva-text max-w-[640px] mt-7 leading-[1.8]" data-i18n="about.hero.subtitle" style="color:#fff;font-size:19px;">Creating space for women's voices, stories, and opportunities.</p>
+      <h1 class="canva-text max-w-[850px] leading-[1.12] font-medium" data-i18n="about.hero.title" style="color:#fff;font-weight:500;">About Us</h1>
     </div>
   </section>
 
