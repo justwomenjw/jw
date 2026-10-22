@@ -187,7 +187,7 @@
       </div>
     </div>
   </nav>
-</header>
+</header> 
 
 <main>
 
@@ -220,49 +220,65 @@
       <p class="canva-text eyebrow text-xs mb-4" data-i18n="team.roles.kicker" style="color:#88692F;font-size:16px;">WHO WE'RE LOOKING FOR</p>
       <h2 class="canva-text mb-12" data-i18n="team.roles.title" style="color:#080808;">Volunteer roles</h2>
       <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
-        <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
+        
+        <!-- 1. Journalists & Reporters -->
+        <article class="border border-[#e6e1d7] p-7 h-full flex flex-col" style="background:#fff;">
           <i data-lucide="newspaper" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="team.r1.title" style="color:#080808;">Journalists and Reporters</h3>
-          <p class="canva-text leading-[1.8]" data-i18n="team.r1.copy" style="color:#55514D;font-size:15px;">Reporting, interviews, and story development.</p>
+          <h3 class="canva-text mb-3" data-i18n="team.r1.title" style="color:#080808;">Journalists &amp; Reporters</h3>
+          <p class="canva-text leading-[1.8] flex-1" data-i18n="team.r1.copy" style="color:#55514D;font-size:15px;">News reporters, investigative journalists, and event reporters covering stories of women and girls.</p>
         </article>
-        <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
+  
+        <!-- 2. International Correspondents -->
+        <article class="border border-[#e6e1d7] p-7 h-full flex flex-col" style="background:#fff;">
+          <i data-lucide="globe" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
+          <h3 class="canva-text mb-3" data-i18n="team.r2.title" style="color:#080808;">International Correspondents</h3>
+          <p class="canva-text leading-[1.8] flex-1" data-i18n="team.r2.copy" style="color:#55514D;font-size:15px;">Reporting on global events, international news, and issues from around the world.</p>
+        </article>
+  
+        <!-- 3. Editors & Researchers -->
+        <article class="border border-[#e6e1d7] p-7 h-full flex flex-col" style="background:#fff;">
           <i data-lucide="pen-line" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="team.r2.title" style="color:#080808;">Writers and Editors</h3>
-          <p class="canva-text leading-[1.8]" data-i18n="team.r2.copy" style="color:#55514D;font-size:15px;">Drafting, structure, and editorial review.</p>
+          <h3 class="canva-text mb-3" data-i18n="team.r3.title" style="color:#080808;">Editors &amp; Researchers</h3>
+          <p class="canva-text leading-[1.8] flex-1" data-i18n="team.r3.copy" style="color:#55514D;font-size:15px;">Fact-checkers, researchers, editors, and proofreaders ensuring accuracy and quality.</p>
         </article>
-        <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
-          <i data-lucide="languages" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="team.r3.title" style="color:#080808;">Researchers and Translators</h3>
-          <p class="canva-text leading-[1.8]" data-i18n="team.r3.copy" style="color:#55514D;font-size:15px;">Research support and careful translation.</p>
-        </article>
-        <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
+  
+        <!-- 4. Visual Journalists -->
+        <article class="border border-[#e6e1d7] p-7 h-full flex flex-col" style="background:#fff;">
           <i data-lucide="camera" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="team.r4.title" style="color:#080808;">Photographers and Documentary Filmmakers</h3>
-          <p class="canva-text leading-[1.8]" data-i18n="team.r4.copy" style="color:#55514D;font-size:15px;">Visual storytelling with care and consent.</p>
+          <h3 class="canva-text mb-3" data-i18n="team.r4.title" style="color:#080808;">Visual Journalists</h3>
+          <p class="canva-text leading-[1.8] flex-1" data-i18n="team.r4.copy" style="color:#55514D;font-size:15px;">Photographers, video journalists, and documentary storytellers capturing powerful moments.</p>
         </article>
-        <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
+  
+        <!-- 5. GED Educators -->
+        <article class="border border-[#e6e1d7] p-7 h-full flex flex-col" style="background:#fff;">
           <i data-lucide="graduation-cap" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="team.r5.title" style="color:#080808;">Journalism Instructors and Mentors</h3>
-          <p class="canva-text leading-[1.8]" data-i18n="team.r5.copy" style="color:#55514D;font-size:15px;">Teaching, mentoring, and sharing experience.</p>
+          <h3 class="canva-text mb-3" data-i18n="team.r5.title" style="color:#080808;">GED Educators</h3>
+          <p class="canva-text leading-[1.8] flex-1" data-i18n="team.r5.copy" style="color:#55514D;font-size:15px;">Volunteer instructors for Language Arts, Math, Science, and Social Studies.</p>
         </article>
-        <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
+  
+        <!-- 6. Web Developers & UI/UX -->
+        <article class="border border-[#e6e1d7] p-7 h-full flex flex-col" style="background:#fff;">
           <i data-lucide="code" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="team.r6.title" style="color:#080808;">Front-End, Back-End and Full-Stack Developers</h3>
-          <p class="canva-text leading-[1.8]" data-i18n="team.r6.copy" style="color:#55514D;font-size:15px;">Building and maintaining web tools.</p>
+          <h3 class="canva-text mb-3" data-i18n="team.r6.title" style="color:#080808;">Web &amp; UI/UX Developers</h3>
+          <p class="canva-text leading-[1.8] flex-1" data-i18n="team.r6.copy" style="color:#55514D;font-size:15px;">Full-stack developers and UI/UX designers building our digital platform.</p>
         </article>
-        <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
-          <i data-lucide="layout" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="team.r7.title" style="color:#080808;">UI/UX Designers</h3>
-          <p class="canva-text leading-[1.8]" data-i18n="team.r7.copy" style="color:#55514D;font-size:15px;">Readable, accessible design.</p>
-        </article>
-        <article class="border border-[#e6e1d7] p-7 h-full" style="background:#fff;">
-          <i data-lucide="shield" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
-          <h3 class="canva-text mb-3" data-i18n="team.r8.title" style="color:#080808;">Cybersecurity Specialists &amp; Website Maintenance</h3>
-          <p class="canva-text leading-[1.8]" data-i18n="team.r8.copy" style="color:#55514D;font-size:15px;">Safety, privacy, and reliable upkeep.</p>
-        </article>
-      </div>
+        <!-- 7. Cybersecurity Specialists -->
+      <article class="border border-[#e6e1d7] p-7 h-full flex flex-col" style="background:#fff;">
+        <i data-lucide="shield" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
+        <h3 class="canva-text mb-3" data-i18n="team.r7.title" style="color:#080808;">Cybersecurity &amp; Tech Support</h3>
+        <p class="canva-text leading-[1.8] flex-1" data-i18n="team.r7.copy" style="color:#55514D;font-size:15px;">Cybersecurity specialists, security testers, and website maintenance volunteers.</p>
+      </article>
+
+      <!-- 8. Communications & Design -->
+      <article class="border border-[#e6e1d7] p-7 h-full flex flex-col" style="background:#fff;">
+        <i data-lucide="megaphone" class="w-7 h-7 text-[#D4AF63] mb-6" aria-hidden="true"></i>
+        <h3 class="canva-text mb-3" data-i18n="team.r8.title" style="color:#080808;">Communications &amp; Design</h3>
+        <p class="canva-text leading-[1.8] flex-1" data-i18n="team.r8.copy" style="color:#55514D;font-size:15px;">Social media managers, media communications volunteers, and graphic designers.</p>
+      </article>
+
     </div>
-  </section>
+  </div>
+</section>
 
   <section id="conditions" class="px-6 py-20 sm:py-28" style="background:#F8F7F4;">
     <div class="max-w-[1260px] mx-auto">
