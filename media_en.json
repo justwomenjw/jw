@@ -98,5 +98,29 @@
   "media.note.kicker": "A NOTE ON PUBLICATION",
   "media.note.title": "Editorial note",
   "media.note.copy": "Editorial note: Stories are published only after appropriate fact-checking, consent, privacy review, and contributor-safety considerations. Source protection and the safety of contributors should guide publication decisions.",
-  "media.note.disclosure": "The stories and excerpts on this page are editorial placeholders awaiting verified material. Illustrative photographs do not depict identified contributors to these proposed stories."
+  "media.note.disclosure": "The stories and excerpts on this page are editorial placeholders awaiting verified material. Illustrative photographs do not depict identified contributors to these proposed stories.",
+  "media.news.readmore": "Read more",
+  "media.news.loadmore": "Load more",
+  "media.news.noresults": "No stories match your search.",
+
+  "media.news.polio.tag": "News",
+  "media.news.polio.date": "Saturday, October 24, 2026",
+  "media.news.polio.title": "UNICEF Urges Vaccination of All Afghan Children to Eradicate Polio",
+  "media.news.polio.excerpt": "The United Nations Children’s Fund (UNICEF) has called for all children in Afghanistan to be vaccinated against polio, stressing that sustained immunization efforts are essential to eradicating the disease.",
+  "media.news.polio.b1": "In a statement marking World Polio Day on Saturday, October 24, UNICEF paid tribute to health workers and vaccinators on the front lines of the fight against polio, commending their efforts to protect children through vaccination.",
+  "media.news.polio.b2": "UNICEF said polio cases worldwide have fallen by more than 99 percent, marking significant progress in the global campaign to eliminate the disease. However, the agency warned that as long as the virus persists anywhere in the world, children everywhere will remain at risk.",
+  "media.news.polio.b3": "The organization emphasized that ensuring every child has access to the polio vaccine is critical to interrupting transmission and achieving a polio-free world.",
+  "media.news.polio.b4": "Despite substantial global progress, Afghanistan continues to face challenges in eliminating polio. An increase in cases in recent years has highlighted the need to expand vaccination coverage, strengthen preventive measures and sustain efforts to protect children from the disease.",
+
+  "media.news.femicide.tag": "Report",
+  "media.news.femicide.date": "Thursday, October 22, 2026",
+  "media.news.femicide.title": "231 Cases of Femicide Linked to Gender-Based and Domestic Violence Recorded in Afghanistan Since 2021",
+  "media.news.femicide.excerpt": "At least 231 cases of women killed in incidents linked to gender-based and domestic violence have been documented across 10 provinces of Afghanistan since 2021, according to a report by The Guardian and the Feminist Majority Foundation.",
+  "media.news.femicide.b1": "The report warns that the documented cases represent only a fraction of the actual scale of violence against women in Afghanistan. Since the Taliban returned to power in August 2021, restrictions on women’s rights and access to legal protection have further limited opportunities to report abuse, seek assistance and pursue accountability.",
+  "media.news.femicide.b2": "The victims ranged in age from five to 65, according to the report. Suspects were arrested in only 58 of the 231 cases, representing approximately 25 per cent of the total.",
+  "media.news.femicide.b3": "Concerns over accountability for perpetrators have intensified following the publication of the Taliban’s criminal procedure regulations for courts in February 2026. According to reports on the regulations, husbands may physically punish their wives, provided the abuse does not result in broken bones or severe, visible injuries.",
+  "media.news.femicide.b4": "The findings also point to the broader psychological impact of restrictions on Afghan women. UN data cited in the report indicate that seven in 10 Afghan women describe their mental health as “poor” or “very poor,” underscoring the toll of mounting social, economic and legal pressures.",
+  "media.news.femicide.b5": "The report stresses that limited access to education, economic opportunities, legal protection and effective justice mechanisms leaves many women vulnerable to abuse and increases the risk that perpetrators will escape accountability.",
+  "media.news.femicide.b6": "It calls on the international community to take concrete measures to protect Afghan women, expand access to support services and strengthen mechanisms for justice and accountability.",
+  "media.news.femicide.b7": "With reporting channels and legal safeguards increasingly constrained, advocates warn that the documented cases are unlikely to reflect the full extent of violence against women in Afghanistan."
 }

@@ -12,28 +12,11 @@
   <style>
     /* ═══════════ Language switcher — always visible, compact on mobile ═══════════ */
 @media (max-width: 767px) {
-  /* Show language switcher in header (was hidden sm:flex) */
-  [aria-label="Language"] {
-    display: flex !important;
-    gap: 1px !important;
-    font-size: 10px !important;
-    padding-right: 4px !important;
-  }
-  [aria-label="Language"] button {
-    padding: 0 2px !important;
-  }
-  [aria-label="Language"] > span[aria-hidden="true"] {
-    font-size: 9px !important;
-    margin: 0 1px;
-  }
-
-  /* Hide tagline on mobile to make room for languages */
-  .brand-tagline,
-  small[data-i18n="brand.tagline"] {
-    display: none !important;
-  }
+  [aria-label="Language"] { display: flex !important; gap: 1px !important; font-size: 10px !important; padding-right: 4px !important; }
+  [aria-label="Language"] button { padding: 0 2px !important; }
+  [aria-label="Language"] > span[aria-hidden="true"] { font-size: 9px !important; margin: 0 1px; }
+  .brand-tagline, small[data-i18n="brand.tagline"] { display: none !important; }
 }
-
 @media (max-width: 400px) {
   .brand-mark { width: 36px !important; height: 36px !important; }
   .brand-mark img { width: 36px !important; height: 36px !important; }
@@ -63,13 +46,37 @@
     .eyebrow{letter-spacing:.18em;text-transform:uppercase}
     .gold-button{background:var(--gold);color:var(--ink);transition:background .2s,transform .2s}
     .gold-button:hover{background:#e6c783;transform:translateY(-2px)}
-    .story-image{width:100%;height:240px;object-fit:cover;transition:transform .45s}
+    .story-image{width:100%;height:240px;object-fit:cover;transition:transform .45s;display:block}
     .story-card:hover .story-image{transform:scale(1.035)}
     .category-button{border-bottom:2px solid transparent;transition:color .2s,border-color .2s}
     .category-button:hover,.category-button[aria-pressed="true"]{color:var(--ink);border-color:var(--gold)}
     .editorial-link:hover{color:#806022}
 
-    /* ═══════════ Fluid typography — overrides inline font-size ═══════════ */
+    /* ═══════════ Read more / Show less label swap & layout ═══════════ */
+    .read-toggle .label-less { display: none; }
+    .read-toggle[open] .label-read { display: none; }
+    .read-toggle[open] .label-less { display: inline; }
+    .read-toggle summary::-webkit-details-marker { display: none; }
+    .read-toggle summary::marker { content: ""; }
+
+    /* جادوی Flexbox برای انتقال دکمه به پایین */
+    .read-toggle {
+      display: flex;
+      flex-direction: column;
+    }
+    .read-toggle > summary {
+      order: 1; /* دکمه Read more بالای متن */
+    }
+    .read-toggle > .read-content {
+      order: 2; /* متن کامل زیر دکمه */
+      margin-top: 1rem;
+      margin-bottom: 0.5rem;
+    }
+    .read-toggle[open] > summary {
+      order: 3; /* وقتی باز شد، دکمه Show less به پایین می‌رود */
+      margin-top: 1rem;
+    }
+
     [data-i18n="media.hero.title"] { font-size: clamp(2.5rem, 5.4vw, 5rem) !important; }
     [data-i18n="media.browse.title"],
     [data-i18n="media.latest.title"],
@@ -77,60 +84,22 @@
     [data-i18n="media.panel.poetry.title"],
     [data-i18n="media.panel.photo.title"],
     [data-i18n="media.note.title"] { font-size: clamp(1.75rem, 3vw, 2.75rem) !important; }
-    [data-i18n="media.featured.title"] { font-size: clamp(1.35rem, 2.2vw, 2rem) !important; }
-    [data-i18n="media.c1.title"],
-    [data-i18n="media.c2.title"],
-    [data-i18n="media.c3.title"],
-    [data-i18n="media.c4.title"],
-    [data-i18n="media.c5.title"],
-    [data-i18n="media.c6.title"] { font-size: clamp(1.15rem, 1.6vw, 1.45rem) !important; }
 
-    /* ═══════════ Responsive header ═══════════ */
-    @media (max-width: 1279px) {
-      .desktop-nav { display: none !important; }
-      .menu-trigger { display: inline-flex !important; }
-    }
-    @media (min-width: 1280px) and (max-width: 1439px) {
-      .desktop-nav { gap: 10px !important; }
-      .desktop-nav .nav-link { font-size: 12px !important; }
-    }
-    @media (min-width: 1440px) {
-      .desktop-nav { gap: 16px !important; }
-      .desktop-nav .nav-link { font-size: 14px !important; }
-    }
+    @media (max-width: 1279px) { .desktop-nav { display: none !important; } .menu-trigger { display: inline-flex !important; } }
+    @media (min-width: 1280px) and (max-width: 1439px) { .desktop-nav { gap: 10px !important; } .desktop-nav .nav-link { font-size: 12px !important; } }
+    @media (min-width: 1440px) { .desktop-nav { gap: 16px !important; } .desktop-nav .nav-link { font-size: 14px !important; } }
 
-    /* ═══════════ Category filter — tighter on mobile ═══════════ */
     @media (max-width: 767px) {
       #stories { padding-left: 1rem; padding-right: 1rem; }
-
-      .category-filter {
-        gap: 0.5rem 1rem !important;
-      }
-      .category-filter .category-button {
-        padding-top: 0.5rem !important;
-        padding-bottom: 0.5rem !important;
-        font-size: 14px !important;
-      }
+      .category-filter { gap: 0.5rem 1rem !important; }
+      .category-filter .category-button { padding-top: 0.5rem !important; padding-bottom: 0.5rem !important; font-size: 14px !important; }
     }
 
-    /* ═══════════ Featured story — smaller image on mobile ═══════════ */
-    @media (max-width: 767px) {
-      #featured-story > div:first-child,
-      #featured-story > div:first-child img {
-        min-height: 220px !important;
-      }
-      #featured-story > div:last-child {
-        padding: 1.5rem !important;
-      }
-    }
-
-    /* ═══════════ Ultra small screens — header fit ═══════════ */
     @media (max-width: 360px) {
       .brand-text { font-size: 13px !important; letter-spacing: .06em !important; }
       .brand-tagline { font-size: 8px !important; letter-spacing: .12em !important; }
       .brand-mark { width: 36px !important; height: 36px !important; }
       .brand-mark img { width: 36px !important; height: 36px !important; }
-      #search-toggle, #menu-toggle { padding: 6px !important; }
     }
 
     @media(max-width:640px){
@@ -150,7 +119,6 @@
 
 <header class="canva-header sticky top-0 z-50 border-b border-white/15 text-white" style="background:#080808;">
   <div class="w-full max-w-[1600px] mx-auto px-4 sm:px-8 xl:px-12 min-h-[78px] flex items-center justify-between gap-3">
-
     <a href="home.html" class="flex items-center gap-2 sm:gap-3 shrink-0" aria-label="Just Women — Home">
       <span class="brand-mark" aria-hidden="true">
         <img src="cropped_circle_image.png" alt="" width="48" height="48" style="width:48px;height:48px;object-fit:contain;display:block;">
@@ -261,6 +229,82 @@
         <button type="button" data-category="Documentaries" class="canva-button category-button py-4" aria-pressed="false" data-i18n="media.cat.docs" style="color:#080808;font-size:16px;">Documentaries</button>
       </div>
       <p id="filter-status" class="sr-only" role="status" aria-live="polite"></p>
+
+      <!-- ── Story cards ── -->
+      <div class="mt-14 grid gap-8 lg:grid-cols-2 items-start">
+
+        <!-- کارت اول: پولیو -->
+        <article class="story-card border border-[#e0d9ca] flex flex-col" style="background:#fff;"
+          data-category="News"
+          data-search="unicef polio vaccination vaccinate eradicate eradication afghanistan children vaccine world polio day health workers vaccinators یونیسف پولیو واکسین واکسیناسیون فلج اطفال ریشه‌کنی افغانستان کودکان واکسن روز جهانی مبارزه با پولیو واکسیناتور مصون‌سازی یونېسف پولیو واکسین افغانستان ماشومان vaccination éradication enfants vaccin journée mondiale">
+          <div class="overflow-hidden">
+            <img class="story-image" src="OIP.webp" alt="A health worker preparing a polio vaccine; illustrative photograph" data-i18n-alt="media.news.polio.image_alt" loading="lazy" width="1200" height="675">
+          </div>
+          <div class="p-8 sm:p-10 flex flex-col h-full">
+            <div class="flex items-center justify-between gap-4 mb-6">
+              <span class="canva-text" data-i18n="media.news.polio.tag" style="background:#F8F7F4;color:#806022;font-size:11px;letter-spacing:.16em;text-transform:uppercase;padding:.35rem .6rem;">News</span>
+              <span class="canva-text" data-i18n="media.news.polio.date" style="color:#8a8578;font-size:13px;">Saturday, October 24, 2026</span>
+            </div>
+            <h3 class="canva-text mb-5" data-i18n="media.news.polio.title" style="color:#080808;font-weight:600;line-height:1.55;font-size:clamp(1.25rem,2vw,1.55rem);">UNICEF Urges Vaccination of All Afghan Children to Eradicate Polio</h3>
+            <p class="canva-text mb-2" data-i18n="media.news.polio.excerpt" style="color:#494641;font-size:16px;line-height:1.95;">The United Nations Children’s Fund (UNICEF) has called for all children in Afghanistan to be vaccinated against polio, stressing that sustained immunization efforts are essential to eradicating the disease.</p>
+            
+            <details class="read-toggle group">
+              <summary class="canva-text cursor-pointer list-none inline-flex items-center gap-2" style="color:#806022;font-size:14px;font-weight:600;">
+                <span class="label-read" data-i18n="media.news.readmore">Read more</span>
+                <span class="label-less" data-i18n="media.news.showless">Show less</span>
+                <span class="transition-transform group-open:rotate-180" aria-hidden="true">▾</span>
+              </summary>
+              <div class="read-content space-y-4">
+                <p class="canva-text" data-i18n="media.news.polio.b1" style="color:#494641;font-size:16px;line-height:1.95;">In a statement marking World Polio Day on Saturday, October 24, UNICEF paid tribute to health workers and vaccinators on the front lines of the fight against polio, commending their efforts to protect children through vaccination.</p>
+                <p class="canva-text" data-i18n="media.news.polio.b2" style="color:#494641;font-size:16px;line-height:1.95;">UNICEF said polio cases worldwide have fallen by more than 99 percent, marking significant progress in the global campaign to eliminate the disease. However, the agency warned that as long as the virus persists anywhere in the world, children everywhere will remain at risk.</p>
+                <p class="canva-text" data-i18n="media.news.polio.b3" style="color:#494641;font-size:16px;line-height:1.95;">The organization emphasized that ensuring every child has access to the polio vaccine is critical to interrupting transmission and achieving a polio-free world.</p>
+                <p class="canva-text" data-i18n="media.news.polio.b4" style="color:#494641;font-size:16px;line-height:1.95;">Despite substantial global progress, Afghanistan continues to face challenges in eliminating polio. An increase in cases in recent years has highlighted the need to expand vaccination coverage, strengthen preventive measures and sustain efforts to protect children from the disease.</p>
+              </div>
+            </details>
+          </div>
+        </article>
+
+        <!-- کارت دوم: خشونت علیه زنان -->
+        <article class="story-card border border-[#e0d9ca] flex flex-col" style="background:#fff;"
+          data-category="Reports"
+          data-search="femicide domestic violence gender-based women killed murdered afghanistan taliban guardian feminist majority foundation justice criminal procedure mental health خشونت خانگی قتل زنان خشونت جنسیتی افغانستان طالبان گاردین بنیاد اکثریت فمنیست عدالت مقرره اجراآت جزایی سلامت روانی د ښځو وژنه کورنی تاوتریخوالی طالبان féminicide domestique sexiste femmes talibans justice santé mentale">
+          <div class="overflow-hidden">
+            <img class="story-image" src="women.jpg" alt="An editorial photograph accompanying a report on violence against women; illustrative image" data-i18n-alt="media.news.femicide.image_alt" loading="lazy" width="1200" height="675">
+          </div>
+          <div class="p-8 sm:p-10 flex flex-col h-full">
+            <div class="flex items-center justify-between gap-4 mb-6">
+              <span class="canva-text" data-i18n="media.news.femicide.tag" style="background:#F8F7F4;color:#806022;font-size:11px;letter-spacing:.16em;text-transform:uppercase;padding:.35rem .6rem;">Report</span>
+              <span class="canva-text" data-i18n="media.news.femicide.date" style="color:#8a8578;font-size:13px;">Thursday, October 22, 2026</span>
+            </div>
+            <h3 class="canva-text mb-5" data-i18n="media.news.femicide.title" style="color:#080808;font-weight:600;line-height:1.55;font-size:clamp(1.25rem,2vw,1.55rem);">231 Cases of Femicide Linked to Gender-Based and Domestic Violence Recorded in Afghanistan Since 2021</h3>
+            <p class="canva-text mb-2" data-i18n="media.news.femicide.excerpt" style="color:#494641;font-size:16px;line-height:1.95;">At least 231 cases of women killed in incidents linked to gender-based and domestic violence have been documented across 10 provinces of Afghanistan since 2021, according to a report by The Guardian and the Feminist Majority Foundation.</p>
+            
+            <details class="read-toggle group">
+              <summary class="canva-text cursor-pointer list-none inline-flex items-center gap-2" style="color:#806022;font-size:14px;font-weight:600;">
+                <span class="label-read" data-i18n="media.news.readmore">Read more</span>
+                <span class="label-less" data-i18n="media.news.showless">Show less</span>
+                <span class="transition-transform group-open:rotate-180" aria-hidden="true">▾</span>
+              </summary>
+              <div class="read-content space-y-4">
+                <p class="canva-text" data-i18n="media.news.femicide.b1" style="color:#494641;font-size:16px;line-height:1.95;">The report warns that the documented cases represent only a fraction of the actual scale of violence against women in Afghanistan. Since the Taliban returned to power in August 2021, restrictions on women’s rights and access to legal protection have further limited opportunities to report abuse, seek assistance and pursue accountability.</p>
+                <p class="canva-text" data-i18n="media.news.femicide.b2" style="color:#494641;font-size:16px;line-height:1.95;">The victims ranged in age from five to 65, according to the report. Suspects were arrested in only 58 of the 231 cases, representing approximately 25 per cent of the total.</p>
+                <p class="canva-text" data-i18n="media.news.femicide.b3" style="color:#494641;font-size:16px;line-height:1.95;">Concerns over accountability for perpetrators have intensified following the publication of the Taliban’s criminal procedure regulations for courts in February 2026. According to reports on the regulations, husbands may physically punish their wives, provided the abuse does not result in broken bones or severe, visible injuries.</p>
+                <p class="canva-text" data-i18n="media.news.femicide.b4" style="color:#494641;font-size:16px;line-height:1.95;">The findings also point to the broader psychological impact of restrictions on Afghan women. UN data cited in the report indicate that seven in 10 Afghan women describe their mental health as “poor” or “very poor,” underscoring the toll of mounting social, economic and legal pressures.</p>
+                <p class="canva-text" data-i18n="media.news.femicide.b5" style="color:#494641;font-size:16px;line-height:1.95;">The report stresses that limited access to education, economic opportunities, legal protection and effective justice mechanisms leaves many women vulnerable to abuse and increases the risk that perpetrators will escape accountability.</p>
+                <p class="canva-text" data-i18n="media.news.femicide.b6" style="color:#494641;font-size:16px;line-height:1.95;">It calls on the international community to take concrete measures to protect Afghan women, expand access to support services and strengthen mechanisms for justice and accountability.</p>
+                <p class="canva-text" data-i18n="media.news.femicide.b7" style="color:#494641;font-size:16px;line-height:1.95;">With reporting channels and legal safeguards increasingly constrained, advocates warn that the documented cases are unlikely to reflect the full extent of violence against women in Afghanistan.</p>
+              </div>
+            </details>
+          </div>
+        </article>
+
+      </div>
+
+      <p id="no-results" hidden class="canva-text text-center mt-12" data-i18n="media.news.noresults" style="color:#494641;font-size:16px;">No stories match your search.</p>
+
+      <div class="text-center mt-12">
+        <button id="load-more" type="button" hidden class="gold-button canva-button px-8 py-3.5 font-semibold" data-i18n="media.news.loadmore" style="font-size:15px;">Load more</button>
+      </div>
     </div>
   </section>
 
@@ -315,7 +359,7 @@
       </div>
       <nav aria-label="Footer navigation">
         <p class="canva-text eyebrow mb-6" data-i18n="footer.explore" style="color:#D4AF63;letter-spacing:.19em;font-size:13px;">EXPLORE</p>
-        <div class="grid grid-cols-2 gap-4"> 
+        <div class="grid grid-cols-2 gap-4">
           <a href="home.html" class="canva-link hover:text-[#D4AF63]" data-i18n="nav.home" style="color:#fff;font-size:15px;">Home</a>
           <a href="about.html" class="canva-link hover:text-[#D4AF63]" data-i18n="nav.about" style="color:#fff;font-size:15px;">About Us</a>
           <a href="media.html" class="canva-link hover:text-[#D4AF63]" data-i18n="nav.media" style="color:#fff;font-size:15px;">Media &amp; Stories</a>
@@ -411,7 +455,7 @@
     categoryButtons.forEach(item => item.setAttribute('aria-pressed', String(item === button)));
     renderStories();
   }));
-  loadMore.addEventListener('click', () => { expanded = true; renderStories(); });
+  if (loadMore) loadMore.addEventListener('click', () => { expanded = true; renderStories(); });
 
   function renderStories() {
     const query = storySearch.value.trim().toLocaleLowerCase();
@@ -420,14 +464,13 @@
       (!query || card.dataset.search.toLocaleLowerCase().includes(query))
     );
     cards.forEach(card => { card.hidden = !matches.includes(card) || (matches.indexOf(card) >= 3 && !expanded); });
-    const featured = document.getElementById('featured-story');
-    const showFeatured = (activeCategory === 'All Stories' || activeCategory === 'Personal Stories') &&
-      (!query || featured.dataset.search.toLocaleLowerCase().includes(query));
-    document.getElementById('featured').hidden = !showFeatured;
-    document.getElementById('no-results').hidden = matches.length > 0 || showFeatured;
-    loadMore.hidden = expanded || matches.length <= 3;
-    document.getElementById('filter-status').textContent =
-      `${matches.length + (showFeatured ? 1 : 0)} matching placeholder stories shown or available.`;
+
+    const noResults = document.getElementById('no-results');
+    if (noResults) noResults.hidden = matches.length > 0;
+    if (loadMore) loadMore.hidden = expanded || matches.length <= 3;
+
+    const status = document.getElementById('filter-status');
+    if (status) status.textContent = `${matches.length} stories shown.`;
   }
 
   document.addEventListener('keydown', event => {

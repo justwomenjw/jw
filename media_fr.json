@@ -96,5 +96,29 @@
   "media.note.kicker": "NOTE SUR LA PUBLICATION",
   "media.note.title": "Note éditoriale",
   "media.note.copy": "Note éditoriale : les histoires ne sont publiées qu'après une vérification appropriée des faits, le consentement, l'examen de la confidentialité et les considérations de sécurité des contributrices. La protection des sources et la sécurité des contributrices doivent guider les décisions de publication.",
-  "media.note.disclosure": "Les histoires et extraits de cette page sont des espaces éditoriaux en attente de contenu vérifié. Les photographies d'illustration ne représentent pas des contributrices identifiées de ces histoires proposées."
-}
+  "media.note.disclosure": "Les histoires et extraits de cette page sont des espaces éditoriaux en attente de contenu vérifié. Les photographies d'illustration ne représentent pas des contributrices identifiées de ces histoires proposées.",
+    "media.news.readmore": "Lire la suite",
+    "media.news.loadmore": "Afficher plus",
+    "media.news.noresults": "Aucun article ne correspond à votre recherche.",
+  
+    "media.news.polio.tag": "Actualité",
+    "media.news.polio.date": "Samedi 24 octobre 2026",
+    "media.news.polio.title": "L’UNICEF appelle à la vaccination de tous les enfants afghans pour éradiquer la polio",
+    "media.news.polio.excerpt": "Le Fonds des Nations Unies pour l’enfance (UNICEF) a appelé à la vaccination de tous les enfants d’Afghanistan contre la polio, soulignant que des efforts de vaccination soutenus sont essentiels pour éradiquer la maladie.",
+    "media.news.polio.b1": "Dans une déclaration marquant la Journée mondiale de la polio, samedi 24 octobre, l’UNICEF a rendu hommage aux agents de santé et aux vaccinateurs en première ligne de la lutte contre la polio, saluant leurs efforts pour protéger les enfants par la vaccination.",
+    "media.news.polio.b2": "L’UNICEF a indiqué que les cas de polio dans le monde ont diminué de plus de 99 pour cent, marquant des progrès significatifs dans la campagne mondiale d’élimination de la maladie. Cependant, l’agence a averti que tant que le virus persiste quelque part dans le monde, les enfants du monde entier resteront exposés au risque.",
+    "media.news.polio.b3": "L’organisation a souligné que garantir à chaque enfant l’accès au vaccin contre la polio est essentiel pour interrompre la transmission et parvenir à un monde exempt de polio.",
+    "media.news.polio.b4": "Malgré des progrès mondiaux substantiels, l’Afghanistan continue de faire face à des défis dans l’élimination de la polio. Une augmentation des cas ces dernières années a mis en évidence la nécessité d’étendre la couverture vaccinale, de renforcer les mesures préventives et de poursuivre les efforts pour protéger les enfants contre la maladie.",
+  
+    "media.news.femicide.tag": "Rapport",
+    "media.news.femicide.date": "Jeudi 22 octobre 2026",
+    "media.news.femicide.title": "231 cas de féminicide liés à la violence basée sur le genre et à la violence domestique recensés en Afghanistan depuis 2021",
+    "media.news.femicide.excerpt": "Au moins 231 cas de femmes tuées dans des incidents liés à la violence basée sur le genre et à la violence domestique ont été documentés dans 10 provinces d’Afghanistan depuis 2021, selon un rapport du Guardian et de la Feminist Majority Foundation.",
+    "media.news.femicide.b1": "Le rapport avertit que les cas documentés ne représentent qu’une fraction de l’ampleur réelle de la violence contre les femmes en Afghanistan. Depuis le retour des talibans au pouvoir en août 2021, les restrictions imposées aux droits des femmes et à l’accès à la protection juridique ont encore limité les possibilités de signaler les abus, de demander de l’aide et d’exiger des comptes.",
+    "media.news.femicide.b2": "Selon le rapport, les victimes étaient âgées de cinq à 65 ans. Des suspects ont été arrêtés dans seulement 58 des 231 cas, soit environ 25 pour cent du total.",
+    "media.news.femicide.b3": "Les préoccupations concernant la responsabilité des auteurs de violences se sont intensifiées après la publication en février 2026 des règlements de procédure pénale des tribunaux talibans. Selon les rapports sur ces règlements, les maris peuvent punir physiquement leurs épouses, à condition que les mauvais traitements n’entraînent pas de fractures ni de blessures graves et visibles.",
+    "media.news.femicide.b4": "Les conclusions soulignent également l’impact psychologique plus large des restrictions sur les femmes afghanes. Les données de l’ONU citées dans le rapport indiquent que sept femmes afghanes sur dix décrivent leur santé mentale comme « mauvaise » ou « très mauvaise », soulignant le tribut des pressions sociales, économiques et juridiques croissantes.",
+    "media.news.femicide.b5": "Le rapport souligne que l’accès limité à l’éducation, aux opportunités économiques, à la protection juridique et aux mécanismes de justice efficaces laisse de nombreuses femmes vulnérables aux abus et augmente le risque que les auteurs échappent à la responsabilité.",
+    "media.news.femicide.b6": "Il appelle la communauté internationale à prendre des mesures concrètes pour protéger les femmes afghanes, élargir l’accès aux services de soutien et renforcer les mécanismes de justice et de responsabilité.",
+    "media.news.femicide.b7": "Avec des canaux de signalement et des garanties juridiques de plus en plus restreints, les défenseurs avertissent que les cas documentés ne reflètent probablement pas l’ampleur réelle de la violence contre les femmes en Afghanistan."
+  }
